@@ -310,5 +310,5 @@ class Evaluacion:
 
 if __name__ == "__main__":
 
-    E = Evaluacion("Curiocity_Turtle.owl")
-    E.ShowScore()
+    E = Evaluacion("../Curiocity_Turtle.owl")
+    print(E.ShowScore())

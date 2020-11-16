@@ -308,7 +308,7 @@ class Metricas:
 
 if __name__ == "__main__":
 
-    M = Metricas("Curiocity_Turtle.owl")
+    M = Metricas("../Curiocity_Turtle.owl")
     #for i in M.level_dic:
     #    print(i, M.level_dic[i])
     #print(M.level_dic)
