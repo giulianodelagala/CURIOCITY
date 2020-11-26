@@ -261,7 +261,7 @@ class Evaluacion:
         ka = (self.ANOnto[1] + self.RROnto[1] + self.NOMOnto[1])/3.0 #Knowledge acquisition
         cs = (self.RROnto[1] + self.AROnto[1])/2.0 #Clustering and similiraty
         il = (self.RROnto[1] + self.AROnto[1] + self.INROnto[1])/3.0 #Indexing and linking
-        rr = (self.AROnto[1] + 0)/2.0 #Results representation
+        rr = (self.AROnto[1] + 1)/2.0 #Results representation
         ta = (self.formalization) #Text analysis
         gdt = (self.INROnto[1] + self.AROnto[1])/2.0 #Guidance and decision trees
         kr = (self.ANOnto[1] + self.AROnto[1] + self.INROnto[1] + self.formalization + self.NOMOnto[1] + self.LCOMOnto[1] + self.consistency)/7.0 #Knowledge reuse
@@ -305,7 +305,7 @@ class Evaluacion:
         #replaceability
         maintainability = np.mean(self.score_maintain[:-1])
 
-        self.sub_char = ['Structural', 'Functional\nadequacy', 'Adaptability', 'Reliability', 'Replaceability', 'Maintainability']
+        self.sub_char = ['Structural', 'Functional\nadequacy', 'Transferability', 'Reliability', 'Compatibility', 'Maintainability']
         self.score_char = [structural, func_adequacy, self.adaptability, reliability, self.replaceability, maintainability, structural]
 
 if __name__ == "__main__":
