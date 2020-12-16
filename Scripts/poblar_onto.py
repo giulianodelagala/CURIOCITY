@@ -1,8 +1,11 @@
 #Script para Poblamiento de Ontologia
 
-from rdflib import Graph, Literal, RDF, URIRef, Namespace
-from rdflib.namespace import RDF, OWL, FOAF, RDFS, XSD
+from rdflib import Graph, Literal, RDF, URIRef, Namespace, term
+from rdflib.namespace import RDF, OWL, FOAF, RDFS, XSD, TIME
 import urllib.parse
+
+#WARNING Rdflib gYear workaround
+term._toPythonMapping.pop(XSD['gYear'])
 
 class Populate():
     def __init__ (self):
@@ -20,6 +23,7 @@ class Populate():
         self.g.bind("rdf", RDF)
         self.g.bind("rdfs", RDFS)
         self.g.bind("ecrm", self.ecrm)
+        self.g.bind("time", TIME)
 
         #self.map_entidad = {"place" : self.ecrm.E53_Place }
 
@@ -96,10 +100,17 @@ class Populate():
             self.AddLabel(var_, name)
         return var_
     
-    def AddSubjectFromURI(self, root, name:str, concept:str):
-        #TODO modificar para aceptar namespace
+    def AddSubjectFromURI(self, root, name:str, concept:str, name_space = "ecrm"):
         var_ = URIRef(root + name)
-        conc = URIRef(self.ecrm + concept)
+        if (name_space == "ecrm"):
+            space = self.ecrm
+        elif (name_space == "cit"):
+            space = self.cit
+        elif (name_space == "time"):
+            space = TIME
+
+        conc = URIRef(space + concept)
+        
         self.g.add((var_, RDF.type, OWL.NamedIndividual))
         self.g.add((var_, RDF.type, conc))
         return var_
@@ -113,8 +124,15 @@ class Populate():
         pre = URIRef(self.ecrm + predicate)
         self.g.add((var_, pre, obj))
 
-    def AddRelationFromURI(self, subject, predicate, object):
-        pre = URIRef(self.ecrm + predicate)
+    def AddRelationFromURI(self, subject, predicate, object, name_space = "ecrm"):
+        if (name_space == "ecrm"):
+            pre = URIRef(self.ecrm + predicate)
+        elif (name_space == "cit"):
+            pre = URIRef(self.cit + predicate)
+        elif (name_space == "time"):
+            pre = URIRef(TIME + predicate )
+        
+        #pre = URIRef(self.ecrm + predicate)
         self.g.add((subject, pre, object))
 
     def AddLiteralFromURI(self, subject, predicate, object, dtype, name_space = "cit"):
@@ -123,9 +141,18 @@ class Populate():
             pre = URIRef(self.ecrm + predicate)
         elif (name_space == "cit"):
             pre = URIRef(self.cit + predicate)
+        elif (name_space == "time"):
+            pre = URIRef(TIME + predicate )
 
         if (dtype == "string"):
             dt = XSD.string
+        elif (dtype == "decimal"):
+            dt = XSD.decimal
+        elif (dtype == "year"):
+            dt = URIRef(u'http://www.w3.org/2001/XMLSchema#gYear')
+        elif (dtype == "date"):
+            dt = XSD.date
+
         self.g.add((subject, pre, Literal(object, datatype=dt)))
 
     def SaveTriples(self, file_name:str, format:str = "turtle"):
