@@ -1,0 +1,2031 @@
+@prefix : <http://curiocity.org/> .
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:e_01_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Combate del 2 de mayo 1866 (parte de la guerra hispano sud-americana, donde se sella en definitiva la independencia del Perú los paises participantes de sud américa)"^^xsd:string ;
+    ecrm:P4_has_time-span :e_01_01-Span .
+
+:e_01_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :e_01_01-Span ;
+    time:hasBeginning :e_01_01-Interval-Beginning ;
+    time:hasEnd :e_01_01-Interval-End .
+
+:e_01_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Batalla de Arica (7 junio 1880) (Parte de la Guerra del Pacífico) (liderada por el coronel Francisco Bolognesi)"^^xsd:string ;
+    ecrm:P4_has_time-span :e_01_02-Span .
+
+:e_01_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :e_01_02-Span ;
+    time:hasBeginning :e_01_02-Interval-Beginning ;
+    time:hasEnd :e_01_02-Interval-End .
+
+:e_01_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Batalla de Tarapacá (27 de noviembre 1879) (parte de la Guerra del Pacífico) (liderada por el Comandante Juan Buendía)"^^xsd:string ;
+    ecrm:P4_has_time-span :e_01_03-Span .
+
+:e_01_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :e_01_03-Span ;
+    time:hasBeginning :e_01_03-Interval-Beginning ;
+    time:hasEnd :e_01_03-Interval-End .
+
+:e_01_04 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Campaña  de la Breña o de la Sierra (1881 a 1883) (parte de la Guerra del Pacífico) (Sierra norte, centro y sur del Perú) (liderada por Andrés Avelino Cáceres)"^^xsd:string ;
+    ecrm:P4_has_time-span :e_01_04-Span .
+
+:e_01_04-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :e_01_04-Span ;
+    time:hasBeginning :e_01_04-Interval-Beginning ;
+    time:hasEnd :e_01_04-Interval-End .
+
+:e_01_05 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Combate de Angamos (8 octubre 1879) dentro de la guerra del Pacífico entre Perú, Bolivia y Chile"^^xsd:string ;
+    ecrm:P4_has_time-span :e_01_05-Span .
+
+:e_01_05-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :e_01_05-Span ;
+    time:hasBeginning :e_01_05-Interval-Beginning ;
+    time:hasEnd :e_01_05-Interval-End .
+
+:p_01_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Lítico (del 11000 a 5000 a.C.) (Lauricocha, Toquepala, Paccaicasa) (Nomadismo, cazador, pescador y recolector)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_01_01-Span .
+
+:p_01_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_01_01-Span ;
+    time:hasBeginning :p_01_01-Interval-Beginning ;
+    time:hasEnd :p_01_01-Interval-End .
+
+:p_01_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arcaico (del 5000 al 1500 a.C) (Sechín Alto, Paraiso, Kotosh, Huaca, Prieta, Chilca) (Sedentarismo, agricultura incipiente, domesticación de animales)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_01_02-Span .
+
+:p_01_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_01_02-Span ;
+    time:hasBeginning :p_01_02-Interval-Beginning ;
+    time:hasEnd :p_01_02-Interval-End .
+
+:p_01_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Horizonte temprano (del 1500 al 500 a.C.) (Paracas Chavín) (Formativo. Revolución agrícola, aparición de la cerámica, Desarrollo de la arquitectura y tejido)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_01_03-Span .
+
+:p_01_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_01_03-Span ;
+    time:hasBeginning :p_01_03-Interval-Beginning ;
+    time:hasEnd :p_01_03-Interval-End .
+
+:p_01_04 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Intermedio temprano (del 500 a.C. al 700 d.C.) (Nazca, Recuay, Mochica, Vicus, Lima) (Aumento poblacional, perfeccionamiento de la agricultura y del arte)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_01_04-Span .
+
+:p_01_04-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_01_04-Span ;
+    time:hasBeginning :p_01_04-Interval-Beginning ;
+    time:hasEnd :p_01_04-Interval-End .
+
+:p_01_05 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Horizonte medio (del 700 al 1000 d.C.) (Tiahuanaco, Wari) (Período de expansión y dominación. Desarrollo tecnológico y urbano. Oficialización de la religión)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_01_05-Span .
+
+:p_01_05-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_01_05-Span ;
+    time:hasBeginning :p_01_05-Interval-Beginning ;
+    time:hasEnd :p_01_05-Interval-End .
+
+:p_01_06 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Intermedio tardío (del 1000 - 1440 d.C.) (Cusco, Chincha, Lambayeque, Chimú, Chancay) (Independencia regional de los Estados.  Desarrollo urbano, artesanal y comercial)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_01_06-Span .
+
+:p_01_06-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_01_06-Span ;
+    time:hasBeginning :p_01_06-Interval-Beginning ;
+    time:hasEnd :p_01_06-Interval-End .
+
+:p_01_07 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Horizonte tardío (del 1440 al 1532 d.C.) (Inca) (Formación y desarrollo del Imperio del Tahuantinsuyo)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_01_07-Span .
+
+:p_01_07-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_01_07-Span ;
+    time:hasBeginning :p_01_07-Interval-Beginning ;
+    time:hasEnd :p_01_07-Interval-End .
+
+:p_02_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Epoca de la conquista (1524 d.C a 1542 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_02_01-Span .
+
+:p_02_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_02_01-Span ;
+    time:hasBeginning :p_02_01-Interval-Beginning ;
+    time:hasEnd :p_02_01-Interval-End .
+
+:p_02_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Epoca Colonial (1542 d.C. a 1821 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+:p_02_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_02_02-Span ;
+    time:hasBeginning :p_02_02-Interval-Beginning ;
+    time:hasEnd :p_02_02-Interval-End .
+
+:p_02_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Epoca republicana (1821 d.C. a la actualidad)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_02_03-Span .
+
+:p_02_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_02_03-Span ;
+    time:hasBeginning :p_02_03-Interval-Beginning ;
+    time:hasEnd :p_02_03-Interval-End .
+
+:p_02_03_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "República aristocrática (1895 a 1919 algunos dicen a 1930)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_02_03_01-Span .
+
+:p_02_03_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_02_03_01-Span ;
+    time:hasBeginning :p_02_03_01-Interval-Beginning ;
+    time:hasEnd :p_02_03_01-Interval-End .
+
+:p_02_04 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Epoca contemporanea (podria considerarse a partir de 1963 a la actualidad)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_02_04-Span .
+
+:p_02_04-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_02_04-Span ;
+    time:hasBeginning :p_02_04-Interval-Beginning ;
+    time:hasEnd :p_02_04-Interval-End .
+
+:p_02_05 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Guerra hispano-sudamericana (Peru, Chile, Bolivia y Ecuador 1865-1866)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_02_05-Span .
+
+:p_02_05-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_02_05-Span ;
+    time:hasBeginning :p_02_05-Interval-Beginning ;
+    time:hasEnd :p_02_05-Interval-End .
+
+:p_02_06 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Guerra del Pacífico (1879 - 1884) (Peru, Chile y Bolivia)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_02_06-Span .
+
+:p_02_06-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_02_06-Span ;
+    time:hasBeginning :p_02_06-Interval-Beginning ;
+    time:hasEnd :p_02_06-Interval-End .
+
+:p_03_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "ARTE PREHISTORICO (3300 a.C.)  (desde la edad de Piedra (paleolítico superior, mesolítico y neolítico) hasta la Edad de los Metales."^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_01-Span .
+
+:p_03_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_01-Span ;
+    time:hasBeginning :p_03_01-Interval-Beginning ;
+    time:hasEnd :p_03_01-Interval-End .
+
+:p_03_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "ARTE DE LA EPOCA ANTIGUA (3000 a.C. +/- Siglo IV (creaciones artísticas de la primera etapa de la historia, inicio de la escritura, destaca la civilización de Egipto y Mesopotamia)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_02-Span .
+
+:p_03_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_02-Span ;
+    time:hasBeginning :p_03_02-Interval-Beginning ;
+    time:hasEnd :p_03_02-Interval-End .
+
+:p_03_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "ARTE CLASICO (siglo IV -  siglo VI)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_03-Span .
+
+:p_03_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_03-Span ;
+    time:hasBeginning :p_03_03-Interval-Beginning ;
+    time:hasEnd :p_03_03-Interval-End .
+
+:p_03_04 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "ARTE MEDIEVAL (siglo V +/- siglo XV)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_04-Span .
+
+:p_03_04-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_04-Span ;
+    time:hasBeginning :p_03_04-Interval-Beginning ;
+    time:hasEnd :p_03_04-Interval-End .
+
+:p_03_04_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte bizantino (del 400 al 1000 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_04_01-Span .
+
+:p_03_04_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_04_01-Span ;
+    time:hasBeginning :p_03_04_01-Interval-Beginning ;
+    time:hasEnd :p_03_04_01-Interval-End .
+
+:p_03_04_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte románico (del 1000 al 1200 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_04_02-Span .
+
+:p_03_04_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_04_02-Span ;
+    time:hasBeginning :p_03_04_02-Interval-Beginning ;
+    time:hasEnd :p_03_04_02-Interval-End .
+
+:p_03_04_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte gótico (del 1150 a 1375 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_04_03-Span .
+
+:p_03_04_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_04_03-Span ;
+    time:hasBeginning :p_03_04_03-Interval-Beginning ;
+    time:hasEnd :p_03_04_03-Interval-End .
+
+:p_03_04_04 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte del pre-renacimiento (1300 d.C. a 1400 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_04_04-Span .
+
+:p_03_04_04-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_04_04-Span ;
+    time:hasBeginning :p_03_04_04-Interval-Beginning ;
+    time:hasEnd :p_03_04_04-Interval-End .
+
+:p_03_05 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "ARTE DE LA EPOCA MODERNA (siglo XV - siglo XVIII)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_05-Span .
+
+:p_03_05-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_05-Span ;
+    time:hasBeginning :p_03_05-Interval-Beginning ;
+    time:hasEnd :p_03_05-Interval-End .
+
+:p_03_05_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte del renacimiento (1400 d.C. a 1530 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_05_01-Span .
+
+:p_03_05_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_05_01-Span ;
+    time:hasBeginning :p_03_05_01-Interval-Beginning ;
+    time:hasEnd :p_03_05_01-Interval-End .
+
+:p_03_05_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte manierismo (1530 d.C. a 1600 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_05_02-Span .
+
+:p_03_05_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_05_02-Span ;
+    time:hasBeginning :p_03_05_02-Interval-Beginning ;
+    time:hasEnd :p_03_05_02-Interval-End .
+
+:p_03_05_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte barroco (de 1600 d.C. a 1750 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_05_03-Span .
+
+:p_03_05_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_05_03-Span ;
+    time:hasBeginning :p_03_05_03-Interval-Beginning ;
+    time:hasEnd :p_03_05_03-Interval-End .
+
+:p_03_05_04 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte rococó (de 1700 d.C. a 1800 d.C.) casi conviviendo con el Barroco"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_05_04-Span .
+
+:p_03_05_04-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_05_04-Span ;
+    time:hasBeginning :p_03_05_04-Interval-Beginning ;
+    time:hasEnd :p_03_05_04-Interval-End .
+
+:p_03_05_05 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte neoclásico (de 1750 d.C. a 1830 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_05_05-Span .
+
+:p_03_05_05-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_05_05-Span ;
+    time:hasBeginning :p_03_05_05-Interval-Beginning ;
+    time:hasEnd :p_03_05_05-Interval-End .
+
+:p_03_06 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "ARTE CONTEMPORANEO (siglo XIX  a la fecha)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_06-Span .
+
+:p_03_06-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_06-Span ;
+    time:hasBeginning :p_03_06-Interval-Beginning ;
+    time:hasEnd :p_03_06-Interval-End .
+
+:p_03_06_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte del siglo XIX (romanticismo, clasicismo, realismo, impresionismo, postimpresionismo, neoimpresionismo, simbolismo, urbanismo de finales del siglo XIX."^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_06_01-Span .
+
+:p_03_06_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_06_01-Span ;
+    time:hasBeginning :p_03_06_01-Interval-Beginning ;
+    time:hasEnd :p_03_06_01-Interval-End .
+
+:p_03_06_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte del siglo XX (vanguardismo)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_03_06_02-Span .
+
+:p_03_06_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_03_06_02-Span ;
+    time:hasBeginning :p_03_06_02-Interval-Beginning ;
+    time:hasEnd :p_03_06_02-Interval-End .
+
+:p_04_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte Prehispánico (antes de 1524)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_01-Span .
+
+:p_04_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_01-Span ;
+    time:hasBeginning :p_04_01-Interval-Beginning ;
+    time:hasEnd :p_04_01-Interval-End .
+
+:p_04_01_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Período preclásico (1500 a.C. - 300 d.C.)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_01_01-Span .
+
+:p_04_01_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_01_01-Span ;
+    time:hasBeginning :p_04_01_01-Interval-Beginning ;
+    time:hasEnd :p_04_01_01-Interval-End .
+
+:p_04_01_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Período clásico (300 - 900"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_01_02-Span .
+
+:p_04_01_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_01_02-Span ;
+    time:hasBeginning :p_04_01_02-Interval-Beginning ;
+    time:hasEnd :p_04_01_02-Interval-End .
+
+:p_04_01_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Período posclásico (900 - 1540)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_01_03-Span .
+
+:p_04_01_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_01_03-Span ;
+    time:hasBeginning :p_04_01_03-Interval-Beginning ;
+    time:hasEnd :p_04_01_03-Interval-End .
+
+:p_04_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte Precolombino Colonial  (1524 a 1820)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_02-Span .
+
+:p_04_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_02-Span ;
+    time:hasBeginning :p_04_02-Interval-Beginning ;
+    time:hasEnd :p_04_02-Interval-End .
+
+:p_04_02_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte Virreinal (1532 hasta finales de 1700)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_02_01-Span .
+
+:p_04_02_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_02_01-Span ;
+    time:hasBeginning :p_04_02_01-Interval-Beginning ;
+    time:hasEnd :p_04_02_01-Interval-End .
+
+:p_04_02_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte y arquitectura Barroca (entre 1650 a  1780)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_02_02-Span .
+
+:p_04_02_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_02_02-Span ;
+    time:hasBeginning :p_04_02_02-Interval-Beginning ;
+    time:hasEnd :p_04_02_02-Interval-End .
+
+:p_04_02_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte y arquitectura Neoclásica (Mediados del siglo XVIII hasta primera mitad XIX)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_02_03-Span .
+
+:p_04_02_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_02_03-Span ;
+    time:hasBeginning :p_04_02_03-Interval-Beginning ;
+    time:hasEnd :p_04_02_03-Interval-End .
+
+:p_04_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte Republicano (1821 a 1920)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_03-Span .
+
+:p_04_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_03-Span ;
+    time:hasBeginning :p_04_03-Interval-Beginning ;
+    time:hasEnd :p_04_03-Interval-End .
+
+:p_04_03_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte y Arquitectura Neoclásica (primera mitad XIX)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_03_01-Span .
+
+:p_04_03_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_03_01-Span ;
+    time:hasBeginning :p_04_03_01-Interval-Beginning ;
+    time:hasEnd :p_04_03_01-Interval-End .
+
+:p_04_04 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte Republicano - moderno (aprox. 1920 a 1960)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_04-Span .
+
+:p_04_04-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_04-Span ;
+    time:hasBeginning :p_04_04-Interval-Beginning ;
+    time:hasEnd :p_04_04-Interval-End .
+
+:p_04_05 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Arte Contemporáneo (a partir del 1960 a la actualidad)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_04_05-Span .
+
+:p_04_05-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_04_05-Span ;
+    time:hasBeginning :p_04_05-Interval-Beginning ;
+    time:hasEnd :p_04_05-Interval-End .
+
+:p_05_01 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo X"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_01-Span .
+
+:p_05_01-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_01-Span ;
+    time:hasBeginning :p_05_01-Interval-Beginning ;
+    time:hasEnd :p_05_01-Interval-End .
+
+:p_05_02 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad siglo X"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_02-Span .
+
+:p_05_02-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_02-Span ;
+    time:hasBeginning :p_05_02-Interval-Beginning ;
+    time:hasEnd :p_05_02-Interval-End .
+
+:p_05_03 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Mediados del siglo X"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_03-Span .
+
+:p_05_03-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_03-Span ;
+    time:hasBeginning :p_05_03-Interval-Beginning ;
+    time:hasEnd :p_05_03-Interval-End .
+
+:p_05_04 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo X"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_04-Span .
+
+:p_05_04-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_04-Span ;
+    time:hasBeginning :p_05_04-Interval-Beginning ;
+    time:hasEnd :p_05_04-Interval-End .
+
+:p_05_05 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XI"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_05-Span .
+
+:p_05_05-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_05-Span ;
+    time:hasBeginning :p_05_05-Interval-Beginning ;
+    time:hasEnd :p_05_05-Interval-End .
+
+:p_05_06 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XI"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_06-Span .
+
+:p_05_06-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_06-Span ;
+    time:hasBeginning :p_05_06-Interval-Beginning ;
+    time:hasEnd :p_05_06-Interval-End .
+
+:p_05_07 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XI"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_07-Span .
+
+:p_05_07-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_07-Span ;
+    time:hasBeginning :p_05_07-Interval-Beginning ;
+    time:hasEnd :p_05_07-Interval-End .
+
+:p_05_08 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XI"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_08-Span .
+
+:p_05_08-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_08-Span ;
+    time:hasBeginning :p_05_08-Interval-Beginning ;
+    time:hasEnd :p_05_08-Interval-End .
+
+:p_05_09 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_09-Span .
+
+:p_05_09-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_09-Span ;
+    time:hasBeginning :p_05_09-Interval-Beginning ;
+    time:hasEnd :p_05_09-Interval-End .
+
+:p_05_10 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_10-Span .
+
+:p_05_10-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_10-Span ;
+    time:hasBeginning :p_05_10-Interval-Beginning ;
+    time:hasEnd :p_05_10-Interval-End .
+
+:p_05_11 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_11-Span .
+
+:p_05_11-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_11-Span ;
+    time:hasBeginning :p_05_11-Interval-Beginning ;
+    time:hasEnd :p_05_11-Interval-End .
+
+:p_05_12 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_12-Span .
+
+:p_05_12-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_12-Span ;
+    time:hasBeginning :p_05_12-Interval-Beginning ;
+    time:hasEnd :p_05_12-Interval-End .
+
+:p_05_13 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XIII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_13-Span .
+
+:p_05_13-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_13-Span ;
+    time:hasBeginning :p_05_13-Interval-Beginning ;
+    time:hasEnd :p_05_13-Interval-End .
+
+:p_05_14 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XIII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_14-Span .
+
+:p_05_14-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_14-Span ;
+    time:hasBeginning :p_05_14-Interval-Beginning ;
+    time:hasEnd :p_05_14-Interval-End .
+
+:p_05_15 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XIII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_15-Span .
+
+:p_05_15-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_15-Span ;
+    time:hasBeginning :p_05_15-Interval-Beginning ;
+    time:hasEnd :p_05_15-Interval-End .
+
+:p_05_16 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XIII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_16-Span .
+
+:p_05_16-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_16-Span ;
+    time:hasBeginning :p_05_16-Interval-Beginning ;
+    time:hasEnd :p_05_16-Interval-End .
+
+:p_05_17 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XIV"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_17-Span .
+
+:p_05_17-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_17-Span ;
+    time:hasBeginning :p_05_17-Interval-Beginning ;
+    time:hasEnd :p_05_17-Interval-End .
+
+:p_05_18 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XIV"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_18-Span .
+
+:p_05_18-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_18-Span ;
+    time:hasBeginning :p_05_18-Interval-Beginning ;
+    time:hasEnd :p_05_18-Interval-End .
+
+:p_05_19 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XIV"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_19-Span .
+
+:p_05_19-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_19-Span ;
+    time:hasBeginning :p_05_19-Interval-Beginning ;
+    time:hasEnd :p_05_19-Interval-End .
+
+:p_05_20 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XIV"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_20-Span .
+
+:p_05_20-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_20-Span ;
+    time:hasBeginning :p_05_20-Interval-Beginning ;
+    time:hasEnd :p_05_20-Interval-End .
+
+:p_05_21 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XV"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_21-Span .
+
+:p_05_21-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_21-Span ;
+    time:hasBeginning :p_05_21-Interval-Beginning ;
+    time:hasEnd :p_05_21-Interval-End .
+
+:p_05_22 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XV"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_22-Span .
+
+:p_05_22-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_22-Span ;
+    time:hasBeginning :p_05_22-Interval-Beginning ;
+    time:hasEnd :p_05_22-Interval-End .
+
+:p_05_23 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XV"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_23-Span .
+
+:p_05_23-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_23-Span ;
+    time:hasBeginning :p_05_23-Interval-Beginning ;
+    time:hasEnd :p_05_23-Interval-End .
+
+:p_05_24 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XV"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_24-Span .
+
+:p_05_24-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_24-Span ;
+    time:hasBeginning :p_05_24-Interval-Beginning ;
+    time:hasEnd :p_05_24-Interval-End .
+
+:p_05_25 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XVI (arte fundamentalmente religioso) (RENANCENTISTA)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_25-Span .
+
+:p_05_25-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_25-Span ;
+    time:hasBeginning :p_05_25-Interval-Beginning ;
+    time:hasEnd :p_05_25-Interval-End .
+
+:p_05_26 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XVI"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_26-Span .
+
+:p_05_26-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_26-Span ;
+    time:hasBeginning :p_05_26-Interval-Beginning ;
+    time:hasEnd :p_05_26-Interval-End .
+
+:p_05_27 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XVI"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_27-Span .
+
+:p_05_27-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_27-Span ;
+    time:hasBeginning :p_05_27-Interval-Beginning ;
+    time:hasEnd :p_05_27-Interval-End .
+
+:p_05_28 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XVI"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_28-Span .
+
+:p_05_28-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_28-Span ;
+    time:hasBeginning :p_05_28-Interval-Beginning ;
+    time:hasEnd :p_05_28-Interval-End .
+
+:p_05_29 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XVII"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_29-Span .
+
+:p_05_29-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_29-Span ;
+    time:hasBeginning :p_05_29-Interval-Beginning ;
+    time:hasEnd :p_05_29-Interval-End .
+
+:p_05_30 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XVII (arte barroco)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_30-Span .
+
+:p_05_30-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_30-Span ;
+    time:hasBeginning :p_05_30-Interval-Beginning ;
+    time:hasEnd :p_05_30-Interval-End .
+
+:p_05_31 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XVII (arte barroco)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_31-Span .
+
+:p_05_31-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_31-Span ;
+    time:hasBeginning :p_05_31-Interval-Beginning ;
+    time:hasEnd :p_05_31-Interval-End .
+
+:p_05_32 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XVII (arte barroco)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_32-Span .
+
+:p_05_32-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_32-Span ;
+    time:hasBeginning :p_05_32-Interval-Beginning ;
+    time:hasEnd :p_05_32-Interval-End .
+
+:p_05_33 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XVIII (arte barroco)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_33-Span .
+
+:p_05_33-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_33-Span ;
+    time:hasBeginning :p_05_33-Interval-Beginning ;
+    time:hasEnd :p_05_33-Interval-End .
+
+:p_05_34 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XVIII (arte barroco)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_34-Span .
+
+:p_05_34-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_34-Span ;
+    time:hasBeginning :p_05_34-Interval-Beginning ;
+    time:hasEnd :p_05_34-Interval-End .
+
+:p_05_35 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XVIII (arte barroco)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_35-Span .
+
+:p_05_35-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_35-Span ;
+    time:hasBeginning :p_05_35-Interval-Beginning ;
+    time:hasEnd :p_05_35-Interval-End .
+
+:p_05_36 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XVIII (arte Barroco que comparte tiempo con el Neoclásico)"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_36-Span .
+
+:p_05_36-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_36-Span ;
+    time:hasBeginning :p_05_36-Interval-Beginning ;
+    time:hasEnd :p_05_36-Interval-End .
+
+:p_05_37 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XIX"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_37-Span .
+
+:p_05_37-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_37-Span ;
+    time:hasBeginning :p_05_37-Interval-Beginning ;
+    time:hasEnd :p_05_37-Interval-End .
+
+:p_05_38 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XIX"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_38-Span .
+
+:p_05_38-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_38-Span ;
+    time:hasBeginning :p_05_38-Interval-Beginning ;
+    time:hasEnd :p_05_38-Interval-End .
+
+:p_05_39 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XIX"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_39-Span .
+
+:p_05_39-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_39-Span ;
+    time:hasBeginning :p_05_39-Interval-Beginning ;
+    time:hasEnd :p_05_39-Interval-End .
+
+:p_05_40 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XIX"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_40-Span .
+
+:p_05_40-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_40-Span ;
+    time:hasBeginning :p_05_40-Interval-Beginning ;
+    time:hasEnd :p_05_40-Interval-End .
+
+:p_05_41 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Siglo XX"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_41-Span .
+
+:p_05_41-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_41-Span ;
+    time:hasBeginning :p_05_41-Interval-Beginning ;
+    time:hasEnd :p_05_41-Interval-End .
+
+:p_05_42 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Primera mitad del siglo XX"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_42-Span .
+
+:p_05_42-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_42-Span ;
+    time:hasBeginning :p_05_42-Interval-Beginning ;
+    time:hasEnd :p_05_42-Interval-End .
+
+:p_05_43 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Medidados del siglo XX"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_43-Span .
+
+:p_05_43-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_43-Span ;
+    time:hasBeginning :p_05_43-Interval-Beginning ;
+    time:hasEnd :p_05_43-Interval-End .
+
+:p_05_44 a ecrm:E4_Period,
+        owl:NamedIndividual ;
+    rdfs:label "Segunda mitad siglo XX"^^xsd:string ;
+    ecrm:P4_has_time-span :p_05_44-Span .
+
+:p_05_44-Interval a owl:NamedIndividual,
+        time:Interval ;
+    :Q14_defines_time :p_05_44-Span ;
+    time:hasBeginning :p_05_44-Interval-Beginning ;
+    time:hasEnd :p_05_44-Interval-End .
+
+:e_01_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_date "1866-05-02"^^xsd:date .
+
+:e_01_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_date "1866-05-02"^^xsd:date .
+
+:e_01_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_date "1880-06-07"^^xsd:date .
+
+:e_01_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_date "1880-06-07"^^xsd:date .
+
+:e_01_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_date "1879-11-27"^^xsd:date .
+
+:e_01_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_date "1879-11-27"^^xsd:date .
+
+:e_01_04-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1881"^^xsd:gYear .
+
+:e_01_04-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1883"^^xsd:gYear .
+
+:e_01_05-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_date "1879-10-08"^^xsd:date .
+
+:e_01_05-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_date "1879-10-08"^^xsd:date .
+
+:p_01_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-11000"^^xsd:gYear .
+
+:p_01_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-5000"^^xsd:gYear .
+
+:p_01_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-5000"^^xsd:gYear .
+
+:p_01_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-1500"^^xsd:gYear .
+
+:p_01_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-1500"^^xsd:gYear .
+
+:p_01_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-500"^^xsd:gYear .
+
+:p_01_04-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-500"^^xsd:gYear .
+
+:p_01_04-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0700"^^xsd:gYear .
+
+:p_01_05-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0700"^^xsd:gYear .
+
+:p_01_05-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1000"^^xsd:gYear .
+
+:p_01_06-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1000"^^xsd:gYear .
+
+:p_01_06-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1440"^^xsd:gYear .
+
+:p_01_07-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1440"^^xsd:gYear .
+
+:p_01_07-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1532"^^xsd:gYear .
+
+:p_02_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1524"^^xsd:gYear .
+
+:p_02_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1542"^^xsd:gYear .
+
+:p_02_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1542"^^xsd:gYear .
+
+:p_02_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1821"^^xsd:gYear .
+
+:p_02_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1821"^^xsd:gYear .
+
+:p_02_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "2020"^^xsd:gYear .
+
+:p_02_03_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1895"^^xsd:gYear .
+
+:p_02_03_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1919"^^xsd:gYear .
+
+:p_02_04-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1963"^^xsd:gYear .
+
+:p_02_04-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "2020"^^xsd:gYear .
+
+:p_02_05-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1865"^^xsd:gYear .
+
+:p_02_05-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1866"^^xsd:gYear .
+
+:p_02_06-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1879"^^xsd:gYear .
+
+:p_02_06-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1884"^^xsd:gYear .
+
+:p_03_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-3300"^^xsd:gYear .
+
+:p_03_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-1000"^^xsd:gYear .
+
+:p_03_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-3000"^^xsd:gYear .
+
+:p_03_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0400"^^xsd:gYear .
+
+:p_03_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0301"^^xsd:gYear .
+
+:p_03_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0600"^^xsd:gYear .
+
+:p_03_04-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0401"^^xsd:gYear .
+
+:p_03_04-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1500"^^xsd:gYear .
+
+:p_03_04_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0400"^^xsd:gYear .
+
+:p_03_04_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1000"^^xsd:gYear .
+
+:p_03_04_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1000"^^xsd:gYear .
+
+:p_03_04_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1200"^^xsd:gYear .
+
+:p_03_04_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1150"^^xsd:gYear .
+
+:p_03_04_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1375"^^xsd:gYear .
+
+:p_03_04_04-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1300"^^xsd:gYear .
+
+:p_03_04_04-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1400"^^xsd:gYear .
+
+:p_03_05-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1401"^^xsd:gYear .
+
+:p_03_05-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1800"^^xsd:gYear .
+
+:p_03_05_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1301"^^xsd:gYear .
+
+:p_03_05_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1530"^^xsd:gYear .
+
+:p_03_05_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1530"^^xsd:gYear .
+
+:p_03_05_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1600"^^xsd:gYear .
+
+:p_03_05_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1600"^^xsd:gYear .
+
+:p_03_05_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1750"^^xsd:gYear .
+
+:p_03_05_04-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1700"^^xsd:gYear .
+
+:p_03_05_04-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1800"^^xsd:gYear .
+
+:p_03_05_05-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1750"^^xsd:gYear .
+
+:p_03_05_05-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1830"^^xsd:gYear .
+
+:p_03_06-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1801"^^xsd:gYear .
+
+:p_03_06-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "2020"^^xsd:gYear .
+
+:p_03_06_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1801"^^xsd:gYear .
+
+:p_03_06_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1900"^^xsd:gYear .
+
+:p_03_06_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1901"^^xsd:gYear .
+
+:p_03_06_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "2000"^^xsd:gYear .
+
+:p_04_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-11000"^^xsd:gYear .
+
+:p_04_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1523"^^xsd:gYear .
+
+:p_04_01_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "-1500"^^xsd:gYear .
+
+:p_04_01_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0300"^^xsd:gYear .
+
+:p_04_01_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0300"^^xsd:gYear .
+
+:p_04_01_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0900"^^xsd:gYear .
+
+:p_04_01_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0900"^^xsd:gYear .
+
+:p_04_01_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1540"^^xsd:gYear .
+
+:p_04_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1524"^^xsd:gYear .
+
+:p_04_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1820"^^xsd:gYear .
+
+:p_04_02_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1532"^^xsd:gYear .
+
+:p_04_02_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1700"^^xsd:gYear .
+
+:p_04_02_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1650"^^xsd:gYear .
+
+:p_04_02_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1780"^^xsd:gYear .
+
+:p_04_02_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1750"^^xsd:gYear .
+
+:p_04_02_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1850"^^xsd:gYear .
+
+:p_04_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1821"^^xsd:gYear .
+
+:p_04_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1920"^^xsd:gYear .
+
+:p_04_03_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1801"^^xsd:gYear .
+
+:p_04_03_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1850"^^xsd:gYear .
+
+:p_04_04-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1920"^^xsd:gYear .
+
+:p_04_04-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1960"^^xsd:gYear .
+
+:p_04_05-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1960"^^xsd:gYear .
+
+:p_04_05-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "2020"^^xsd:gYear .
+
+:p_05_01-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0901"^^xsd:gYear .
+
+:p_05_01-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1000"^^xsd:gYear .
+
+:p_05_02-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0901"^^xsd:gYear .
+
+:p_05_02-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0950"^^xsd:gYear .
+
+:p_05_03-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0930"^^xsd:gYear .
+
+:p_05_03-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0970"^^xsd:gYear .
+
+:p_05_04-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "0951"^^xsd:gYear .
+
+:p_05_04-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1000"^^xsd:gYear .
+
+:p_05_05-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1001"^^xsd:gYear .
+
+:p_05_05-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1100"^^xsd:gYear .
+
+:p_05_06-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1001"^^xsd:gYear .
+
+:p_05_06-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1050"^^xsd:gYear .
+
+:p_05_07-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1030"^^xsd:gYear .
+
+:p_05_07-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1070"^^xsd:gYear .
+
+:p_05_08-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1051"^^xsd:gYear .
+
+:p_05_08-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1100"^^xsd:gYear .
+
+:p_05_09-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1101"^^xsd:gYear .
+
+:p_05_09-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1200"^^xsd:gYear .
+
+:p_05_10-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1101"^^xsd:gYear .
+
+:p_05_10-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1150"^^xsd:gYear .
+
+:p_05_11-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1130"^^xsd:gYear .
+
+:p_05_11-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1170"^^xsd:gYear .
+
+:p_05_12-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1151"^^xsd:gYear .
+
+:p_05_12-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1200"^^xsd:gYear .
+
+:p_05_13-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1201"^^xsd:gYear .
+
+:p_05_13-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1300"^^xsd:gYear .
+
+:p_05_14-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1201"^^xsd:gYear .
+
+:p_05_14-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1250"^^xsd:gYear .
+
+:p_05_15-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1230"^^xsd:gYear .
+
+:p_05_15-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1270"^^xsd:gYear .
+
+:p_05_16-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1251"^^xsd:gYear .
+
+:p_05_16-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1300"^^xsd:gYear .
+
+:p_05_17-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1301"^^xsd:gYear .
+
+:p_05_17-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1400"^^xsd:gYear .
+
+:p_05_18-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1301"^^xsd:gYear .
+
+:p_05_18-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1350"^^xsd:gYear .
+
+:p_05_19-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1330"^^xsd:gYear .
+
+:p_05_19-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1370"^^xsd:gYear .
+
+:p_05_20-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1351"^^xsd:gYear .
+
+:p_05_20-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1400"^^xsd:gYear .
+
+:p_05_21-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1401"^^xsd:gYear .
+
+:p_05_21-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1500"^^xsd:gYear .
+
+:p_05_22-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1401"^^xsd:gYear .
+
+:p_05_22-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1450"^^xsd:gYear .
+
+:p_05_23-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1430"^^xsd:gYear .
+
+:p_05_23-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1470"^^xsd:gYear .
+
+:p_05_24-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1451"^^xsd:gYear .
+
+:p_05_24-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1500"^^xsd:gYear .
+
+:p_05_25-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1501"^^xsd:gYear .
+
+:p_05_25-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1600"^^xsd:gYear .
+
+:p_05_26-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1501"^^xsd:gYear .
+
+:p_05_26-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1550"^^xsd:gYear .
+
+:p_05_27-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1530"^^xsd:gYear .
+
+:p_05_27-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1570"^^xsd:gYear .
+
+:p_05_28-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1551"^^xsd:gYear .
+
+:p_05_28-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1600"^^xsd:gYear .
+
+:p_05_29-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1601"^^xsd:gYear .
+
+:p_05_29-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1700"^^xsd:gYear .
+
+:p_05_30-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1601"^^xsd:gYear .
+
+:p_05_30-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1650"^^xsd:gYear .
+
+:p_05_31-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1630"^^xsd:gYear .
+
+:p_05_31-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1670"^^xsd:gYear .
+
+:p_05_32-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1651"^^xsd:gYear .
+
+:p_05_32-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1700"^^xsd:gYear .
+
+:p_05_33-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1701"^^xsd:gYear .
+
+:p_05_33-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1800"^^xsd:gYear .
+
+:p_05_34-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1701"^^xsd:gYear .
+
+:p_05_34-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1750"^^xsd:gYear .
+
+:p_05_35-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1730"^^xsd:gYear .
+
+:p_05_35-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1770"^^xsd:gYear .
+
+:p_05_36-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1751"^^xsd:gYear .
+
+:p_05_36-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1800"^^xsd:gYear .
+
+:p_05_37-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1801"^^xsd:gYear .
+
+:p_05_37-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1900"^^xsd:gYear .
+
+:p_05_38-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1801"^^xsd:gYear .
+
+:p_05_38-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1850"^^xsd:gYear .
+
+:p_05_39-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1830"^^xsd:gYear .
+
+:p_05_39-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1870"^^xsd:gYear .
+
+:p_05_40-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1851"^^xsd:gYear .
+
+:p_05_40-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1900"^^xsd:gYear .
+
+:p_05_41-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1901"^^xsd:gYear .
+
+:p_05_41-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "2000"^^xsd:gYear .
+
+:p_05_42-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1901"^^xsd:gYear .
+
+:p_05_42-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1950"^^xsd:gYear .
+
+:p_05_43-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1930"^^xsd:gYear .
+
+:p_05_43-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1970"^^xsd:gYear .
+
+:p_05_44-Interval-Beginning a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "1951"^^xsd:gYear .
+
+:p_05_44-Interval-End a owl:NamedIndividual,
+        time:Instant ;
+    time:in_XSD_g-Year "2000"^^xsd:gYear .
+
+:e_01_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:e_01_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:e_01_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:e_01_04-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:e_01_05-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_01_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_01_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_01_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_01_04-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_01_05-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_01_06-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_01_07-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_02_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_02_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_02_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_02_03_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_02_04-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_02_05-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_02_06-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_04-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_04_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_04_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_04_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_04_04-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_05-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_05_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_05_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_05_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_05_04-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_05_05-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_06-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_06_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_03_06_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_01_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_01_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_01_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_02_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_02_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_02_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_03_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_04-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_04_05-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_01-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_02-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_03-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_04-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_05-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_06-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_07-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_08-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_09-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_10-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_11-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_12-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_13-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_14-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_15-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_16-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_17-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_18-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_19-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_20-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_21-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_22-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_23-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_24-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_25-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_26-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_27-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_28-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_29-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_30-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_31-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_32-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_33-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_34-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_35-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_36-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_37-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_38-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_39-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_40-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_41-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_42-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_43-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:p_05_44-Span a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
