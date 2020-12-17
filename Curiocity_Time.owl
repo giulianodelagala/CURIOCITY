@@ -4506,11 +4506,28 @@ P190(x,y) ⊃ E62(y)""" ;
                            rdfs:label "P190 has symbolic content" .
 
 
-###  http://curiocity.org/T1_has_rgb_value
-:T1_has_rgb_value rdf:type owl:DatatypeProperty ;
+###  http://curiocity.org/T1_has_blue_value
+:T1_has_blue_value rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :D9_Data_Object ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment "scope note: image rgb Blue value from histogram"@en ;
+                   rdfs:label "T1 has blue value"@en .
+
+
+###  http://curiocity.org/T1_has_green_value
+:T1_has_green_value rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :D9_Data_Object ;
+                    rdfs:range xsd:integer ;
+                    rdfs:comment "scope note: image rgb Green value from histogram"@en ;
+                    rdfs:label "T1 has green value"@en .
+
+
+###  http://curiocity.org/T1_has_red_value
+:T1_has_red_value rdf:type owl:DatatypeProperty ;
                   rdfs:domain :D9_Data_Object ;
-                  rdfs:comment "scope note: image rgb value from histogram"@en ;
-                  rdfs:label "T1 has rgb value" .
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "scope note: image rgb Red value from histogram"@en ;
+                  rdfs:label "T1 has red value"@en .
 
 
 ###  http://curiocity.org/T2_has_file_name
@@ -6936,7 +6953,7 @@ time:TemporalEntity rdf:type owl:Class ;
 :Imagen_Cesto_de_la_Cultura_Nazca_01 rdf:type owl:NamedIndividual ,
                                               :D9_Data_Object ;
                                      ecrm:P43_has_dimension :A1_Range ;
-                                     :T1_has_rgb_value "200,200,200"^^xsd:string ;
+                                     :T1_has_red_value "200,200,200"^^xsd:string ;
                                      :T2_has_file_name "m01_s01_002.jpg"^^xsd:string .
 
 

@@ -152,6 +152,8 @@ class Populate():
             dt = URIRef(u'http://www.w3.org/2001/XMLSchema#gYear')
         elif (dtype == "date"):
             dt = XSD.date
+        elif (dtype == "integer"):
+            dt = XSD.integer
 
         self.g.add((subject, pre, Literal(object, datatype=dt)))
 
