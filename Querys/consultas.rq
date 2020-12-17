@@ -1,0 +1,286 @@
+#Consultas
+
+PREFIX ecrm: <http://erlangen-crm.org/170309/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX cit: <http://curiocity.org/>
+
+
+#Get ID from label
+SELECT ?o
+WHERE {
+  ?s a ecrm:E22_Man-Made_Object ;
+     rdfs:label "Puntas Líticas" ;
+     ecrm:P48_has_preferred_identifier ?o .                    
+}
+
+#Get Period of artwork from label
+SELECT ?label
+WHERE {
+  ?prod ecrm:P108_has_produced ?artifact ;
+  		ecrm:P4_has_time-span ?span .
+  ?period ecrm:P4_has_time-span ?span ;
+          a ecrm:E4_Period ;
+          rdfs:label ?label.
+  {
+    SELECT (?s as ?artifact)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Puntas Líticas" ;
+         ecrm:P48_has_preferred_identifier ?o .                    
+    }
+  }
+}
+
+#Get Creator of artwork 
+SELECT ?label
+WHERE {
+  ?prod ecrm:P108_has_produced ?artifact ;
+  		ecrm:P14_carried_out_by ?creator .
+  ?creator rdfs:label ?label .
+  {
+    SELECT (?s as ?artifact)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Puntas Líticas" ;
+         ecrm:P48_has_preferred_identifier ?o .                    
+    }
+  }
+}
+
+#How old artifact is?
+SELECT ?bdate ?edate
+WHERE
+{
+  VALUES ?type { time:in_XSD_date time:in_XSD_g-Year }
+
+  ?prod ecrm:P108_has_produced ?artifact ;
+        ecrm:P4_has_time-span ?span .
+  ?period ecrm:P4_has_time-span ?span ;
+          a ecrm:E4_Period .
+  ?interval a time:Interval ;
+            cit:Q14_defines_time ?span ;
+            time:hasBeginning ?begin ;
+            time:hasEnd ?end .
+  ?begin ?type ?bdate .
+  ?end ?type ?edate .
+  {
+    SELECT (?s as ?artifact)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Puntas Líticas" ;
+         ecrm:P48_has_preferred_identifier ?o .                    
+    }
+  }
+}
+
+#Artifact description (technique)
+SELECT ?note
+WHERE
+{
+  ?artifact ecrm:P3_has_note ?note
+  {
+    SELECT (?s as ?artifact)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Puntas Líticas" ;
+         ecrm:P48_has_preferred_identifier ?o .                    
+    }
+  }
+}
+
+#Acquisition description (how the artifact was obtained?)
+SELECT ?donor_l ?receiver_l ?note
+WHERE
+{
+  ?transfer a ecrm:E10_Transfer_of_Custody ;
+    		ecrm:P30_transferred_custody_of ?artifact ;
+      		ecrm:P28_custody_surrendered_by ?donor ;
+        	ecrm:P29_custody_received_by ?receiver ;
+            ecrm:P3_has_note ?note .
+  ?donor rdfs:label ?donor_l .
+  ?receiver rdfs:label ?receiver_l .
+  {
+    SELECT (?s as ?artifact)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Puntas Líticas" ;
+         ecrm:P48_has_preferred_identifier ?o .                    
+    }
+  }
+}
+
+#Artifact usefullness
+SELECT ?artifact ?util_l
+WHERE
+{
+  ?artifact ecrm:P2_has_type ?utility .
+  ?utility rdfs:label ?util_l
+  {
+    SELECT (?s as ?artifact)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Puntas Líticas" ;
+         ecrm:P48_has_preferred_identifier ?o .                    
+    }
+  }
+}
+
+#Artifact material
+SELECT ?artifact ?material_l
+WHERE
+{
+  ?artifact ecrm:P2_has_type ?utility ;
+  			ecrm:P45_consists_of ?material .
+  ?material rdfs:label ?material_l .
+  {
+    SELECT (?s as ?artifact)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Puntas Líticas" ;
+         ecrm:P48_has_preferred_identifier ?o .                    
+    }
+  }
+}
+
+#Search Coincidence Artifact label
+SELECT ?l
+WHERE {
+  ?s a ecrm:E22_Man-Made_Object ;
+     rdfs:label ?l .
+  FILTER (regex(?l , "san", "i"))       
+}
+
+#Summary Query
+SELECT ?code ?label_period ?label_creator ?bdate ?edate ?note 
+?donor_l ?receiver_l ?note_donor ?util_l ?material_l
+WHERE {
+  VALUES ?type { time:in_XSD_date time:in_XSD_g-Year }
+  ?prod ecrm:P108_has_produced ?artifact ;
+  		ecrm:P4_has_time-span ?span .
+  ?period ecrm:P4_has_time-span ?span ;
+          a ecrm:E4_Period ;
+          rdfs:label ?label_period.
+  OPTIONAL
+  {
+    ?prod ecrm:P108_has_produced ?artifact ;
+  		ecrm:P14_carried_out_by ?creator .
+  	?creator rdfs:label ?label_creator .
+  }
+  OPTIONAL
+  {
+    ?prod ecrm:P108_has_produced ?artifact ;
+        ecrm:P4_has_time-span ?span .
+    ?period ecrm:P4_has_time-span ?span ;
+            a ecrm:E4_Period .
+    ?interval a time:Interval ;
+              cit:Q14_defines_time ?span ;
+              time:hasBeginning ?begin ;
+              time:hasEnd ?end .
+    ?begin ?type ?bdate .
+    ?end ?type ?edate .    
+  }
+  OPTIONAL
+  {
+    ?artifact ecrm:P3_has_note ?note
+  }
+  OPTIONAL
+  {
+    ?transfer a ecrm:E10_Transfer_of_Custody ;
+    		ecrm:P30_transferred_custody_of ?artifact ;
+      		ecrm:P28_custody_surrendered_by ?donor ;
+        	ecrm:P29_custody_received_by ?receiver ;
+            ecrm:P3_has_note ?note_donor .
+    ?donor rdfs:label ?donor_l .
+    ?receiver rdfs:label ?receiver_l .
+  }
+  OPTIONAL
+  {
+    ?artifact ecrm:P2_has_type ?utility .
+ 	?utility rdfs:label ?util_l
+  }
+  OPTIONAL
+  {
+    ?artifact ecrm:P45_consists_of ?material .
+  	?material rdfs:label ?material_l .
+  }
+  {
+    SELECT (?s as ?artifact)(?o as ?code)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Puntas Líticas" ;
+         ecrm:P48_has_preferred_identifier ?o .                    
+    }
+  }
+}
+
+####################
+SELECT DISTINCT ?code ?label_period ?label_creator ?bdate ?edate ?note 
+?donor_l ?receiver_l ?note_donor ?util_l ?material_l
+WHERE {
+  VALUES ?type { time:in_XSD_date time:in_XSD_g-Year }
+  OPTIONAL
+  {
+    ?period ecrm:P4_has_time-span ?span ;
+          a ecrm:E4_Period ;
+          rdfs:label ?label_period.
+    ?interval a time:Interval ;
+              cit:Q14_defines_time ?span ;
+              time:hasBeginning ?begin ;
+              time:hasEnd ?end .
+    ?begin ?type ?bdate .
+    ?end ?type ?edate .    
+  }
+  OPTIONAL
+  {
+    ?artifact ecrm:P3_has_note ?note
+  }
+  OPTIONAL
+  {
+    ?transfer a ecrm:E10_Transfer_of_Custody ;
+    		ecrm:P30_transferred_custody_of ?artifact ;
+      		ecrm:P28_custody_surrendered_by ?donor ;
+        	ecrm:P29_custody_received_by ?receiver ;
+            ecrm:P3_has_note ?note_donor .
+    ?donor rdfs:label ?donor_l .
+    ?receiver rdfs:label ?receiver_l .
+  }
+  OPTIONAL
+  {
+    ?artifact ecrm:P2_has_type ?utility .
+ 	?utility rdfs:label ?util_l
+  }
+	OPTIONAL
+  {
+    ?artifact ecrm:P45_consists_of ?material .
+  	?material rdfs:label ?material_l .
+  }
+  {
+    SELECT (?s as ?artifact)(?o as ?code)(?p as ?prod)(?sp as ?span)
+    (?creator_l as ?label_creator)
+    WHERE {
+      ?s a ecrm:E22_Man-Made_Object ;
+         rdfs:label "Composición costumbrista arequipeña" ;
+         ecrm:P48_has_preferred_identifier ?o .
+      ?p ecrm:P108_has_produced ?s ;
+      	ecrm:P4_has_time-span ?sp .
+      ?p ecrm:P14_carried_out_by ?creator .
+  		?creator rdfs:label ?creator_l .
+    }
+  }
+}
+LIMIT 1
+
+#####
+#Image Query
+SELECT ?img ?artifact_l
+WHERE {
+  ?img a cit:D9_Data_Object ;
+     cit:T1_has_blue_value 33 ;
+    cit:T1_has_green_value 35 ;
+    cit:T1_has_red_value 38 .
+  ?proces a cit:D2_Digitization_Process ;
+   		ecrm:L20_has_created ?img ;
+        ecrm:L1_digitized ?artifact .
+  ?artifact rdfs:label ?artifact_l ;
+}
