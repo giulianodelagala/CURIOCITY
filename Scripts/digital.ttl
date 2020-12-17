@@ -1,0 +1,243 @@
+@prefix : <http://curiocity.org/> .
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Process_ROI_1.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s01_005/Object> ;
+    ecrm:L20_has_created :ROI_1.png .
+
+:Process_ROI_10.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s06_144p/Object> ;
+    ecrm:L20_has_created :ROI_10.png .
+
+:Process_ROI_11.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s06_168_p/Object> ;
+    ecrm:L20_has_created :ROI_11.png .
+
+:Process_ROI_12.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s06_171/Object> ;
+    ecrm:L20_has_created :ROI_12.png .
+
+:Process_ROI_13.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s06_172/Object> ;
+    ecrm:L20_has_created :ROI_13.png .
+
+:Process_ROI_14.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s06_180/Object> ;
+    ecrm:L20_has_created :ROI_14.png .
+
+:Process_ROI_15.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s06_183/Object> ;
+    ecrm:L20_has_created :ROI_15.png .
+
+:Process_ROI_16.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s08_258/Object> ;
+    ecrm:L20_has_created :ROI_16.png .
+
+:Process_ROI_2.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s01_009/Object> ;
+    ecrm:L20_has_created :ROI_2.png .
+
+:Process_ROI_3.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s01_011/Object> ;
+    ecrm:L20_has_created :ROI_3.png .
+
+:Process_ROI_4.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s01_012/Object> ;
+    ecrm:L20_has_created :ROI_4.png .
+
+:Process_ROI_5.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s01_013/Object> ;
+    ecrm:L20_has_created :ROI_5.png .
+
+:Process_ROI_6.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s01_014/Object> ;
+    ecrm:L20_has_created :ROI_6.png .
+
+:Process_ROI_7.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s01_020/Object> ;
+    ecrm:L20_has_created :ROI_7.png .
+
+:Process_ROI_8.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s01_021_p/Object> ;
+    ecrm:L20_has_created :ROI_8.png .
+
+:Process_ROI_9.png a :D2_Digitization_Process,
+        owl:NamedIndividual ;
+    ecrm:L1_digitized <http://curiocity.org/m01_s06_141p/Object> ;
+    ecrm:L20_has_created :ROI_9.png .
+
+:ROI_1.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 48 ;
+    :T1_has_green_value 53 ;
+    :T1_has_red_value 59 ;
+    :T2_has_file_name "ROI_1.png"^^xsd:string .
+
+:ROI_10.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 63 ;
+    :T1_has_green_value 53 ;
+    :T1_has_red_value 59 ;
+    :T2_has_file_name "ROI_10.png"^^xsd:string .
+
+:ROI_11.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 91 ;
+    :T1_has_green_value 87 ;
+    :T1_has_red_value 97 ;
+    :T2_has_file_name "ROI_11.png"^^xsd:string .
+
+:ROI_12.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 38 ;
+    :T1_has_green_value 42 ;
+    :T1_has_red_value 51 ;
+    :T2_has_file_name "ROI_12.png"^^xsd:string .
+
+:ROI_13.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 63 ;
+    :T1_has_green_value 60 ;
+    :T1_has_red_value 68 ;
+    :T2_has_file_name "ROI_13.png"^^xsd:string .
+
+:ROI_14.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 76 ;
+    :T1_has_green_value 78 ;
+    :T1_has_red_value 117 ;
+    :T2_has_file_name "ROI_14.png"^^xsd:string .
+
+:ROI_15.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 58 ;
+    :T1_has_green_value 56 ;
+    :T1_has_red_value 63 ;
+    :T2_has_file_name "ROI_15.png"^^xsd:string .
+
+:ROI_16.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 51 ;
+    :T1_has_green_value 43 ;
+    :T1_has_red_value 46 ;
+    :T2_has_file_name "ROI_16.png"^^xsd:string .
+
+:ROI_2.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 36 ;
+    :T1_has_green_value 36 ;
+    :T1_has_red_value 38 ;
+    :T2_has_file_name "ROI_2.png"^^xsd:string .
+
+:ROI_3.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 86 ;
+    :T1_has_green_value 88 ;
+    :T1_has_red_value 104 ;
+    :T2_has_file_name "ROI_3.png"^^xsd:string .
+
+:ROI_4.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 43 ;
+    :T1_has_green_value 40 ;
+    :T1_has_red_value 40 ;
+    :T2_has_file_name "ROI_4.png"^^xsd:string .
+
+:ROI_5.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 71 ;
+    :T1_has_green_value 67 ;
+    :T1_has_red_value 75 ;
+    :T2_has_file_name "ROI_5.png"^^xsd:string .
+
+:ROI_6.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 38 ;
+    :T1_has_green_value 34 ;
+    :T1_has_red_value 35 ;
+    :T2_has_file_name "ROI_6.png"^^xsd:string .
+
+:ROI_7.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 41 ;
+    :T1_has_green_value 39 ;
+    :T1_has_red_value 41 ;
+    :T2_has_file_name "ROI_7.png"^^xsd:string .
+
+:ROI_8.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 29 ;
+    :T1_has_green_value 27 ;
+    :T1_has_red_value 37 ;
+    :T2_has_file_name "ROI_8.png"^^xsd:string .
+
+:ROI_9.png a :D9_Data_Object,
+        owl:NamedIndividual ;
+    :T1_has_blue_value 33 ;
+    :T1_has_green_value 35 ;
+    :T1_has_red_value 38 ;
+    :T2_has_file_name "ROI_9.png"^^xsd:string .
+
+<http://curiocity.org/m01_s01_005/Object> ecrm:P2_has_type :Ceramica_como_arte_decorativo .
+
+<http://curiocity.org/m01_s01_009/Object> ecrm:P2_has_type :Ceramica_como_arte_decorativo .
+
+<http://curiocity.org/m01_s01_011/Object> ecrm:P2_has_type :Ceramica_como_arte_decorativo .
+
+<http://curiocity.org/m01_s01_012/Object> ecrm:P2_has_type :Ceramica_como_arte_decorativo .
+
+<http://curiocity.org/m01_s01_013/Object> ecrm:P2_has_type :Ceramica_como_arte_decorativo .
+
+<http://curiocity.org/m01_s01_014/Object> ecrm:P2_has_type :Ceramica_como_arte_decorativo .
+
+<http://curiocity.org/m01_s01_020/Object> ecrm:P2_has_type :Ceramica_como_arte_decorativo .
+
+<http://curiocity.org/m01_s01_021_p/Object> ecrm:P2_has_type :Ceramica_como_arte_decorativo .
+
+<http://curiocity.org/m01_s06_141p/Object> ecrm:P2_has_type :Pintura_de_arte_fino .
+
+<http://curiocity.org/m01_s06_144p/Object> ecrm:P2_has_type :Pintura_de_arte_fino .
+
+<http://curiocity.org/m01_s06_168_p/Object> ecrm:P2_has_type :Pintura_de_arte_fino .
+
+<http://curiocity.org/m01_s06_171/Object> ecrm:P2_has_type :Pintura_de_arte_fino .
+
+<http://curiocity.org/m01_s06_172/Object> ecrm:P2_has_type :Pintura_de_arte_fino .
+
+<http://curiocity.org/m01_s06_180/Object> ecrm:P2_has_type :Pintura_de_arte_fino .
+
+<http://curiocity.org/m01_s06_183/Object> ecrm:P2_has_type :Pintura_de_arte_fino .
+
+<http://curiocity.org/m01_s08_258/Object> ecrm:P2_has_type :Pintura_de_arte_fino .
+
+:Recognition_Concept a ecrm:E55_Type,
+        owl:NamedIndividual .
+
+:Ceramica_como_arte_decorativo a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Ceramica como arte decorativo"^^xsd:string ;
+    ecrm:P_127_has_broader_term :Recognition_Concept .
+
+:Pintura_de_arte_fino a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura de arte fino"^^xsd:string ;
+    ecrm:P_127_has_broader_term :Recognition_Concept .
+
