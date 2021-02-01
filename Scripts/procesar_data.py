@@ -14,19 +14,14 @@ def LeerDatos(filename : str, header = True):
         data = pd.read_csv(filename + ".csv", sep ='\t', encoding='utf8', header = 0)
     else:
         data = pd.read_csv(filename+ ".csv", sep ='\t', header = None)
-    #data = data.sample(frac = 1)
-    #data = data.sort_values(data.columns[-1])
-    #return np.array(data.iloc[:,:])
     return data
 
-#def Formato(cadena: str):
-#    cadena = cadena.replace(" ", "_")
-#    return urllib.parse.quote(cadena)
 
-log = open("log.txt", "w")
+#Logfile name
+log = open("log_municipal.txt", "w")
 
-
-data = LeerDatos("data")
+#Database CSV file Name
+data = LeerDatos("municipal")
 num_filas = data.shape[0] #total de filas
 
 #Column index from csv
@@ -38,15 +33,19 @@ col_descripcion = data.columns.get_loc('Descripción o nota asociada al objeto')
 
 col_creador = data.columns.get_loc('Creador del objeto')
 
-col_uso = data.columns.get_loc('Uso que se la dio al objeto')
+#col_uso = data.columns.get_loc('Uso que se le dio al objeto')
+col_uso = data.columns.get_loc('Uso que se le dio al objeto') #Museo Municipal
 col_duenio = data.columns.get_loc('Dueño actual')
 col_estado = data.columns.get_loc('Estado actual del objeto')
-col_material = data.columns.get_loc('Material del objeto (TECNICA USADA)')
+col_material = data.columns.get_loc('Material del objeto (TECNICA USADA)') #Museo Municipal
+#col_material = data.columns.get_loc('Material del objeto (tècnica usada)')
 
-col_id_periodo = data.columns.get_loc('Código del Período o evento')
+col_id_periodo = data.columns.get_loc('Código del Período o evento') #Museo Municipal
+#col_id_periodo = data.columns.get_loc('Código Período')
 col_periodo = data.columns.get_loc('Periodo, evento')
 
-col_date_creation = data.columns.get_loc('Fecha de creación del objeto/obra de arte')
+col_date_creation = data.columns.get_loc('Fecha de creación del objeto/obra de arte') #Museo Municipal
+#col_date_creation = data.columns.get_loc('Fecha de creación del objeto/obra de arte o Código de la Fecha')
 
 col_adquisicion = data.columns.get_loc('Forma como fue adquirido el objeto')
 col_donor = data.columns.get_loc('Identifica y da crédito a la persona, fundación o método por el cual el objeto fue adquirido  (del/a cual fue adquirido el objeto)')
@@ -56,11 +55,15 @@ col_desc_donor = data.columns.get_loc('Descripción de donación')
 col_localizacion = data.columns.get_loc('Localización del objeto dentro del museo')
 col_department = data.columns.get_loc('Departamento dentro del museo responsable por el objeto')
 
-col_alto = data.columns.get_loc('Dimensión: Alto')
-col_ancho = data.columns.get_loc('Dimensión: Ancho')
-col_largo = data.columns.get_loc('Dimensión: Largo')
-col_diametro = data.columns.get_loc('Dimensión: Diámetro')
-col_profundidad = data.columns.get_loc('Profundidad')
+col_alto = data.columns.get_loc('Dimensión: Alto') #Museo Municipal
+#col_alto = data.columns.get_loc('Dimensión: Alto en centímetros')
+col_ancho = data.columns.get_loc('Dimensión: Ancho') #Museo Municipal
+#col_ancho = data.columns.get_loc('Dimensión: Ancho en centímetros')
+col_largo = data.columns.get_loc('Dimensión: Largo') #Museo Municipal
+#col_largo = data.columns.get_loc('Dimensión: Largo en centímetros') 
+col_diametro = data.columns.get_loc('Dimensión: Diámetro') #Museo Municipal
+col_profundidad = data.columns.get_loc('Profundidad') #Museo Municipal
+#col_profundidad = data.columns.get_loc('Dimensión: Profundidad en centímetros') 
 col_peso = data.columns.get_loc('Peso')
 
 #Load Ontology
@@ -74,6 +77,9 @@ def Verificar(cadena: str):
     if (str(cadena) != "No asignado" and 
         str(cadena) != 'nan' and 
         str(cadena) != 'No aplicable' and 
+        str(cadena) != 'Desconocida' and
+        str(cadena) != 'Desconocido' and
+        str(cadena) != 'Sin información' and
         str(cadena) != 'No definido'):
         return True
     else:
@@ -173,8 +179,8 @@ def Utility(utility_text: str):
 def ObjectCondition(condition: str):
     if ( Verificar(condition)):
         condition_uri = URIRef(Popu.cit + Popu.Formato(condition))
-        if ( (condition_uri, RDF.type, Popu.ecrm.E55_Type) in Popu.g): #condicion existente
-            print("Condición existente ... omitiendo")
+        if ( (condition_uri, RDF.type, Popu.ecrm.E55_Type) in Popu.g): #tipo condicion existente
+            print("Tipo Condición existente ... omitiendo")
             return condition_uri
         else: #add condition        
            return Popu.AddSubject(condition, "E55_Type")                
@@ -218,7 +224,7 @@ def Dimensions():
     height = ExtractNumber(data.iloc[row,col_alto])
     width = ExtractNumber(data.iloc[row,col_ancho])
     length = ExtractNumber(data.iloc[row,col_largo])
-    diameter = ExtractNumber(data.iloc[row,col_diametro])
+    diameter = ExtractNumber(data.iloc[row,col_diametro]) #Museo Municipal
     depth = ExtractNumber(data.iloc[row,col_profundidad])
     weigth = ExtractNumber(data.iloc[row,col_peso])
 
@@ -239,10 +245,11 @@ def Dimensions():
     else:
         temp_log += "largo "
 
+    #Museo Municipal
     if (diameter.isnumeric() ):
-        Popu.AddLiteralFromURI(dimen, "T6_has_diameter", diameter, "decimal")
+       Popu.AddLiteralFromURI(dimen, "T6_has_diameter", diameter, "decimal")
     else:
-        temp_log += "diametro "
+       temp_log += "diametro "
 
     if (depth.isnumeric() ):
         Popu.AddLiteralFromURI(dimen, "T7_has_depth", depth, "decimal")
@@ -288,7 +295,7 @@ periodo_span_unknown = Popu.AddSubject("Lapso_de_Tiempo_desconocido", "SP10_Decl
 # General Concepts
 ##################
 #ID Type
-type_id = Popu.AddSubject("ID-RUTAS", "E55-Type")
+type_id = Popu.AddSubject("ID-RUTAS", "E55_Type")
 
 #Measurement Unit
 meas_cm = Popu.AddSubject("cm","E58_Measurement_Unit")
@@ -327,7 +334,9 @@ for row in range(0, num_filas):
 
         dimen = Dimensions() #Artifact measurements
 
-        condition = ObjectCondition(data.iloc[row,col_estado].strip() ) #artifact condition
+        type_condition = ObjectCondition(data.iloc[row,col_estado].strip() ) #artifact condition type
+        condition = Popu.AddSubjectFromURI(conc_id, "/Current_Condition", "E3_Condition_State")
+
         material = Material(data.iloc[row,col_material].strip() ) #artifact material
 
         period, period_span = ProcPeriods(data.iloc[row,col_id_periodo].strip()) #Period
@@ -354,6 +363,9 @@ for row in range(0, num_filas):
         Popu.AddLiteralFromURI(obj, 'P3_has_note', data.iloc[row, col_descripcion], dtype="string", name_space="ecrm")
         Popu.AddRelationFromURI(obj, 'P55_has_current_location', localization)
 
+        #of the Condition
+        Popu.AddRelationFromURI(condition, 'P44_has_type', type_condition)
+
         #of the ID
         Popu.AddRelationFromURI(conc_id, "P2_has_type", type_id)
         if (alt_id):
@@ -371,7 +383,7 @@ for row in range(0, num_filas):
         Popu.AddRelationFromURI(production, "P4_has_time-span", period_span)
 
         #Adquisition
-        Popu.AddLiteralFromURI(adquisition, 'P3_has_note', data.iloc[row,col_desc_donor], dtype="string", name_space="ecrm")
+        Popu.AddLiteralFromURI(adquisition, 'P3_has_note', data.iloc[row,col_desc_donor], dtype="string", name_space="ecrm") #Museo Municipal
         Popu.AddRelationFromURI(adquisition, 'P30_transferred_custody_of', obj)
         Popu.AddRelationFromURI(adquisition, "P29_custody_received_by", owner)
         Popu.AddRelationFromURI(adquisition, "P28_custody_surrendered_by", donor)
@@ -384,5 +396,5 @@ log.close()
 
 #############################
 # Save individuals
-Popu.SaveTriples("museo.ttl")
+Popu.SaveTriples("museo_municipal.ttl")
 
