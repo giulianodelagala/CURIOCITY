@@ -1,0 +1,1373 @@
+@prefix : <http://curiocity.org/> .
+@prefix ecrm: <http://erlangen-crm.org/170309/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Condicion_desconocida a ecrm:E55_Type,
+        owl:NamedIndividual .
+
+:Donador_desconocido a ecrm:E39_Actor,
+        owl:NamedIndividual .
+
+:ID_alternativo_desconocido a ecrm:E42_Identifier,
+        owl:NamedIndividual .
+
+:Lapso_de_Tiempo_desconocido a :SP10_Declarative_Time-Span,
+        owl:NamedIndividual .
+
+:Lugar_desconocido a ecrm:E53_Place,
+        owl:NamedIndividual .
+
+:Material_desconocido a ecrm:E57_Material,
+        owl:NamedIndividual .
+
+:Periodo_desconocido a ecrm:E4_Period,
+        owl:NamedIndividual .
+
+:Propietario_desconocido a ecrm:E39_Actor,
+        owl:NamedIndividual .
+
+:Utilidad_desconocida a ecrm:E55_Type,
+        owl:NamedIndividual .
+
+<http://curiocity.org/m3_s01_001_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_001_x/Object> .
+
+<http://curiocity.org/m3_s01_001_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_001_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_001_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_002_p/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_002_p/Object> .
+
+<http://curiocity.org/m3_s01_002_p/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_002_p/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_002_p/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_003_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_003_x/Object> .
+
+<http://curiocity.org/m3_s01_003_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_003_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_003_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_004_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_004_x/Object> .
+
+<http://curiocity.org/m3_s01_004_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_004_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_004_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_005_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_005_x/Object> .
+
+<http://curiocity.org/m3_s01_005_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_005_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_005_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_006_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_006_x/Object> .
+
+<http://curiocity.org/m3_s01_006_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_006_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_006_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_007_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_007_x/Object> .
+
+<http://curiocity.org/m3_s01_007_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_007_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_007_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_008_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_008_x/Object> .
+
+<http://curiocity.org/m3_s01_008_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_008_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_008_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_009_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_009_x/Object> .
+
+<http://curiocity.org/m3_s01_009_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_009_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_009_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_010_p/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_010_p/Object> .
+
+<http://curiocity.org/m3_s01_010_p/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_010_p/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_010_p/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_011_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_011_x/Object> .
+
+<http://curiocity.org/m3_s01_011_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_011_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_011_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_012_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_012_x/Object> .
+
+<http://curiocity.org/m3_s01_012_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_012_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_012_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_013_p/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_013_p/Object> .
+
+<http://curiocity.org/m3_s01_013_p/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_013_p/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_013_p/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_014_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_014_x/Object> .
+
+<http://curiocity.org/m3_s01_014_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_014_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_014_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_015_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_015_x/Object> .
+
+<http://curiocity.org/m3_s01_015_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_015_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_015_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_016_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_016_x/Object> .
+
+<http://curiocity.org/m3_s01_016_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_016_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_016_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_017_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_017_x/Object> .
+
+<http://curiocity.org/m3_s01_017_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_017_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_017_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_018_p/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_018_p/Object> .
+
+<http://curiocity.org/m3_s01_018_p/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_018_p/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_018_p/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_019_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_019_x/Object> .
+
+<http://curiocity.org/m3_s01_019_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_019_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_019_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_020_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_020_x/Object> .
+
+<http://curiocity.org/m3_s01_020_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_020_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_020_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_021_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_021_x/Object> .
+
+<http://curiocity.org/m3_s01_021_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_021_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_021_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_022_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_022_x/Object> .
+
+<http://curiocity.org/m3_s01_022_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_022_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_022_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_023_p/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_023_p/Object> .
+
+<http://curiocity.org/m3_s01_023_p/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_023_p/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_023_p/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_024_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_024_x/Object> .
+
+<http://curiocity.org/m3_s01_024_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_024_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_024_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/m3_s01_025_x/Adquisition> a ecrm:E10_Transfer_of_Custody,
+        owl:NamedIndividual ;
+    ecrm:P28_custody_surrendered_by :Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena ;
+    ecrm:P29_custody_received_by <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P30_transferred_custody_of <http://curiocity.org/m3_s01_025_x/Object> .
+
+<http://curiocity.org/m3_s01_025_x/Measurements> a ecrm:E54_Dimension,
+        owl:NamedIndividual ;
+    ecrm:P91_has_unit :cm .
+
+<http://curiocity.org/m3_s01_025_x/Production> a ecrm:E12_Production,
+        owl:NamedIndividual ;
+    ecrm:P108_has_produced <http://curiocity.org/m3_s01_025_x/Object> ;
+    ecrm:P14_carried_out_by :Creador_desconocido ;
+    ecrm:P4_has_time-span :p_02_02-Span .
+
+<http://curiocity.org/Departamento_de_Conservaci%C3%B3n_y_Museolog%C3%ADa> a ecrm:E53_Place,
+        owl:NamedIndividual ;
+    rdfs:label "Departamento de Conservación y Museología"^^xsd:string .
+
+:m3_s01_001_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_001_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_001_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_001_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_001_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_001_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-183"^^xsd:string .
+
+<http://curiocity.org/m3_s01_001_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas de claustro que el propósito de la vida conventual es conseguir la perfección del alma. Lienzo de presentación introductoria a los demás lienzos expuestos."^^xsd:string .
+
+:m3_s01_002_p a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_002_p"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_002_p"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_002_p/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_002_p/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_002_p/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-185"^^xsd:string .
+
+<http://curiocity.org/m3_s01_002_p/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la primera vía \"Purgativa\"  el alma comienza el camino de la pruficación mediante una fase de dolor, toma de conciencia y arrepentimiento."^^xsd:string .
+
+:m3_s01_003_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_003_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_003_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_003_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_003_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_003_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-187"^^xsd:string .
+
+<http://curiocity.org/m3_s01_003_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la primera vía \"Purgativa\"  el alma comienza el camino de la pruficación mediante una fase de dolor, toma de conciencia y arrepentimiento."^^xsd:string .
+
+:m3_s01_004_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_004_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_004_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_004_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_004_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_004_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-189"^^xsd:string .
+
+<http://curiocity.org/m3_s01_004_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la primera vía \"Purgativa\"  el alma comienza el camino de la pruficación mediante una fase de dolor, toma de conciencia y arrepentimiento."^^xsd:string .
+
+:m3_s01_005_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_005_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_005_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_005_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_005_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_005_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-191"^^xsd:string .
+
+<http://curiocity.org/m3_s01_005_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la primera vía \"Purgativa\"  el alma comienza el camino de la pruficación mediante una fase de dolor, toma de conciencia y arrepentimiento."^^xsd:string .
+
+:m3_s01_006_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_006_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_006_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_006_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_006_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_006_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-194"^^xsd:string .
+
+<http://curiocity.org/m3_s01_006_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la primera vía \"Purgativa\"  el alma comienza el camino de la pruficación mediante una fase de dolor, toma de conciencia y arrepentimiento."^^xsd:string .
+
+:m3_s01_007_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_007_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_007_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_007_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_007_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_007_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-196"^^xsd:string .
+
+<http://curiocity.org/m3_s01_007_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la primera vía \"Purgativa\"  el alma comienza el camino de la pruficación mediante una fase de dolor, toma de conciencia y arrepentimiento."^^xsd:string .
+
+:m3_s01_008_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_008_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_008_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_008_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_008_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_008_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-198"^^xsd:string .
+
+<http://curiocity.org/m3_s01_008_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la primera vía \"Purgativa\"  el alma comienza el camino de la pruficación mediante una fase de dolor, toma de conciencia y arrepentimiento."^^xsd:string .
+
+:m3_s01_009_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_009_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_009_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_009_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_009_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_009_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-200"^^xsd:string .
+
+<http://curiocity.org/m3_s01_009_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la primera vía \"Purgativa\"  el alma comienza el camino de la pruficación mediante una fase de dolor, toma de conciencia y arrepentimiento."^^xsd:string .
+
+:m3_s01_010_p a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_010_p"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_010_p"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_010_p/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_010_p/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_010_p/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-202"^^xsd:string .
+
+<http://curiocity.org/m3_s01_010_p/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la segunda vía \"Ilumintiva\" el alma tiene deseos de perfección y va purifándose con la meditación y toma de conciencia, dispuesta a vivir la vida contemplativa, aunque todavía tiene ciertas imperfecciones"^^xsd:string .
+
+:m3_s01_011_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_011_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_011_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_011_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_011_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_011_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-204"^^xsd:string .
+
+<http://curiocity.org/m3_s01_011_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la segunda vía \"Ilumintiva\" el alma tiene deseos de perfección y va purifándose con la meditación y toma de conciencia, dispuesta a vivir la vida contemplativa, aunque todavía tiene ciertas imperfecciones"^^xsd:string .
+
+:m3_s01_012_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_012_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_012_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_012_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_012_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_012_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-206"^^xsd:string .
+
+<http://curiocity.org/m3_s01_012_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la segunda vía \"Ilumintiva\" el alma tiene deseos de perfección y va purificándose con la meditación y toma de conciencia, dispuesta a vivir la vida contemplativa, aunque todavía tiene ciertas imperfecciones"^^xsd:string .
+
+:m3_s01_013_p a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_013_p"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_013_p"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_013_p/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_013_p/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_013_p/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-208"^^xsd:string .
+
+<http://curiocity.org/m3_s01_013_p/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la segunda vía \"Ilumintiva\" el alma tiene deseos de perfección y va purifándose con la meditación y toma de conciencia, dispuesta a vivir la vida contemplativa, aunque todavía tiene ciertas imperfecciones"^^xsd:string .
+
+:m3_s01_014_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_014_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_014_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_014_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_014_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_014_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-210"^^xsd:string .
+
+<http://curiocity.org/m3_s01_014_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la segunda vía \"Ilumintiva\" el alma tiene deseos de perfección y va purifándose con la meditación y toma de conciencia, dispuesta a vivir la vida contemplativa, aunque todavía tiene ciertas imperfecciones"^^xsd:string .
+
+:m3_s01_015_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_015_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_015_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_015_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_015_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_015_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-212"^^xsd:string .
+
+<http://curiocity.org/m3_s01_015_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la segunda vía \"Ilumintiva\" el alma tiene deseos de perfección y va purifándose con la meditación y toma de conciencia, dispuesta a vivir la vida contemplativa, aunque todavía tiene ciertas imperfecciones"^^xsd:string .
+
+:m3_s01_016_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_016_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_016_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_016_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_016_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_016_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-219"^^xsd:string .
+
+<http://curiocity.org/m3_s01_016_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la segunda vía \"Ilumintiva\" el alma tiene deseos de perfección y va purifándose con la meditación y toma de conciencia, dispuesta a vivir la vida contemplativa, aunque todavía tiene ciertas imperfecciones"^^xsd:string .
+
+:m3_s01_017_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_017_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_017_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_017_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_017_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_017_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-216"^^xsd:string .
+
+<http://curiocity.org/m3_s01_017_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la segunda vía \"Ilumintiva\" el alma tiene deseos de perfección y va purifándose con la meditación y toma de conciencia, dispuesta a vivir la vida contemplativa, aunque todavía tiene ciertas imperfecciones"^^xsd:string .
+
+:m3_s01_018_p a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_018_p"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_018_p"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_018_p/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_018_p/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_018_p/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-218"^^xsd:string .
+
+<http://curiocity.org/m3_s01_018_p/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la tercera vía \"Unitiva\" se ha alcanzado la perfección y se accede a una unión contemplativa del alma con Dios, donde vive un matrimonio místico y está lista para la unión definitiva con Dios a través de la muerte física"^^xsd:string .
+
+:m3_s01_019_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_019_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_019_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_019_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_019_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_019_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-219"^^xsd:string .
+
+<http://curiocity.org/m3_s01_019_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la tercera vía \"Unitiva\" se ha alcanzado la perfección y se accede a una unión contemplativa del alma con Dios, donde vive un matrimonio místico y está lista para la unión definitiva con Dios a través de la muerte física"^^xsd:string .
+
+:m3_s01_020_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_020_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_020_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_020_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_020_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_020_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-221"^^xsd:string .
+
+<http://curiocity.org/m3_s01_020_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la tercera vía \"Unitiva\" se ha alcanzado la perfección y se accede a una unión contemplativa del alma con Dios, donde vive un matrimonio místico y está lista para la unión definitiva con Dios a través de la muerte física"^^xsd:string .
+
+:m3_s01_021_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_021_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_021_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_021_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_021_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_021_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-223"^^xsd:string .
+
+<http://curiocity.org/m3_s01_021_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la tercera vía \"Unitiva\" se ha alcanzado la perfección y se accede a una unión contemplativa del alma con Dios, donde vive un matrimonio místico y está lista para la unión definitiva con Dios a través de la muerte física"^^xsd:string .
+
+:m3_s01_022_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_022_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_022_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_022_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_022_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_022_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-225"^^xsd:string .
+
+<http://curiocity.org/m3_s01_022_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la tercera vía \"Unitiva\" se ha alcanzado la perfección y se accede a una unión contemplativa del alma con Dios, donde vive un matrimonio místico y está lista para la unión definitiva con Dios a través de la muerte física"^^xsd:string .
+
+:m3_s01_023_p a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_023_p"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_023_p"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_023_p/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_023_p/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_023_p/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-227"^^xsd:string .
+
+<http://curiocity.org/m3_s01_023_p/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la tercera vía \"Unitiva\" se ha alcanzado la perfección y se accede a una unión contemplativa del alma con Dios, donde vive un matrimonio místico y está lista para la unión definitiva con Dios a través de la muerte física"^^xsd:string .
+
+:m3_s01_024_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_024_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_024_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_024_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_024_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_024_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-229"^^xsd:string .
+
+<http://curiocity.org/m3_s01_024_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la tercera vía \"Unitiva\" se ha alcanzado la perfección y se accede a una unión contemplativa del alma con Dios, donde vive un matrimonio místico y está lista para la unión definitiva con Dios a través de la muerte física"^^xsd:string .
+
+:m3_s01_025_x a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    rdfs:label "m3_s01_025_x"^^xsd:string ;
+    :P190_has_symbolic_content "m3_s01_025_x"^^xsd:string ;
+    ecrm:P139_has_alternative_form <http://curiocity.org/m3_s01_025_x/IDalternativo> ;
+    ecrm:P2_has_type :ID-RUTAS .
+
+<http://curiocity.org/m3_s01_025_x/Current_Condition> a ecrm:E3_Condition_State,
+        owl:NamedIndividual ;
+    ecrm:P44_has_type <http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> .
+
+<http://curiocity.org/m3_s01_025_x/IDalternativo> a ecrm:E42_Identifier,
+        owl:NamedIndividual ;
+    :P190_has_symbolic_content "01-231"^^xsd:string .
+
+<http://curiocity.org/m3_s01_025_x/Utility> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura desarrollada para recordar a las monjas del Convento que el propósito de la vida conventual es conseguir la perfección del alma, a través de tres vías. Y que en la tercera vía \"Unitiva\" se ha alcanzado la perfección y se accede a una unión contemplativa del alma con Dios, donde vive un matrimonio místico y está lista para la unión definitiva con Dios a través de la muerte física"^^xsd:string .
+
+<http://curiocity.org/m3_s01_001_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo de apertura a los Emblemas del Amor Divino."^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_001_x/Utility> ;
+    ecrm:P3_has_note "Este lienzo viene a ser como la carátula de un libro, que presenta a los dos personajes protagonistas del relato de la serie de emblemas: \"Psique\" que representa al  \"Alma\" y \"Eros o Cupido\" que representa al  \"Amor Divino\". El Alma simboliza la situación del hombre sobre la tierra y el Amor Divino intenta guiar al Alma por el camino de la purificación y de la salvación.  A un lado de  la imagen  se observa además un volcán en erupción que no figura en el grabado original y para el caso del Monasterio podría tratarse de una alusión a la geografía de la zona.  En la cartela va escrito un verso como recordatorio para las destinatarias."^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_001_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_001_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_002_p/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el primer y segundo emblema de la Vía Purgativa."^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_002_p/Utility> ;
+    ecrm:P3_has_note """Primer Emblema de la Vía Purgativa "El Alma en sus engaños ciega"                                                                     - Lema escrito en latín, que en español expresa: “Mi Alma Señor te desea en medio de la noche y ceguedad de mis culpas”. Lema tomado de la Biblia, del Libro de Salmos, capítulo 26, versículo 9.
+- Epigrama:  “El Alma en una noche muy oscura que anda tentando como ciega, y el Amor divino delante alumbrando con una linterna”.
+- Interpretación: El Amor Divino que alumbra con su linterna, simboliza la luz del intelecto o del conocimiento que guía al Alma por el camino de la salvación, aliviándola de su ceguera.
+Segundo Emblema de la Vía Purgativa "Loca”
+- Lema escrito en latín, que en español expresa: “Tu sabes Señor mis locuras y mis pecados no se esconden de ti". Lema tomado de la Biblia, Libro de Salmos, salmo 68, verso 6.
+- Epigrama: “El Alma vestida de loca dando carreras en un Caballo de cana con un reguilete en mano, y el amor divino detrás cubriendose la cara con las manos de vergüenza”.
+Interpretación: el Alma vestida de bufón simboliza que está desbocada, atada a todo lo terrenal y mundano.          """^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_002_p/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_002_p ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_003_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el tercer y cuarto  emblema de la Vía Purgativa."^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_003_x/Utility> ;
+    ecrm:P3_has_note """Tercer Emblema de la Vía Purgativa "Enferma"
+- Lema escrito en latín, que en español expresa: “Ten compasión Señor de mí, que estoy enferma, sáname oh Señor porque no tengo hueso sano".  Lema tomado de la Biblia, del libro de Salmos, salmo 6, verso 9.
+- Epigrama: “El Alma en una cama enferma, y el amor divino como médíco a su cabecera que le toma el pulso”.
+- Interpretación: El Alma enferma postrada en un lecho, está llena de males que vendrían a ser los pecados. El Amor Divino ayudándola es una fuente de sanación. 
+Cuarto Emblema de la Vía Purgativa "Reparada por Cristo"
+- Lema escrito en latín, que en español expresa: "Acuérdate que me formaste de barro y que en polvo me he de volver".  Lema tomado de la Biblia, del libro de Job, capítulo 10, versículo 9.
+Epigrama: “El amor divino como ollero en su oficina, y el alma en la rueda como que la forma de barro”.
+- Interpretación: El Amor Divino utiliza la rueda del alfarero para ir formando al Alma.
+Nos hace pensar en una pieza de arcilla que se va moldeando, también en que polvo fuimos y en polvo nos convertiremos. """^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_003_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_003_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_004_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el quinto y sexto Emblema de la Vía Purgativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_004_x/Utility> ;
+    ecrm:P3_has_note """Quinto Emblema de la Vía Purgativa “Esclava del pecado” - Lema escrito en latín, que en español expresa: "Mira Señor mi dolor y perdona mis pecados". Lema tomado de la Biblia, del libro de Salmos, salmo 24, verso 18.
+ - Epigrama: El alma atada a una tahona como bestia que gira a su alrededor, y el amor divino detrás que la va amenazando con un azote”.
+ Interpretación: El alma pide el perdón de sus pecados a través de su dolor y trabajo.
+ Sexto Emblema de la Vía Purgativa “Rendida a El”
+ - Lema escrito en latín, que en español expresa: "“He pecado, qué haré para satisfacerte oh guarda de los hombres, porque me has puesto como contrario a que riña contigo"
+ - Epigrama: “El Amor divino armado, y como que esgrime con dos Espadas con el alma, y ella echada a sus pies rindiendo las armas”.
+ - Interpretación: El alma en actitud humilde se doblega rendida a los pies del Amor Divino, reconoce que ha pecado y tiene deseos de satisfacer al Amor Divino."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_004_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_004_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_005_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el séptimo y octavo emblema de la Vía Purgativa."^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_005_x/Utility> ;
+    ecrm:P3_has_note """Séptimo Emblema de la Vía Purgativa “Sentida de sus culpas”
+ - Lema escrito en latín, que en español expresa: “Por qué Señor me escondes tu rostro y me juzgas tu enemiga?" Lema tomado de la Biblia, libro de Job, capítulo 13, versículo 24.
+ Epigrama: “El Alma atrayendo a si al amor divino el cual con una mano esconde su rostro, y con la otra desdeña al alma”.
+ - Interpretación: El Amor divino desdeña al alma por su comportamiento indigno.
+ Octavo Emblema de la Vía Purgativa “Llorando sus pecados”
+ - Lema escrito en latín, que en español expresa: “Quién dará agua a mi cabeza y a mis ojos fuentes de lágrimas para llorar mis pecados de día y de noche. Lema tomado de la Biblia, del libro de Jeremías, capítulo 9, versículo 1.
+ - Epigrama: “El Alma sentada en un campo llorando amargamente corriendo agua por todo su cuerpo y el amor divino desde el Cielo con un aguamanil arrojando agua que cae sobre la cabeza del alma”.
+ - Interpretación: El Amor divino provee de agua purificadora para que el Alma pueda continuar lavando sus manchas por medio del arrepentimiento. La fuente simboliza energía espiritual y vida interior. La fuente de lágrimas vendría a ser la conciencia de nuestras faltas."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_005_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_005_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_006_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el noveno emblema de la Vía Purgativa."^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_006_x/Utility> ;
+    ecrm:P3_has_note """Noveno Emblema de la Vía Purgativa “Presa de sus pasiones”
+ - Lema escrito en latín, que en español expresa: “Cercáronme dolores de infierno; anticipándose a cogerme los lazos de la muerte". Lema tomado de la Biblia, del libro de Salmos, salmo 17, verso 6.
+ - Epigrama: “La muerte tirando de unas redes en que lleva como casada al Alma arrastrada, y el amor divino que con una navaja corta los lazos”.
+ - Interpretación: El mundo pone trampas banales, que llevan a la muerte del espíritu. El Amor Divino intenta liberar al Alma de estas trampas. 
+ Nota: Esta escena está representada sola en el lienzo."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_006_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_006_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_007_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el décimo y onceavo emblema de la Vía Purgativa."^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_007_x/Utility> ;
+    ecrm:P3_has_note """Décimo Emblema de la Vía Purgativa “Temblando de la cuenta”
+ - Lema escrito en latín, que en español expresa: “No entres Señor en cuenta con tu criada que no hay quien pueda justificarse en tu presencia”. Lema tomado del libro de Salmos, salmo 142, verso 2.
+ - Epigrama: “Pintase el Amor divino sentado en una silla con una mesa delante como Señor de casa que toma cuenta al Alma que está  en pie, muy turbada y llorando”.
+ - Interpretación: El Alma comienza a hacer un examen de conciencia y teme ser juzgada.
+ Onceavo Emblema de la Vía Purgativa “Regálase con la meditación de la Encarnación y Nacimiento de Cristo” 
+ - Lema escrito en latín, que en español expresa: “Oh quién me concediese poderte abrazar y juntar a mi rostro hermano mío, colgado de los pechos de mi madre y fuera de tu casa, para que nadie me desprecie” Lema tomado de la Biblia, del libro Cantar de los Cantares, capítulo 8, versículo 1.
+ - Epigrama: “El Alma abrazando estrechamente al Amor divino que le saca de una cama como Niño en pañales”."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_007_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_007_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_008_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el doceavo y treceavo emblema de la vía Purgativa."^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_008_x/Utility> ;
+    ecrm:P3_has_note """Doceavo Emblema de la Vía Purgativa “Huyendo de los castigos de Dios”  - Lema escrito en latín, que en español expresa: “Quién me dará que me escondas en el infierno hsta que pase tu furor”. Lema tomado de la Biblia, libro de Job, capítulo 14, versículo 13. 
+ - Epigrama: “El Alma atemorizada que se esconde dentro de una cueva guareciéndose del amor divino que está en el aire, amenazando, descarga sobre ella un manojo de rayos”
+ - Interpretación: El Alma siente temor de Dios. Tiende a esconderse ante las pruebas de la vida.
+ Treceavo Emblema de la Vía Purgativa “Deseosa de más vida para hacer penitencia”  - Lema escrito en latín, que en español expresa: “Siendo tan corto el termino de mi vida, déjame Señor llorar un poco mis culpas”. Lema tomado de la Biblia, del libro de Job, capítulo 10, versículo 20.
+ - Epigrama: “El Alma enjugando sus lagrimas con un lienzo y el amor divino como que la quiere acallar y ella que lo rehúsa señalando a un reloj de sol que tiene delante”.
+ - Interpretación: El Alma toma conciencia de que el tránsito por la vida es para purgar culpas. Se da cuenta de que el plazo para redimirse es limitado."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_008_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_008_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_009_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el catorceavo y quinceavo Emblema de la Vía Purgativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_009_x/Utility> ;
+    ecrm:P3_has_note """Catorceavo Emblema de la Vía Purgativa “Meditando en sus postrimerías” - Lema escrito en latín, que en español expresa: “Oh si todos entendieran mirando hacia adelante, y meditando sus postrimerías”. Lema tomado de la Biblia, del libro de Salmos, salmo 32, verso 25.
+ - Epigrama: “El Alma mirando con un anteojo de larga vista sus postrimerías, muerte, juicio, infiero y Gloria, que están pintadas a lo lejos, y el amor divino enseñándoselas”.
+ - Interpretación: Recomendación para actuar mirando hacia el futuro, porque todas nuestras acciones tienen consecuencias.
+ Quinceavo Emblema de la Vía Purgativa “Desmayada de puro dolor y condenándose a perpetuo arrepentimiento de los pecados”  - Lema escrito en latín, que en español expresa: “Paso mi vida en dolor, y mis años en gemidos". Lema tomado de la Biblia, del libro de Salmos, salmo 30, verso 11.
+ - Epigrama: El Alma desmayada arrojando este suspiro, Ay! y caída en los brazos del amor divino.."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_009_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_009_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_010_p/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el primer y segundo  Emblema de la Vía Iluminativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_010_p/Utility> ;
+    ecrm:P3_has_note """Primer Emblema de la Vía Iluminativa “Desea seguir a Cristo”
+ - Lema escrito en latín, que en español expresa: "Anhela mi alma desear tu santa ley en todo tiempo". Lema tomado de la Biblia, del libro de Salmos, salmo 118, verso 20.
+ - Epigrama: "El Alma en medio del Amor divino y humano combatida fuertemente por ambos".
+ - Interpretación: El Alma quiere vivir de acuerdo con la Ley de Dios, pero lo mundano aún tira.
+ Segundo Emblema de la Vía Iluminativa “Ser enderezado y guiado por El en su ley y consejos”
+ - Lema escrito en latín, que en español expresa: "Ojalá Señor mis caminos vayan enderezados por ti al cumplimiento de tu santa ley". Lema tomado de la Biblia, del libro de Salmos, salmo 118, verso 9.
+ - Epigrama:" El Alma Peregrina dudosa entre dos caminos sobre un medio mundo, y el Amor divino en el aire como que desde el Cielo la va guiando con un farol y con una cuerda que desde arriba la arrojó y a la que ella va asida".
+ - Interpretación: La bifurcación del camino hace referencia a una elección, donde uno puede escoger entre dos o más caminos, algunos de los cuales llevan a la perdición y otros conducen a la salvación. La cinta que une el Alma con el cielo es la guía por el buen camino."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_010_p/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_010_p ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_011_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el tercer y cuarto Emblema de la Vía Iluminativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_011_x/Utility> ;
+    ecrm:P3_has_note """Tercer Emblema de la Vía Iluminativa “Andar y Adelantarle a la virtud”
+ - Lema escrito en latín, que en español expresa: “Asienta señor con toda perfección mis plantas a tus caminos para que nunca me pueda apartar de ellos". Lema tomado de la Biblia, del libro de Salmos, salmo 16, verso 8.
+ - Epigrama: "El Alma medita en un carretoncillo como niña que comienza a andar, y el Amor divino que le enseña".
+ - Interpretación: El Alma va aprendiendo a andar por el buen camino.
+ Cuarto Emblema de la Vía Iluminativa “Aprender como niña su santo temor”
+ - Lema escrito en latín, que en español expresa: “Venid Hijos oidme y os enseñaré a temer a Dios". Lema tomado de la Biblia, del libro de Salmos, salmo 33, verso 12.
+ - Epigrama: "El Amor divino como Maestro de niños con una cartilla en la mano en la que está escrito: Timor Domini; enseñando al alma que está delante de él"."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_011_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_011_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_012_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el quinto y sexto Emblema de la Vía Iluminativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_012_x/Utility> ;
+    ecrm:P3_has_note """Quinto Emblema de la Vía Iluminativa “Temed al Señor todos sus Santos”
+ - Lema escrito en latín, que en español expresa: “Temed al Señor todos sus Santos”. Lema tomado de la Biblia, del libro de Salmos, salmo 33, verso 10.
+ - Epigrama: "El Amor divino que en torbellino de tempestad, prueba al alma y esta atribulada en ademan de susto".
+ - Interpretación: En medio de una tempestad, que significa las pruebas de la vida y las tribulaciones del espíritu, el alma vuelve a ser puesta a prueba.
+ Sexto Emblema de la Vía Iluminativa “Corre tras Cristo imitando sus virtudes”
+ - Lema escrito en latín, que en español expresa: “Llévame Señor tras de ti, corramos al olor de tus ungüentos". Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 1, verso 1.
+ - Epigrama: El Amor divino como que va huyendo, llevando en la mano un perfumador cuyos vapores lleguen al Alma que arrastra tras él, asida a una cinta por la cual la lleva”."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_012_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_012_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_013_p/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el séptimo y octavo Lienzo de la Vía Iluminativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_013_p/Utility> ;
+    ecrm:P3_has_note """Séptimo Lienzo de la vía Iluminativa “Apartar sus sentidos y mortificarlos de toda vanidad”.
+ - Lema escrito en latín, que en español expresa: “Aparta señor mis ojos, que no vean la vanidad del mundo". Lema tomado de la Biblia, del libro de Salmos, salmo 9.
+ - Epigrama: "El Amor divino cerrando con sus manos los ojos al alma, para que no mire a una mujer bizarra que es la vanidad".
+ - Interpretación: El Amor Divino mantiene al alma alejada de lo mundano. Al fondo se ve una mujer que representa la vanidad. La copa representa beber de la perdición, las pompas de jabón lo efímero, y el perfumador lo sensual.
+ Octavo Lienzo de la vía Iluminativa “Renuncia a sus galas y afeites”.
+ - Lema escrito en latín, que en español expresa: “Mi corazón Señor sea tan puro y sin mancha en la guarda de tus mandatos, para que así te agrade y no sea confundida". Lema tomado de la Biblia, del libro de Salmos, salmo 118, verso 80"
+ - Epigrama: "El Amor divino con un espejo en las manos en el que está un corazón y el alma de rodillas ofreciéndole el suyo y dándole la mano".
+ - Interpretación: Al centro puede verse una mesa con artículos de tocador y joyas, que está siendo volcada en señal de desprecio. El corazón del Alma refleja los deseos de vivir de acuerdo a los Mandamientos de la Ley de Dios."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_013_p/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_013_p ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_014_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el catorceavo Emblema de la Vía Iluminativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_014_x/Utility> ;
+    ecrm:P3_has_note """Noveno Emblema de la Vía Iluminativa “Retírase del mundo”
+ - Lema escrito en latín, que en español expresa: “Ven amado mío, vamos al campo, moremos juntos en la aldea". Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 7, verso 11"
+ - Epigrama: "El Amor divino con el Alma vestidos a lo aldeano, que asidos de las manos salen al campo".
+ - Interpretación: Despojada de vanidades, el Alma y el Amor Divino caminan juntos llevando una vida sencilla. Esta escena es la única representada en el lienzo que tiene un corte en escuadra en la zona inferior para dar paso a una puerta."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_014_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_014_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_015_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el décimo y onceavo Emblema de la Vía Iluminativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_015_x/Utility> ;
+    ecrm:P3_has_note """Décimo Emblema de la Vía Iluminativa “Afligida y probada con ausencias de Cristo”
+ - Lema escrito en latín, que en español expresa: “Te anduve buscando de noche en mi lecho oh amado de mi alma, te busqué y no te hallé". Lema tomado de la Biblia, del libro Cantar de los Cantares, canto 3, verso 1.
+ - Epigrama: "El Alma como que se levanta de la cama y él está detrás de ella recostado y dormido sobre una cruz".
+ - Interpretación: El alma busca al Amor Divino y no lo encuentra, puesto que está en el lugar de mayor sacrificio.
+ Onceavo Emblema de la Vía Iluminativa “Búscale con grande diligencia"  - Lema escrito en latín, que en español expresa: “Me levantaré y andaré por la ciudad por las calles y por las plazas, buscaré a quien ama mi alma. Ay que lo he buscado y no lo he hallado". Lema tomado de la Biblia, del libro Cantar de los Cantares, canto 3, verso 2. 
+ - Epigrama: "El Alma en busca del amor divino se levanta de la cama y este está escondido detrás del pabellón de ella".
+ - Interpretación: El Alma busca al Amor Divino sin tener la claridad suficiente para encontrarlo, puesto que no es algo fácil de conseguir."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_015_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_015_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_016_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el doceavo y treceavo Emblema de la Vía Iluminativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_016_x/Utility> ;
+    ecrm:P3_has_note """Doceavo Emblema de la Vía Iluminativa “Dala la mano para que salga de los peligros del mundo”
+ - Lema escrito en latín, que en español expresa: “No me anegue Señor la tempestad de las aguas, ni me suerba lo profundo del mar".  Lema tomado de la Biblia, del libro de Salmos, salmo 68, verso 18"
+ - Epigrama: "El Alma metida en el mar luchando con sus olas alteradas, el Cielo despidiendo rayos y el amor divino que desde la tierra le extiende los brazos para sacarla".
+ Treceavo Emblema de la Vía Iluminativa “No confía en otro más que en El”
+ - Lema escrito en latín, que en español expresa: “Oh cuán bien me está a mí el ir asida a Dios y poner a mi Señor Dios toda mi esperanza". Lema tomado de la Biblia, del libro de Salmos, salmo 72, verso 28"
+ - Epigrama: "El Amor Divino que lleva a cuestas caminando al alma abrazada a sus espaldas y con un ancla en la mano".
+ - Interpretación: El alma confiada se abandona al amor Divino, echándole toda su carga. El ancla simboliza paciencia, esperanza y salvación."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_016_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_016_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_017_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el catorceavo y quinceavo Emblema de la Vía Iluminativa"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_017_x/Utility> ;
+    ecrm:P3_has_note """Catorceavo Emblema de la Vía Iluminativa “Descansa en su Cruz y Pasión peregrina de todas las cosas de la tierra”
+ - Lema escrito en latín, que en español expresa: “Me senté a la sombra de aquel Dios a quien deseaba mi alma". Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 2, verso 3"
+ - Epigrama: "Me senté a la sombra de un árbol en frente de El y en él está clavado como en cruz el Amor divino".
+ Quinceavo Emblema de la Vía Iluminativa “No admite contento alguno de esta vida ni desea más que gozar a Cristo”
+ - Lema escrito en latín, que en español expresa: “Como podré cantar las canciones del Señor, desterrada en tierra ajena". Lema tomado de la Biblia, del libro de Salmos, salmo 136, verso 3"
+ - Epigrama: "El Alma y el Amor divino sentados en el prado entre instrumentos musicales, el alma con ademán de darle la mano, y el Amor divino de rogarle que cante \""""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_017_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_017_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_018_p/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el primer y segundo Emblema de la Vía Unitiva"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_018_p/Utility> ;
+    ecrm:P3_has_note """Primer Emblema de la Vía Unitiva "Herida de amor de Cristo, suspira por gozarle"
+ - Lema escrito en latín, que en español expresa: “Os conjuro hijas de Jerusalén que si hallases a mi amado le digas que estoy herida de su amor".  Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 5, capítulo 8"
+ - Epigrama: "El Alma tendida en el suelo con el corazón herido por una flecha y desde el cielo el amor divino se dispone a lanzar otra flecha,  y allí junto a ella están dos doncellas en pie como que van a llevar los recados que ella les da".                                            Segundo Emblema de la Vía Unitiva "Desfallecida de amor y más favorecida, pide remedios para amarle más"                                                                                          - Lema escrito en latín, que en español expresa: “Fortaléceme con flores, cúbreme con manzanas, porque estoy enferma de amor". Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 2, capitulo 3"
+ - Epigrama: "El Alma desmayada, en brazos de dos doncellas que con rosas, flores y frutas la socorren, y el Amor Divino desde el cielo hace llover flores sobre ella".
+ Interpretación: La manzana es emblema de redención. Las flores son espiritualidad. El alma está ahora completamente entregada al Amor Divino."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_018_p/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_018_p ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_019_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el tercer y cuarto Emblema de la Vía Unitiva"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_019_x/Utility> ;
+    ecrm:P3_has_note """Tercer emblema de la Via Unitiva: "Andar y adelantarle a la virtud"
+ - Lema escrito en latín, que en español expresa: “Mi amado para mi, y yo para él, que mora y  se apacienta entre azucenas". Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 4, capitulo 162"
+ - Epigrama: "En un jardín sentados, el Amor Divino y el Alma enlazada con él,  aparecen enlazándose con una mano en forma de abrazo, el uno con el otro y con la otra coronándose mutuamente con guirnaldas  de flores. Aparecen también allí  unos corderitos paciendo azucenas".
+ Interpretación: El cordero paciendo flores es símbolo de paz, tranquilidad y pureza. El abrazo es símbolo de compenetración.                                                               Cuarto emblema de la Via Unitiva:"Correspondiéndose con Cristo y El con ella, con sentimientos soberanos"                                                                                                   - Lema escrito en latín, que en español expresa: “Yo para mi amado y él me corresponde, se voltea a mirarme si yo lo miro". Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 1, capitulo 10"
+ - Epigrama: "El Alma mirando al Amor Divino, que voltea la cabeza, la mira, arrojando de la boca un rayo de luz a un corazón que ella tiene en la mano, y tras del alma la flor del girasol mirando a un sol que recibe de éste un rayo de luz".
+ Interpretación: Así como el girasol necesita del sol para lucir todo su esplendor, el alma necesita de la luz que le da el Amor Divino. """^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_019_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_019_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_020_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el quinto y sexto Emblema de la Vía Unitiva"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_020_x/Utility> ;
+    ecrm:P3_has_note """Quinto Emblema de la Via Unitiva: "Siente la prisión de su cuerpo" 
+ - Lema escrito en latín, que en español expresa: “No sé que hacerme apretada por dos partes, una del mundo que me detiene, otra del deseo de desasirme y volar a estar con Cristo". Lema tomado de la Biblia, del libro de Filipenses 1, número 23"
+ - Epigrama: El alma con alas y ademán de volar al amor divino que estará a lo lejos en el cielo con los brazos abiertos para recibirla, y abajo una figura del mundo con una cadena a la que está asido un pie del alma deteniéndola para que no vuele" 
+ Interpretación: El Alma no pertenece ya al mundo y quiere ir al cielo, pero no es su momento y aún esta encadenado al mundo.                           Sexto emblema de la Via Unitiva: "Peregrina en este mundo, muere por salir de el y gozar de Dios"                                                                             - Lema escrito en latín, que en español expresa: “Hay de mí que se ha dilatado mi destierro, vivo entre los moradores de este mundo, mi alma está harta de vivir con ellos".  Lema tomado de la Biblia, del libro de Salmos 112, verso 5"
+ - Epigrama: "El Alma vestida de peregrina sentada bajo de una choza seca y sin árboles y delante del Amor divino, con un reloj de arena en la mano".
+ Interpretación: El Alma ya siente que no pertenece al mundo, pero el Amor Divino le indica que el proceso no ha terminado. La choza seca simboliza la falta de atractivo que tiene el mundo para el Alma.                                                                  """^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_020_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_020_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_021_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el séptimo y octavo Emblema de la Vía Unitiva"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_021_x/Utility> ;
+    ecrm:P3_has_note """Septimo emblema de la Via Purgativa: "Deshácese en regalos con sus hablas interiores"
+ - Lema escrito en latín, que en español expresa: “Mi alma se derritió toda luego que oyó la voz de su amado ". Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 7, verso 6"
+ - Epigrama: "El Alma con hilos de plata que van recorriendo todo su cuerpo como si se derritiese y el Amor divino mirándola y arrojándole desde la boca unas llamas que le dan en el corazón".
+ Interpretación: El Amor Divino ha encendido fuego dentro del Alma, y esta se ha rendido. La torre sobre la montaña representa la gloria, meta de esta vía.                                                                                                                                                                                                                                   Octavo emblema de la Via Unitiva: ""Nada, ni de la tierra ni del cielo la satisface, si no es Cristo"                                                                                      - Lema escrito en latín, que en español expresa: “Qué busco yo en el Cielo sin ti mi Dios? Qué puedo querer sobre la tierra sino a tí" . Lema tomado de la Biblia, del libro de Salmos, 72, verso 29"
+ - Epigrama: "El Alma sentada en una media esfera en  la que están pintadas algunas ciudades y ella mirando al cielo señalando un globo estrellado en el que está el Amor Divino con los brazos abiertos y sentado como en un trono".
+ Interpretación: El Alma está por encima del laberinto que representa el mundo, solo ansiando partir al cielo, y el Amor Divino la espera.                                                                                """^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_021_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_021_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_022_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el noveno Emblema de la Vía Unitiva"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_022_x/Utility> ;
+    ecrm:P3_has_note """Noveno emblema de la Via Unitiva: "Unida por semejanza con El, clavada en su Cruz, siente en altísima contemplación sus mismos dolores y afectos"
+ - Lema escrito en latín, que en español expresa: “Clavado estoy con Cristo en una misma Cruz. Ahora puedo decir que vivo, vivo cuando no vivo yo, por que vive en mi Cristo" . Lema tomado de la Biblia, del libro de Los Gálatas, 2, número 20"
+ - Epigrama: "Una Cruz abierta medio dividida en dos, en la derecha está el Amor divino crucificado enviando de su boca como aliento al ama que está en la otra cruz clavada recibiéndola; el mundo debajo con sus deleites riquezas y honras al lado de la Cruz ".
+ Interpretación: El Alma copartícipe del martirio de Cristo y ya son uno. Este es el único emblema pintado en el lienzo, el cual presenta un corte en escuadra en la parte inferior para dar paso a una puerta."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_022_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_022_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_023_p/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el decimo y onceavo Emblema de la Vía Unitiva"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_023_p/Utility> ;
+    ecrm:P3_has_note """Decimo emblema de la Via Unitiva: " "Siente la prisión de su cuerpo"
+ - Lema escrito en latín, que en español expresa: “Saca de la jaula de este cuerpo a mi alma para que alabe tu santo nombre" . Lema tomado de la Biblia, del libro de Salmos, 141 número 8"
+ - Epigrama: "El Alma encerrada en una jaula, como que hace fuerza por salir de ella,  y el Amor Divino por fuera como que le abre la puerta con la mano puesta en la cerradura".
+ Interpretación: El cuerpo representa una cárcel para el Alma. El Amor Divino le ayuda a liberarse.                                                                                  Onceavo emblema de Via Unitiva: "Padece sentimientos admirables de la vía unitiva significados por la sed del ciervo"                                              - Lema escrito en latín, que en español expresa: “Como el siervo desea las fuentes de agua, así te desea mi alma Dios y Señor mío" .  Lema tomado de la Biblia, del libro de P Salmos, salmo 41, verso 1"
+ - Epigrama: "El Alma muy airosa sentada sobre un ciervo que va con gran velocidad corriendo hacia una fuente en cuya taza está en pie el Amor Divino, despidiendo por cinco caños fuentes de sangre".
+ Interpretación: Las cinco llagas, representan, la sangre de Cristo, que vierte su sangre para redimir a la humanidad. El alma corre a la comunión, que es la unión con Cristo."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_023_p/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_023_p ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_024_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el doceavo y treceavo Emblema de la Vía Unitiva"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_024_x/Utility> ;
+    ecrm:P3_has_note """Doceavo emblema de la Via Unitiva: "Abrasada en deseos de ver la cara de su Dios, pide cumpla su palabra de llevarla a Sí"
+ - Lema escrito en latín, que en español expresa: “Cuando iré y estaré en tu presencia gozando la cara de mi Dios?" . Lema tomado de la Biblia, del libro de Salmos, salmo 41, verso 3"
+ - Epigrama: "En un campo solitario el alma puesta en pie, con aspecto de suspensión, abre los brazos con los  ojos levantados al Cielo donde entre algunas nubes el Amor Divino está asomándose y mirándola".
+ Interpretación: El Alma suspendida en éxtasis, desea elevarse hasta Dios.                                                                                                                            Treceavo emblema de la Via Unitiva: "Padece sentimientos admirables de la vía unitiva significados por el vuelo de la paloma"                                                                                                      - Lema escrito en latín, que en español expresa: “Quien me diera alas de paloma para volar y descansar en mi Dios?" . Lema tomado de la Biblia, del libro de P Salmos, salmo 41, verso 3"
+ - Epigrama: "El Alma con ademán de volar desde el suelo con los brazos abiertos transformados en alas que nacen de los hombros siguiendo al Amor Divino. El Amor Divino llega como quien la invita a volar y le envía resplandores de luces. Junto al alma se encuentra una palomita con las alitas levantadas como si fuera a iniciar el vuelo".
+ Interpretación: El Alma guida por el Amor Divino eleva vuelo hacia Él. La paloma al pie, como animal alado, es emblema del alma.                                                                                             """^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_024_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_024_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+<http://curiocity.org/m3_s01_025_x/Object> a ecrm:E22_Man-Made_Object,
+        owl:NamedIndividual ;
+    rdfs:label "Lienzo conteniendo el catorceavo y quinceavo Emblema de la Vía Unitiva"^^xsd:string ;
+    ecrm:P2_has_type <http://curiocity.org/m3_s01_025_x/Utility> ;
+    ecrm:P3_has_note """Catorceavo emblema de la Via Unitiva: "Súspendese contemplando su gloria"
+ - Lema escrito en latín, que en español expresa: “Huye amado mío sobre los montes de olores semejante a la cabra y al hijuelo de la cierva" . Lema tomado de la Biblia, del libro del Cantar de los cantares, canto 8, verso 14"
+ - Epigrama: "El Alma sentada en un campo y el Amor Divino con ademán de que huye a un monte y va volviendo el rostro al Alma, y por delante de él va corriendo un cervatillo ".
+ Interpretación: El Amor Divino invita al Alma a seguirlo al cielo.  La cabra y el ciervo son animales que escalan por terrenos abruptos.                                                  Quinceavo emblema de la Via Unitiva: "Elévase con raptos, éxtasis y pasiones de cosas divinas"                                                                                                                            - Lema escrito en latín, que en español expresa: “ ¡Cuan dignas de ser amadas y deseadas son, Señor, tus moradas! Mi alma las desea y muere por entrar " . Lema tomado de la Biblia, del libro de Salmos, salmo 83, versos 2 al 3.
+ - Epigrama: "El Alma en un campo como elevada, con los brazos abiertos mirando al Cielo  que está en forma de gloria. El amor Divino en el cielo sentado en medio, en su trono como Rey con corona y cetro rodeado de resplandor y Angeles”.
+ Interpretación: El triunfo del Amor Divino para conquistar al Alma, representado dentro de un rompimiento de gloria."""^^xsd:string ;
+    ecrm:P44_has_condition <http://curiocity.org/m3_s01_025_x/Current_Condition> ;
+    ecrm:P45_consists_of <http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> ;
+    ecrm:P48_has_preferred_identifier :m3_s01_025_x ;
+    ecrm:P50_has_current_keeper <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P50_has_current_owner <http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> ;
+    ecrm:P55_has_current_location :Claustro_de_Los_Naranjos .
+
+:Claustro_de_Los_Naranjos a ecrm:E53_Place,
+        owl:NamedIndividual ;
+    rdfs:label "Claustro de Los Naranjos"^^xsd:string ;
+    ecrm:P89_falls_within <http://curiocity.org/Departamento_de_Conservaci%C3%B3n_y_Museolog%C3%ADa> .
+
+:Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena a ecrm:E74_Group,
+        owl:NamedIndividual ;
+    rdfs:label "Comunidad de las monjas del Convento de Santa Catalina de Siena"^^xsd:string .
+
+:Creador_desconocido a ecrm:E39_Actor,
+        owl:NamedIndividual .
+
+:ID-RUTAS a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "ID-RUTAS"^^xsd:string .
+
+<http://curiocity.org/Pintura_sobre_lienzo._T%C3%A9cnica_mixta.> a ecrm:E57_Material,
+        owl:NamedIndividual ;
+    rdfs:label "Pintura sobre lienzo. Técnica mixta."^^xsd:string .
+
+<http://curiocity.org/Regular_estado_de_conservaci%C3%B3n> a ecrm:E55_Type,
+        owl:NamedIndividual ;
+    rdfs:label "Regular estado de conservación"^^xsd:string .
+
+:cm a ecrm:E58_Measurement_Unit,
+        owl:NamedIndividual ;
+    rdfs:label "cm"^^xsd:string .
+
+<http://curiocity.org/Comunidad_de_las_monjas_del_Convento_de_Santa_Catalina_de_Siena%2C_de_la_Orden_Dominica> a ecrm:E74_Group,
+        owl:NamedIndividual ;
+    rdfs:label "Comunidad de las monjas del Convento de Santa Catalina de Siena, de la Orden Dominica"^^xsd:string .
+

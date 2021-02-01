@@ -1,0 +1,53 @@
+WARNING:Fila 2 -> Creador No identificado
+WARNING:Fila 2 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 3 -> no válida, no existe id/title
+WARNING:Fila 4 -> Creador No identificado
+WARNING:Fila 4 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 5 -> Creador No identificado
+WARNING:Fila 5 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 6 -> Creador No identificado
+WARNING:Fila 6 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 7 -> Creador No identificado
+WARNING:Fila 7 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 8 -> Creador No identificado
+WARNING:Fila 8 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 9 -> Creador No identificado
+WARNING:Fila 9 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 10 -> Creador No identificado
+WARNING:Fila 10 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 11 -> Creador No identificado
+WARNING:Fila 11 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 12 -> no válida, no existe id/title
+WARNING:Fila 13 -> Creador No identificado
+WARNING:Fila 13 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 14 -> Creador No identificado
+WARNING:Fila 14 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 15 -> Creador No identificado
+WARNING:Fila 15 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 16 -> Creador No identificado
+WARNING:Fila 16 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 17 -> Creador No identificado
+WARNING:Fila 17 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 18 -> Creador No identificado
+WARNING:Fila 18 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 19 -> Creador No identificado
+WARNING:Fila 19 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 20 -> Creador No identificado
+WARNING:Fila 20 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 21 -> no válida, no existe id/title
+WARNING:Fila 22 -> Creador No identificado
+WARNING:Fila 22 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 23 -> Creador No identificado
+WARNING:Fila 23 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 24 -> Creador No identificado
+WARNING:Fila 24 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 25 -> Creador No identificado
+WARNING:Fila 25 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 26 -> Creador No identificado
+WARNING:Fila 26 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 27 -> Creador No identificado
+WARNING:Fila 27 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 28 -> Creador No identificado
+WARNING:Fila 28 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 29 -> Creador No identificado
+WARNING:Fila 29 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
