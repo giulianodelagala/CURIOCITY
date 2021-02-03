@@ -1,0 +1,230 @@
+body {
+    font-size: 16px;
+    color: #1c4e84;
+    background-color: #e9e7e7;
+    font-family: 'Chonburi', cursive;
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: #c0c0c0 ;
+}
+
+#logo-img {
+    background: url('/images/museum-logo-small.png') no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 10px 15px 15px 0;
+  }
+
+  .navbar-brand{
+    padding-top: 20px;
+  }
+  
+  .navbar-brand h1{ /*Museum name*/
+    font-family: 'Lora', serif;
+    color: #1c4e84;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+
+  .navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbar-brand p { /*Project name*/
+    margin-top: 1px;
+  }
+
+  .navbar-brand p:hover, .navbar-brand p:focus {
+      color: black;
+  }
+
+  .navbar-brand p span { /*star k*/
+    vertical-align: middle;
+  }
+
+  #nav-list a{
+    color: #1c4e84;
+    text-align: center;
+  }
+
+  #nav-list a:hover {
+    color: black;
+  }
+
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #1c4e84;
+  }
+
+  .navbar-header button.navbar-toggle {
+    /* clear: both; */
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+/* END HEADER /*
+
+/*SEARCH HEADER */
+#header-search {
+    background-color: #e9e7e7;
+}
+#header-search .btn-primary {
+    margin-top: 10px;
+    font-size: 1.1em;
+    background-color: #1c4e84;
+}
+.form-control {
+  margin-top: -5px;
+  margin-bottom: 5px; 
+}
+/* END SEARCH HEADER */
+
+/* HOME-PAGE */
+.map-tile{
+  position: relative;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.map-tile span {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #1c4e84;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 20px;
+  background-color: #c0c0c0;
+}
+/* END FOOTER */
+
+/* MAIN CONTENT */
+
+.artifact-tile {
+  position: relative;
+  height: 330px;
+  /* overflow: auto; */
+  margin-bottom: 20px;
+  background-color: rgb(223, 222, 222);
+}
+
+.artifact-tile img, .artifact-tile .artifact-info  {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.artifact-tile img{
+  margin: 0;
+  box-shadow: 0 1px 5px 1px #b3b3b3;
+  transform: translate(-50%, 0%);
+}
+
+.artifact-tile .artifact-info{
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, 110px);
+  font-size: .8em;
+}
+
+.artifact-info .text-info {
+  /* padding-left: 10px; */
+  /* font-size: .8em; */
+  color: gray;
+  overflow: hidden;
+  /* vertical-align: middle; */
+}
+
+.artifact-info .row {
+  border: 1px solid gray;
+  margin: 0;
+  height: 50px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* END MAIN CONTENT */
+
+/* SINGLE ARTIFACT */
+#single-artifact {
+  /* position: relative; */
+  /* height: 330px; */
+  /* overflow: auto; */
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  background-color: rgb(223, 222, 222);
+}
+#single-image {
+  position: relative;
+}
+#single-image img  {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  box-shadow: 0 1px 10px 1px #b3b3b3;
+  transform: translate(-50%, 0%);
+}
+#single-artifact .row {
+  border-bottom: 1px solid rgba(202, 202, 202, 0.9) ;
+  margin: 5px;
+  /* height: 50px; */
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#single-artifact .row:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+  /*********** Large Devices*/
+@media (min-width: 1200px)
+{
+
+}
+
+/* Medium Devices*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+
+}
+
+/* Small Devices*/
+@media (min-width: 768px) and (max-width: 991 px)
+{
+
+}
+
+/* Extra Small Devices*/
+@media (max-width: 767px)
+{
+  /*Header */
+  
+  #collapsable-nav a { /*Collapsed nav menu glyph */
+    font-size: 1em;
+  }
+
+  #collapsable-nav a span {
+    font-size: 1em;
+    margin-right: 1px;
+  }
+
+}
