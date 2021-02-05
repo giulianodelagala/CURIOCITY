@@ -1,0 +1,886 @@
+WARNING:Fila 2 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 3 -> no válida, no existe id/title
+WARNING:Fila 4 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 5 -> Codigo alternativo No Asignado
+WARNING:Fila 5 -> Dimensiones no identificadas: altura diametro profundidad peso.
+WARNING:Fila 6 -> no válida, no existe id/title
+WARNING:Fila 7 -> Codigo alternativo No Asignado
+WARNING:Fila 7 -> Dimensiones no identificadas: altura diametro profundidad peso.
+WARNING:Fila 8 -> no válida, no existe id/title
+WARNING:Fila 9 -> no válida, no existe id/title
+WARNING:Fila 10 -> Codigo alternativo No Asignado
+WARNING:Fila 10 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 11 -> Codigo alternativo No Asignado
+WARNING:Fila 11 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 12 -> Codigo alternativo No Asignado
+WARNING:Fila 12 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 13 -> Codigo alternativo No Asignado
+WARNING:Fila 13 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 14 -> no válida, no existe id/title
+WARNING:Fila 15 -> no válida, no existe id/title
+WARNING:Fila 16 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 17 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 18 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 19 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 20 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 21 -> no válida, no existe id/title
+WARNING:Fila 22 -> no válida, no existe id/title
+WARNING:Fila 23 -> no válida, no existe id/title
+WARNING:Fila 24 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 25 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 26 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 27 -> Dimensiones no identificadas: altura ancho largo diametro peso.
+WARNING:Fila 28 -> no válida, no existe id/title
+WARNING:Fila 29 -> no válida, no existe id/title
+WARNING:Fila 30 -> no válida, no existe id/title
+WARNING:Fila 31 -> Dimensiones no identificadas: largo diametro profundidad peso.
+ERROR:Fila 32 -> Codigo existente: m01_s01_019, Fila ignorada
+WARNING:Fila 33 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 34 -> Dimensiones no identificadas: altura ancho diametro profundidad peso.
+WARNING:Fila 35 -> no válida, no existe id/title
+WARNING:Fila 36 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 37 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 38 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 39 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 40 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 41 -> no válida, no existe id/title
+WARNING:Fila 42 -> no válida, no existe id/title
+WARNING:Fila 43 -> no válida, no existe id/title
+WARNING:Fila 44 -> no válida, no existe id/title
+WARNING:Fila 45 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 46 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 47 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 48 -> no válida, no existe id/title
+WARNING:Fila 49 -> no válida, no existe id/title
+WARNING:Fila 50 -> Donador No identificado
+WARNING:Fila 50 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 51 -> no válida, no existe id/title
+WARNING:Fila 52 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 53 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 54 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 55 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 56 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 57 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 58 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 59 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 60 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 61 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 62 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 63 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 64 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 65 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 66 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 67 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 68 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 69 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 70 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 71 -> Creador No identificado
+WARNING:Fila 71 -> Donador No identificado
+WARNING:Fila 71 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 71 -> Periodo desconocido.
+WARNING:Fila 72 -> Creador No identificado
+WARNING:Fila 72 -> Donador No identificado
+WARNING:Fila 72 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 72 -> Periodo desconocido.
+WARNING:Fila 73 -> no válida, no existe id/title
+WARNING:Fila 74 -> Creador No identificado
+WARNING:Fila 74 -> Donador No identificado
+WARNING:Fila 74 -> Dimensiones no identificadas: altura ancho diametro profundidad peso.
+WARNING:Fila 75 -> Codigo alternativo No Asignado
+WARNING:Fila 75 -> Creador No identificado
+WARNING:Fila 75 -> Donador No identificado
+WARNING:Fila 75 -> Dimensiones no identificadas: altura ancho diametro profundidad peso.
+WARNING:Fila 76 -> Creador No identificado
+WARNING:Fila 76 -> Donador No identificado
+WARNING:Fila 76 -> Dimensiones no identificadas: altura ancho diametro profundidad peso.
+WARNING:Fila 77 -> Creador No identificado
+WARNING:Fila 77 -> Donador No identificado
+WARNING:Fila 77 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 77 -> Periodo desconocido.
+WARNING:Fila 78 -> Creador No identificado
+WARNING:Fila 78 -> Donador No identificado
+WARNING:Fila 78 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 79 -> no válida, no existe id/title
+WARNING:Fila 80 -> Donador No identificado
+WARNING:Fila 80 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 80 -> Periodo desconocido.
+WARNING:Fila 81 -> Donador No identificado
+WARNING:Fila 81 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 81 -> Periodo desconocido.
+WARNING:Fila 82 -> no válida, no existe id/title
+WARNING:Fila 83 -> Donador No identificado
+WARNING:Fila 83 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 83 -> Periodo desconocido.
+WARNING:Fila 84 -> no válida, no existe id/title
+WARNING:Fila 85 -> no válida, no existe id/title
+WARNING:Fila 86 -> no válida, no existe id/title
+WARNING:Fila 87 -> Donador No identificado
+WARNING:Fila 87 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 87 -> Periodo desconocido.
+WARNING:Fila 88 -> Creador No identificado
+WARNING:Fila 88 -> Donador No identificado
+WARNING:Fila 88 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 88 -> Periodo desconocido.
+WARNING:Fila 89 -> Donador No identificado
+WARNING:Fila 89 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 89 -> Periodo desconocido.
+WARNING:Fila 90 -> no válida, no existe id/title
+WARNING:Fila 91 -> no válida, no existe id/title
+WARNING:Fila 92 -> Creador No identificado
+WARNING:Fila 92 -> Donador No identificado
+WARNING:Fila 92 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 93 -> Creador No identificado
+WARNING:Fila 93 -> Donador No identificado
+WARNING:Fila 93 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 94 -> Creador No identificado
+WARNING:Fila 94 -> Donador No identificado
+WARNING:Fila 94 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 95 -> Creador No identificado
+WARNING:Fila 95 -> Donador No identificado
+WARNING:Fila 95 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 96 -> no válida, no existe id/title
+WARNING:Fila 97 -> Creador No identificado
+WARNING:Fila 97 -> Donador No identificado
+WARNING:Fila 97 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 97 -> Periodo desconocido.
+WARNING:Fila 98 -> Creador No identificado
+WARNING:Fila 98 -> Donador No identificado
+WARNING:Fila 98 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 98 -> Periodo desconocido.
+WARNING:Fila 99 -> Creador No identificado
+WARNING:Fila 99 -> Donador No identificado
+WARNING:Fila 99 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 99 -> Periodo desconocido.
+WARNING:Fila 100 -> Creador No identificado
+WARNING:Fila 100 -> Donador No identificado
+WARNING:Fila 100 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 100 -> Periodo desconocido.
+WARNING:Fila 101 -> no válida, no existe id/title
+WARNING:Fila 102 -> no válida, no existe id/title
+WARNING:Fila 103 -> no válida, no existe id/title
+WARNING:Fila 104 -> no válida, no existe id/title
+WARNING:Fila 105 -> Creador No identificado
+WARNING:Fila 105 -> Donador No identificado
+WARNING:Fila 105 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 105 -> Periodo desconocido.
+WARNING:Fila 106 -> Creador No identificado
+WARNING:Fila 106 -> Donador No identificado
+WARNING:Fila 106 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 106 -> Periodo desconocido.
+WARNING:Fila 107 -> Donador No identificado
+WARNING:Fila 107 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 107 -> Periodo desconocido.
+WARNING:Fila 108 -> Creador No identificado
+WARNING:Fila 108 -> Donador No identificado
+WARNING:Fila 108 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 108 -> Periodo desconocido.
+WARNING:Fila 109 -> Creador No identificado
+WARNING:Fila 109 -> Donador No identificado
+WARNING:Fila 109 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 109 -> Periodo desconocido.
+WARNING:Fila 110 -> Creador No identificado
+WARNING:Fila 110 -> Donador No identificado
+WARNING:Fila 110 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 110 -> Periodo desconocido.
+WARNING:Fila 111 -> Creador No identificado
+WARNING:Fila 111 -> Donador No identificado
+WARNING:Fila 111 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 111 -> Periodo desconocido.
+WARNING:Fila 112 -> no válida, no existe id/title
+WARNING:Fila 113 -> no válida, no existe id/title
+WARNING:Fila 114 -> Creador No identificado
+WARNING:Fila 114 -> Donador No identificado
+WARNING:Fila 114 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 114 -> Periodo desconocido.
+WARNING:Fila 115 -> Creador No identificado
+WARNING:Fila 115 -> Donador No identificado
+WARNING:Fila 115 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 115 -> Periodo desconocido.
+WARNING:Fila 116 -> Creador No identificado
+WARNING:Fila 116 -> Donador No identificado
+WARNING:Fila 116 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 116 -> Periodo desconocido.
+WARNING:Fila 117 -> no válida, no existe id/title
+WARNING:Fila 118 -> Donador No identificado
+WARNING:Fila 118 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 118 -> Periodo desconocido.
+WARNING:Fila 119 -> Creador No identificado
+WARNING:Fila 119 -> Donador No identificado
+WARNING:Fila 119 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 119 -> Periodo desconocido.
+WARNING:Fila 120 -> no válida, no existe id/title
+WARNING:Fila 121 -> no válida, no existe id/title
+WARNING:Fila 122 -> Creador No identificado
+WARNING:Fila 122 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 122 -> Periodo desconocido.
+WARNING:Fila 123 -> Codigo alternativo No Asignado
+WARNING:Fila 123 -> Creador No identificado
+WARNING:Fila 123 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 124 -> Creador No identificado
+WARNING:Fila 124 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 125 -> Creador No identificado
+WARNING:Fila 125 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 126 -> Creador No identificado
+WARNING:Fila 126 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 127 -> Creador No identificado
+WARNING:Fila 127 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 128 -> Creador No identificado
+WARNING:Fila 128 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 129 -> no válida, no existe id/title
+WARNING:Fila 130 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 130 -> Periodo desconocido.
+WARNING:Fila 131 -> no válida, no existe id/title
+WARNING:Fila 132 -> no válida, no existe id/title
+WARNING:Fila 133 -> Creador No identificado
+WARNING:Fila 133 -> Donador No identificado
+WARNING:Fila 133 -> Dimensiones no identificadas: altura ancho diametro profundidad peso.
+WARNING:Fila 133 -> Periodo desconocido.
+WARNING:Fila 134 -> Creador No identificado
+WARNING:Fila 134 -> Donador No identificado
+WARNING:Fila 134 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 135 -> Creador No identificado
+WARNING:Fila 135 -> Donador No identificado
+WARNING:Fila 135 -> Dimensiones no identificadas: altura ancho diametro profundidad peso.
+WARNING:Fila 136 -> no válida, no existe id/title
+WARNING:Fila 137 -> no válida, no existe id/title
+WARNING:Fila 138 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 138 -> Periodo desconocido.
+WARNING:Fila 139 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 140 -> no válida, no existe id/title
+WARNING:Fila 141 -> no válida, no existe id/title
+WARNING:Fila 142 -> Creador No identificado
+WARNING:Fila 142 -> Donador No identificado
+WARNING:Fila 142 -> Dimensiones no identificadas: altura ancho diametro profundidad peso.
+WARNING:Fila 143 -> Codigo alternativo No Asignado
+WARNING:Fila 143 -> Creador No identificado
+WARNING:Fila 143 -> Donador No identificado
+WARNING:Fila 143 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 144 -> Codigo alternativo No Asignado
+WARNING:Fila 144 -> Creador No identificado
+WARNING:Fila 144 -> Donador No identificado
+WARNING:Fila 144 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 145 -> Codigo alternativo No Asignado
+WARNING:Fila 145 -> Creador No identificado
+WARNING:Fila 145 -> Donador No identificado
+WARNING:Fila 145 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 146 -> Codigo alternativo No Asignado
+WARNING:Fila 146 -> Creador No identificado
+WARNING:Fila 146 -> Donador No identificado
+WARNING:Fila 146 -> Dimensiones no identificadas: altura ancho diametro profundidad peso.
+WARNING:Fila 147 -> no válida, no existe id/title
+WARNING:Fila 148 -> no válida, no existe id/title
+WARNING:Fila 149 -> Creador No identificado
+WARNING:Fila 149 -> Donador No identificado
+WARNING:Fila 149 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 150 -> no válida, no existe id/title
+WARNING:Fila 151 -> no válida, no existe id/title
+WARNING:Fila 152 -> no válida, no existe id/title
+WARNING:Fila 153 -> Codigo alternativo No Asignado
+WARNING:Fila 153 -> Creador No identificado
+WARNING:Fila 153 -> Donador No identificado
+WARNING:Fila 153 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 153 -> Periodo desconocido.
+WARNING:Fila 154 -> Creador No identificado
+WARNING:Fila 154 -> Donador No identificado
+WARNING:Fila 154 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 155 -> Creador No identificado
+WARNING:Fila 155 -> Donador No identificado
+WARNING:Fila 155 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 156 -> Creador No identificado
+WARNING:Fila 156 -> Donador No identificado
+WARNING:Fila 156 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 156 -> Periodo desconocido.
+WARNING:Fila 157 -> no válida, no existe id/title
+WARNING:Fila 158 -> no válida, no existe id/title
+WARNING:Fila 159 -> Creador No identificado
+WARNING:Fila 159 -> Donador No identificado
+WARNING:Fila 159 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 160 -> Creador No identificado
+WARNING:Fila 160 -> Donador No identificado
+WARNING:Fila 160 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 161 -> Creador No identificado
+WARNING:Fila 161 -> Donador No identificado
+WARNING:Fila 161 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 162 -> Codigo alternativo No Asignado
+WARNING:Fila 162 -> Creador No identificado
+WARNING:Fila 162 -> Donador No identificado
+WARNING:Fila 162 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 163 -> Creador No identificado
+WARNING:Fila 163 -> Donador No identificado
+WARNING:Fila 163 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 164 -> Creador No identificado
+WARNING:Fila 164 -> Donador No identificado
+WARNING:Fila 164 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 165 -> Creador No identificado
+WARNING:Fila 165 -> Donador No identificado
+WARNING:Fila 165 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 166 -> Creador No identificado
+WARNING:Fila 166 -> Donador No identificado
+WARNING:Fila 166 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 167 -> Creador No identificado
+WARNING:Fila 167 -> Donador No identificado
+WARNING:Fila 167 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 168 -> Creador No identificado
+WARNING:Fila 168 -> Donador No identificado
+WARNING:Fila 168 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 169 -> Donador No identificado
+WARNING:Fila 169 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 170 -> Donador No identificado
+WARNING:Fila 170 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 171 -> Donador No identificado
+WARNING:Fila 171 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 172 -> Donador No identificado
+WARNING:Fila 172 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 173 -> Creador No identificado
+WARNING:Fila 173 -> Donador No identificado
+WARNING:Fila 173 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 174 -> Donador No identificado
+WARNING:Fila 174 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 175 -> Donador No identificado
+WARNING:Fila 175 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 176 -> Donador No identificado
+WARNING:Fila 176 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 177 -> Donador No identificado
+WARNING:Fila 177 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 178 -> Donador No identificado
+WARNING:Fila 178 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 179 -> Donador No identificado
+WARNING:Fila 179 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 180 -> Donador No identificado
+WARNING:Fila 180 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 181 -> Donador No identificado
+WARNING:Fila 181 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 182 -> Donador No identificado
+WARNING:Fila 182 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 183 -> Donador No identificado
+WARNING:Fila 183 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 184 -> Donador No identificado
+WARNING:Fila 184 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 185 -> Donador No identificado
+WARNING:Fila 185 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 186 -> Creador No identificado
+WARNING:Fila 186 -> Donador No identificado
+WARNING:Fila 186 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 187 -> no válida, no existe id/title
+WARNING:Fila 188 -> no válida, no existe id/title
+WARNING:Fila 189 -> no válida, no existe id/title
+WARNING:Fila 190 -> no válida, no existe id/title
+WARNING:Fila 191 -> no válida, no existe id/title
+WARNING:Fila 192 -> Donador No identificado
+WARNING:Fila 192 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 192 -> Periodo desconocido.
+WARNING:Fila 193 -> Donador No identificado
+WARNING:Fila 193 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 193 -> Periodo desconocido.
+WARNING:Fila 194 -> Creador No identificado
+WARNING:Fila 194 -> Donador No identificado
+WARNING:Fila 194 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 194 -> Periodo desconocido.
+WARNING:Fila 195 -> Donador No identificado
+WARNING:Fila 195 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 195 -> Periodo desconocido.
+WARNING:Fila 196 -> Donador No identificado
+WARNING:Fila 196 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 197 -> Creador No identificado
+WARNING:Fila 197 -> Donador No identificado
+WARNING:Fila 197 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 197 -> Periodo desconocido.
+WARNING:Fila 198 -> Donador No identificado
+WARNING:Fila 198 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 198 -> Periodo desconocido.
+WARNING:Fila 199 -> Creador No identificado
+WARNING:Fila 199 -> Donador No identificado
+WARNING:Fila 199 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 199 -> Periodo desconocido.
+WARNING:Fila 200 -> Creador No identificado
+WARNING:Fila 200 -> Donador No identificado
+WARNING:Fila 200 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 200 -> Periodo desconocido.
+WARNING:Fila 201 -> Donador No identificado
+WARNING:Fila 201 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 202 -> Creador No identificado
+WARNING:Fila 202 -> Donador No identificado
+WARNING:Fila 202 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 202 -> Periodo desconocido.
+WARNING:Fila 203 -> Creador No identificado
+WARNING:Fila 203 -> Donador No identificado
+WARNING:Fila 203 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 203 -> Periodo desconocido.
+WARNING:Fila 204 -> Creador No identificado
+WARNING:Fila 204 -> Donador No identificado
+WARNING:Fila 204 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 204 -> Periodo desconocido.
+WARNING:Fila 205 -> Creador No identificado
+WARNING:Fila 205 -> Donador No identificado
+WARNING:Fila 205 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 205 -> Periodo desconocido.
+WARNING:Fila 206 -> Donador No identificado
+WARNING:Fila 206 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 206 -> Periodo desconocido.
+WARNING:Fila 207 -> Creador No identificado
+WARNING:Fila 207 -> Donador No identificado
+WARNING:Fila 207 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 207 -> Periodo desconocido.
+WARNING:Fila 208 -> Creador No identificado
+WARNING:Fila 208 -> Donador No identificado
+WARNING:Fila 208 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 208 -> Periodo desconocido.
+WARNING:Fila 209 -> Creador No identificado
+WARNING:Fila 209 -> Donador No identificado
+WARNING:Fila 209 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 209 -> Periodo desconocido.
+WARNING:Fila 210 -> Codigo alternativo No Asignado
+WARNING:Fila 210 -> Donador No identificado
+WARNING:Fila 210 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 211 -> Creador No identificado
+WARNING:Fila 211 -> Donador No identificado
+WARNING:Fila 211 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 211 -> Periodo desconocido.
+WARNING:Fila 212 -> Donador No identificado
+WARNING:Fila 212 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 213 -> Creador No identificado
+WARNING:Fila 213 -> Donador No identificado
+WARNING:Fila 213 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 213 -> Periodo desconocido.
+WARNING:Fila 214 -> Donador No identificado
+WARNING:Fila 214 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 215 -> Creador No identificado
+WARNING:Fila 215 -> Donador No identificado
+WARNING:Fila 215 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 215 -> Periodo desconocido.
+WARNING:Fila 216 -> Donador No identificado
+WARNING:Fila 216 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 217 -> Creador No identificado
+WARNING:Fila 217 -> Donador No identificado
+WARNING:Fila 217 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 217 -> Periodo desconocido.
+WARNING:Fila 218 -> Donador No identificado
+WARNING:Fila 218 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 219 -> Donador No identificado
+WARNING:Fila 219 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 220 -> Donador No identificado
+WARNING:Fila 220 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 221 -> Donador No identificado
+WARNING:Fila 221 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 222 -> Donador No identificado
+WARNING:Fila 222 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 223 -> Codigo alternativo No Asignado
+WARNING:Fila 223 -> Creador No identificado
+WARNING:Fila 223 -> Donador No identificado
+WARNING:Fila 223 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 223 -> Periodo desconocido.
+WARNING:Fila 224 -> Donador No identificado
+WARNING:Fila 224 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 225 -> Donador No identificado
+WARNING:Fila 225 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 226 -> Creador No identificado
+WARNING:Fila 226 -> Donador No identificado
+WARNING:Fila 226 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 227 -> Donador No identificado
+WARNING:Fila 227 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 228 -> Creador No identificado
+WARNING:Fila 228 -> Donador No identificado
+WARNING:Fila 228 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 228 -> Periodo desconocido.
+WARNING:Fila 229 -> Creador No identificado
+WARNING:Fila 229 -> Donador No identificado
+WARNING:Fila 229 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 229 -> Periodo desconocido.
+WARNING:Fila 230 -> Codigo alternativo No Asignado
+WARNING:Fila 230 -> Donador No identificado
+WARNING:Fila 230 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 230 -> Periodo desconocido.
+WARNING:Fila 231 -> Donador No identificado
+WARNING:Fila 231 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 232 -> Donador No identificado
+WARNING:Fila 232 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 233 -> Donador No identificado
+WARNING:Fila 233 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 234 -> Donador No identificado
+WARNING:Fila 234 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 234 -> Periodo desconocido.
+WARNING:Fila 235 -> Codigo alternativo No Asignado
+WARNING:Fila 235 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 236 -> Codigo alternativo No Asignado
+WARNING:Fila 236 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 237 -> Codigo alternativo No Asignado
+WARNING:Fila 237 -> Creador No identificado
+WARNING:Fila 237 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 238 -> Codigo alternativo No Asignado
+WARNING:Fila 238 -> Creador No identificado
+WARNING:Fila 238 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 239 -> Codigo alternativo No Asignado
+WARNING:Fila 239 -> Creador No identificado
+WARNING:Fila 239 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 240 -> Codigo alternativo No Asignado
+WARNING:Fila 240 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 241 -> no válida, no existe id/title
+WARNING:Fila 242 -> no válida, no existe id/title
+WARNING:Fila 243 -> no válida, no existe id/title
+WARNING:Fila 244 -> Donador No identificado
+WARNING:Fila 244 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 245 -> Donador No identificado
+WARNING:Fila 245 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 246 -> Donador No identificado
+WARNING:Fila 246 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 247 -> Codigo alternativo No Asignado
+WARNING:Fila 247 -> Donador No identificado
+WARNING:Fila 247 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 248 -> Codigo alternativo No Asignado
+WARNING:Fila 248 -> Creador No identificado
+WARNING:Fila 248 -> Donador No identificado
+WARNING:Fila 248 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 248 -> Periodo desconocido.
+WARNING:Fila 249 -> Codigo alternativo No Asignado
+WARNING:Fila 249 -> Donador No identificado
+WARNING:Fila 249 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 250 -> Donador No identificado
+WARNING:Fila 250 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 251 -> Codigo alternativo No Asignado
+WARNING:Fila 251 -> Donador No identificado
+WARNING:Fila 251 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 252 -> Donador No identificado
+WARNING:Fila 252 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 253 -> Codigo alternativo No Asignado
+WARNING:Fila 253 -> Donador No identificado
+WARNING:Fila 253 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 253 -> Periodo desconocido.
+WARNING:Fila 254 -> Donador No identificado
+WARNING:Fila 254 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 255 -> Donador No identificado
+WARNING:Fila 255 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 256 -> Donador No identificado
+WARNING:Fila 256 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 257 -> Donador No identificado
+WARNING:Fila 257 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 258 -> Donador No identificado
+WARNING:Fila 258 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 259 -> Donador No identificado
+WARNING:Fila 259 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 260 -> Codigo alternativo No Asignado
+WARNING:Fila 260 -> Donador No identificado
+WARNING:Fila 260 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 261 -> Donador No identificado
+WARNING:Fila 261 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 262 -> Donador No identificado
+WARNING:Fila 262 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 263 -> Donador No identificado
+WARNING:Fila 263 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 264 -> Donador No identificado
+WARNING:Fila 264 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 265 -> Donador No identificado
+WARNING:Fila 265 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 265 -> Periodo desconocido.
+WARNING:Fila 266 -> Codigo alternativo No Asignado
+WARNING:Fila 266 -> Donador No identificado
+WARNING:Fila 266 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 267 -> Donador No identificado
+WARNING:Fila 267 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 268 -> Donador No identificado
+WARNING:Fila 268 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 269 -> Donador No identificado
+WARNING:Fila 269 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 270 -> Donador No identificado
+WARNING:Fila 270 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 271 -> Donador No identificado
+WARNING:Fila 271 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 272 -> Codigo alternativo No Asignado
+WARNING:Fila 272 -> Donador No identificado
+WARNING:Fila 272 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 273 -> Donador No identificado
+WARNING:Fila 273 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 274 -> Donador No identificado
+WARNING:Fila 274 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 275 -> Donador No identificado
+WARNING:Fila 275 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 276 -> Donador No identificado
+WARNING:Fila 276 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 277 -> Codigo alternativo No Asignado
+WARNING:Fila 277 -> Donador No identificado
+WARNING:Fila 277 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 278 -> Donador No identificado
+WARNING:Fila 278 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 279 -> Donador No identificado
+WARNING:Fila 279 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 280 -> Donador No identificado
+WARNING:Fila 280 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 281 -> Donador No identificado
+WARNING:Fila 281 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 282 -> Donador No identificado
+WARNING:Fila 282 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 283 -> no válida, no existe id/title
+WARNING:Fila 284 -> no válida, no existe id/title
+WARNING:Fila 285 -> no válida, no existe id/title
+WARNING:Fila 286 -> no válida, no existe id/title
+WARNING:Fila 287 -> no válida, no existe id/title
+WARNING:Fila 288 -> no válida, no existe id/title
+WARNING:Fila 289 -> Codigo alternativo No Asignado
+WARNING:Fila 289 -> Donador No identificado
+WARNING:Fila 289 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 290 -> Codigo alternativo No Asignado
+WARNING:Fila 290 -> Donador No identificado
+WARNING:Fila 290 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 291 -> no válida, no existe id/title
+WARNING:Fila 292 -> no válida, no existe id/title
+WARNING:Fila 293 -> no válida, no existe id/title
+WARNING:Fila 294 -> no válida, no existe id/title
+WARNING:Fila 295 -> no válida, no existe id/title
+WARNING:Fila 296 -> no válida, no existe id/title
+WARNING:Fila 297 -> Donador No identificado
+WARNING:Fila 297 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 298 -> Donador No identificado
+WARNING:Fila 298 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 299 -> Donador No identificado
+WARNING:Fila 299 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 300 -> Donador No identificado
+WARNING:Fila 300 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 301 -> Donador No identificado
+WARNING:Fila 301 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 302 -> Donador No identificado
+WARNING:Fila 302 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 303 -> Donador No identificado
+WARNING:Fila 303 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 304 -> Donador No identificado
+WARNING:Fila 304 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 305 -> Donador No identificado
+WARNING:Fila 305 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 306 -> no válida, no existe id/title
+WARNING:Fila 307 -> no válida, no existe id/title
+WARNING:Fila 308 -> Codigo alternativo No Asignado
+WARNING:Fila 308 -> Creador No identificado
+WARNING:Fila 308 -> Donador No identificado
+WARNING:Fila 308 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 309 -> no válida, no existe id/title
+WARNING:Fila 310 -> Donador No identificado
+WARNING:Fila 310 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 311 -> Donador No identificado
+WARNING:Fila 311 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 312 -> Donador No identificado
+WARNING:Fila 312 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 313 -> Donador No identificado
+WARNING:Fila 313 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 314 -> Donador No identificado
+WARNING:Fila 314 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 315 -> Donador No identificado
+WARNING:Fila 315 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 316 -> Donador No identificado
+WARNING:Fila 316 -> Dimensiones no identificadas: altura largo diametro profundidad peso.
+WARNING:Fila 317 -> Donador No identificado
+WARNING:Fila 317 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 318 -> Donador No identificado
+WARNING:Fila 318 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 319 -> Donador No identificado
+WARNING:Fila 319 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 320 -> Donador No identificado
+WARNING:Fila 320 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 321 -> Donador No identificado
+WARNING:Fila 321 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 322 -> Donador No identificado
+WARNING:Fila 322 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 323 -> Donador No identificado
+WARNING:Fila 323 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 324 -> Donador No identificado
+WARNING:Fila 324 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 325 -> Donador No identificado
+WARNING:Fila 325 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 326 -> Donador No identificado
+WARNING:Fila 326 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 327 -> Donador No identificado
+WARNING:Fila 327 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 328 -> Donador No identificado
+WARNING:Fila 328 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 329 -> Codigo alternativo No Asignado
+WARNING:Fila 329 -> Donador No identificado
+WARNING:Fila 329 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 330 -> no válida, no existe id/title
+WARNING:Fila 331 -> Codigo alternativo No Asignado
+WARNING:Fila 331 -> Donador No identificado
+WARNING:Fila 331 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 331 -> Periodo desconocido.
+WARNING:Fila 332 -> no válida, no existe id/title
+WARNING:Fila 333 -> no válida, no existe id/title
+WARNING:Fila 334 -> Codigo alternativo No Asignado
+WARNING:Fila 334 -> Creador No identificado
+WARNING:Fila 334 -> Donador No identificado
+WARNING:Fila 334 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 334 -> Periodo desconocido.
+WARNING:Fila 335 -> no válida, no existe id/title
+WARNING:Fila 336 -> no válida, no existe id/title
+WARNING:Fila 337 -> no válida, no existe id/title
+WARNING:Fila 338 -> Codigo alternativo No Asignado
+WARNING:Fila 338 -> Creador No identificado
+WARNING:Fila 338 -> Donador No identificado
+WARNING:Fila 338 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 338 -> Periodo desconocido.
+WARNING:Fila 339 -> Codigo alternativo No Asignado
+WARNING:Fila 339 -> Creador No identificado
+WARNING:Fila 339 -> Donador No identificado
+WARNING:Fila 339 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 339 -> Periodo desconocido.
+WARNING:Fila 340 -> no válida, no existe id/title
+WARNING:Fila 341 -> no válida, no existe id/title
+WARNING:Fila 342 -> Codigo alternativo No Asignado
+WARNING:Fila 342 -> Creador No identificado
+WARNING:Fila 342 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 343 -> no válida, no existe id/title
+WARNING:Fila 344 -> Codigo alternativo No Asignado
+WARNING:Fila 344 -> Creador No identificado
+WARNING:Fila 344 -> Dimensiones no identificadas: altura diametro profundidad peso.
+WARNING:Fila 344 -> Periodo desconocido.
+WARNING:Fila 345 -> Codigo alternativo No Asignado
+WARNING:Fila 345 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 345 -> Periodo desconocido.
+WARNING:Fila 346 -> Codigo alternativo No Asignado
+WARNING:Fila 346 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 346 -> Periodo desconocido.
+WARNING:Fila 347 -> no válida, no existe id/title
+WARNING:Fila 348 -> no válida, no existe id/title
+WARNING:Fila 349 -> no válida, no existe id/title
+WARNING:Fila 350 -> no válida, no existe id/title
+WARNING:Fila 351 -> no válida, no existe id/title
+WARNING:Fila 352 -> Creador No identificado
+WARNING:Fila 352 -> Donador No identificado
+WARNING:Fila 352 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 352 -> Periodo desconocido.
+WARNING:Fila 353 -> Codigo alternativo No Asignado
+WARNING:Fila 353 -> Donador No identificado
+WARNING:Fila 353 -> Dimensiones no identificadas: ancho largo diametro profundidad peso.
+WARNING:Fila 353 -> Periodo desconocido.
+WARNING:Fila 354 -> Codigo alternativo No Asignado
+WARNING:Fila 354 -> Creador No identificado
+WARNING:Fila 354 -> Donador No identificado
+WARNING:Fila 354 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 354 -> Periodo desconocido.
+WARNING:Fila 355 -> Codigo alternativo No Asignado
+WARNING:Fila 355 -> Creador No identificado
+WARNING:Fila 355 -> Donador No identificado
+WARNING:Fila 355 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 355 -> Periodo desconocido.
+WARNING:Fila 356 -> no válida, no existe id/title
+WARNING:Fila 357 -> no válida, no existe id/title
+WARNING:Fila 358 -> no válida, no existe id/title
+WARNING:Fila 359 -> Codigo alternativo No Asignado
+WARNING:Fila 359 -> Creador No identificado
+WARNING:Fila 359 -> Donador No identificado
+WARNING:Fila 359 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 360 -> Codigo alternativo No Asignado
+WARNING:Fila 360 -> Creador No identificado
+WARNING:Fila 360 -> Donador No identificado
+WARNING:Fila 360 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 361 -> Codigo alternativo No Asignado
+WARNING:Fila 361 -> Creador No identificado
+WARNING:Fila 361 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 362 -> Codigo alternativo No Asignado
+WARNING:Fila 362 -> Creador No identificado
+WARNING:Fila 362 -> Donador No identificado
+WARNING:Fila 362 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 363 -> Codigo alternativo No Asignado
+WARNING:Fila 363 -> Creador No identificado
+WARNING:Fila 363 -> Donador No identificado
+WARNING:Fila 363 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 364 -> Creador No identificado
+WARNING:Fila 364 -> Donador No identificado
+WARNING:Fila 364 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 365 -> Creador No identificado
+WARNING:Fila 365 -> Donador No identificado
+WARNING:Fila 365 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 366 -> Codigo alternativo No Asignado
+WARNING:Fila 366 -> Creador No identificado
+WARNING:Fila 366 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 367 -> Codigo alternativo No Asignado
+WARNING:Fila 367 -> Creador No identificado
+WARNING:Fila 367 -> Donador No identificado
+WARNING:Fila 367 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 368 -> Creador No identificado
+WARNING:Fila 368 -> Donador No identificado
+WARNING:Fila 368 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 369 -> Codigo alternativo No Asignado
+WARNING:Fila 369 -> Creador No identificado
+WARNING:Fila 369 -> Donador No identificado
+WARNING:Fila 369 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 370 -> Codigo alternativo No Asignado
+WARNING:Fila 370 -> Creador No identificado
+WARNING:Fila 370 -> Donador No identificado
+WARNING:Fila 370 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 371 -> Codigo alternativo No Asignado
+WARNING:Fila 371 -> Creador No identificado
+WARNING:Fila 371 -> Donador No identificado
+WARNING:Fila 371 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 372 -> Codigo alternativo No Asignado
+WARNING:Fila 372 -> Creador No identificado
+WARNING:Fila 372 -> Donador No identificado
+WARNING:Fila 372 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 373 -> Codigo alternativo No Asignado
+WARNING:Fila 373 -> Creador No identificado
+WARNING:Fila 373 -> Donador No identificado
+WARNING:Fila 373 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 374 -> Codigo alternativo No Asignado
+WARNING:Fila 374 -> Creador No identificado
+WARNING:Fila 374 -> Donador No identificado
+WARNING:Fila 374 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 375 -> Codigo alternativo No Asignado
+WARNING:Fila 375 -> Creador No identificado
+WARNING:Fila 375 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 376 -> no válida, no existe id/title
+WARNING:Fila 377 -> no válida, no existe id/title
+WARNING:Fila 378 -> no válida, no existe id/title
+WARNING:Fila 379 -> Codigo alternativo No Asignado
+WARNING:Fila 379 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 380 -> Codigo alternativo No Asignado
+WARNING:Fila 380 -> Creador No identificado
+WARNING:Fila 380 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 380 -> Periodo desconocido.
+WARNING:Fila 381 -> Donador No identificado
+WARNING:Fila 381 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.
+WARNING:Fila 382 -> no válida, no existe id/title
+WARNING:Fila 383 -> no válida, no existe id/title
+WARNING:Fila 384 -> no válida, no existe id/title
+WARNING:Fila 385 -> Codigo alternativo No Asignado
+WARNING:Fila 385 -> Creador No identificado
+WARNING:Fila 385 -> Donador No identificado
+WARNING:Fila 385 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 386 -> Codigo alternativo No Asignado
+WARNING:Fila 386 -> Creador No identificado
+WARNING:Fila 386 -> Donador No identificado
+WARNING:Fila 386 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 386 -> Periodo desconocido.
+WARNING:Fila 387 -> Codigo alternativo No Asignado
+WARNING:Fila 387 -> Creador No identificado
+WARNING:Fila 387 -> Donador No identificado
+WARNING:Fila 387 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 388 -> Codigo alternativo No Asignado
+WARNING:Fila 388 -> Creador No identificado
+WARNING:Fila 388 -> Donador No identificado
+WARNING:Fila 388 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 389 -> Codigo alternativo No Asignado
+WARNING:Fila 389 -> Creador No identificado
+WARNING:Fila 389 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 389 -> Periodo desconocido.
+WARNING:Fila 390 -> Codigo alternativo No Asignado
+WARNING:Fila 390 -> Creador No identificado
+WARNING:Fila 390 -> Donador No identificado
+WARNING:Fila 390 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 391 -> Codigo alternativo No Asignado
+WARNING:Fila 391 -> Creador No identificado
+WARNING:Fila 391 -> Donador No identificado
+WARNING:Fila 391 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 391 -> Periodo desconocido.
+WARNING:Fila 392 -> Codigo alternativo No Asignado
+WARNING:Fila 392 -> Creador No identificado
+WARNING:Fila 392 -> Donador No identificado
+WARNING:Fila 392 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 392 -> Periodo desconocido.
+WARNING:Fila 393 -> Codigo alternativo No Asignado
+WARNING:Fila 393 -> Creador No identificado
+WARNING:Fila 393 -> Donador No identificado
+WARNING:Fila 393 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 393 -> Periodo desconocido.
+WARNING:Fila 394 -> Codigo alternativo No Asignado
+WARNING:Fila 394 -> Creador No identificado
+WARNING:Fila 394 -> Donador No identificado
+WARNING:Fila 394 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 394 -> Periodo desconocido.
+WARNING:Fila 395 -> Creador No identificado
+WARNING:Fila 395 -> Donador No identificado
+WARNING:Fila 395 -> Dimensiones no identificadas: largo diametro profundidad peso.
+WARNING:Fila 395 -> Periodo desconocido.
