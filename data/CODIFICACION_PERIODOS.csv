@@ -1,0 +1,105 @@
+CODIGO	DESCRIP1	DESCRIP2	INICIO	FIN
+				
+e_01	Eventos			
+e_01_01		Combate del 2 de mayo 1866 (parte de la guerra hispano sud-americana, donde se sella en definitiva la independencia del Perú los paises participantes de sud américa)	1866-05-02	1866-05-02
+e_01_02		Batalla de Arica (7 junio 1880) (Parte de la Guerra del Pacífico) (liderada por el coronel Francisco Bolognesi)	1880-06-07	1880-06-07
+e_01_03		Batalla de Tarapacá (27 de noviembre 1879) (parte de la Guerra del Pacífico) (liderada por el Comandante Juan Buendía)	1879-11-27	1879-11-27
+e_01_04		Campaña  de la Breña o de la Sierra (1881 a 1883) (parte de la Guerra del Pacífico) (Sierra norte, centro y sur del Perú) (liderada por Andrés Avelino Cáceres)	1881	1883
+e_01_05		Combate de Angamos (8 octubre 1879) dentro de la guerra del Pacífico entre Perú, Bolivia y Chile	1879-10-08	1879-10-08
+				
+p_01	Períodos históricos del Perú pre-hispánicos, según John Rowe			
+p_01_01		Lítico (del 11000 a 5000 a.C.) (Lauricocha, Toquepala, Paccaicasa) (Nomadismo, cazador, pescador y recolector)	-11000	-5000
+p_01_02		Arcaico (del 5000 al 1500 a.C) (Sechín Alto, Paraiso, Kotosh, Huaca, Prieta, Chilca) (Sedentarismo, agricultura incipiente, domesticación de animales)	-5000	-1500
+p_01_03		Horizonte temprano (del 1500 al 500 a.C.) (Paracas Chavín) (Formativo. Revolución agrícola, aparición de la cerámica, Desarrollo de la arquitectura y tejido)	-1500	-500
+p_01_04		Intermedio temprano (del 500 a.C. al 700 d.C.) (Nazca, Recuay, Mochica, Vicus, Lima) (Aumento poblacional, perfeccionamiento de la agricultura y del arte)	-500	700
+p_01_05		Horizonte medio (del 700 al 1000 d.C.) (Tiahuanaco, Wari) (Período de expansión y dominación. Desarrollo tecnológico y urbano. Oficialización de la religión)	700	1000
+p_01_06		Intermedio tardío (del 1000 - 1440 d.C.) (Cusco, Chincha, Lambayeque, Chimú, Chancay) (Independencia regional de los Estados.  Desarrollo urbano, artesanal y comercial)	1000	1440
+p_01_07		Horizonte tardío (del 1440 al 1532 d.C.) (Inca) (Formación y desarrollo del Imperio del Tahuantinsuyo)	1440	1532
+				
+p_02	Períodos históricos del Perú a partir de la Conquista española			
+p_02_01		Epoca de la conquista (1524 d.C a 1542 d.C.)	1524	1542
+p_02_02		Epoca Colonial (1542 d.C. a 1821 d.C.)	1542	1821
+p_02_03		Epoca republicana (1821 d.C. a la actualidad)	1821	2020
+p_02_03_01		República aristocrática (1895 a 1919 algunos dicen a 1930)	1895	1919
+p_02_04		Epoca contemporanea (podria considerarse a partir de 1963 a la actualidad)	1963	2020
+p_02_05		Guerra hispano-sudamericana (Peru, Chile, Bolivia y Ecuador 1865-1866)	1865	1866
+p_02_06		Guerra del Pacífico (1879 - 1884) (Peru, Chile y Bolivia)	1879	1884
+				
+p_03	Períodos artísticos con origen en Europa			
+p_03_01		ARTE PREHISTORICO (3300 a.C.)  (desde la edad de Piedra (paleolítico superior, mesolítico y neolítico) hasta la Edad de los Metales.	-3300	-1000
+p_03_02		ARTE DE LA EPOCA ANTIGUA (3000 a.C. +/- Siglo IV (creaciones artísticas de la primera etapa de la historia, inicio de la escritura, destaca la civilización de Egipto y Mesopotamia)	-3000	400
+p_03_03		ARTE CLASICO (siglo IV -  siglo VI)	301	600
+p_03_04		ARTE MEDIEVAL (siglo V +/- siglo XV)	401	1500
+p_03_04_01		Arte bizantino (del 400 al 1000 d.C.)	400	1000
+p_03_04_02		Arte románico (del 1000 al 1200 d.C.)	1000	1200
+p_03_04_03		Arte gótico (del 1150 a 1375 d.C.)	1150	1375
+p_03_04_04		Arte del pre-renacimiento (1300 d.C. a 1400 d.C.)	1300	1400
+p_03_05		ARTE DE LA EPOCA MODERNA (siglo XV - siglo XVIII)	1401	1800
+p_03_05_01		Arte del renacimiento (1400 d.C. a 1530 d.C.)	1301	1530
+p_03_05_02		Arte manierismo (1530 d.C. a 1600 d.C.)	1530	1600
+p_03_05_03		Arte barroco (de 1600 d.C. a 1750 d.C.)	1600	1750
+p_03_05_04		Arte rococó (de 1700 d.C. a 1800 d.C.) casi conviviendo con el Barroco	1700	1800
+p_03_05_05		Arte neoclásico (de 1750 d.C. a 1830 d.C.)	1750	1830
+p_03_06		ARTE CONTEMPORANEO (siglo XIX  a la fecha)  	1801	2020
+p_03_06_01		Arte del siglo XIX (romanticismo, clasicismo, realismo, impresionismo, postimpresionismo, neoimpresionismo, simbolismo, urbanismo de finales del siglo XIX.	1801	1900
+p_03_06_02		Arte del siglo XX (vanguardismo)	1901	2000
+				
+p_04	Períodos artísticos en Perú			
+p_04_01		Arte Prehispánico (antes de 1524)	-11000	1523
+p_04_01_01		Período preclásico (1500 a.C. - 300 d.C.)	-1500	300
+p_04_01_02		Período clásico (300 - 900 	300	900
+p_04_01_03		Período posclásico (900 - 1540)	900	1540
+p_04_02		Arte Precolombino Colonial  (1524 a 1820)	1524	1820
+p_04_02_01		Arte Virreinal (1532 hasta finales de 1700)	1532	1700
+p_04_02_02		Arte y arquitectura Barroca (entre 1650 a  1780)	1650	1780
+p_04_02_03		Arte y arquitectura Neoclásica (Mediados del siglo XVIII hasta primera mitad XIX)	1750	1850
+p_04_03		Arte Republicano (1821 a 1920)	1821	1920
+p_04_03_01		Arte y Arquitectura Neoclásica (primera mitad XIX)	1801	1850
+p_04_04		Arte Republicano - moderno (aprox. 1920 a 1960)	1920	1960
+p_04_05		Arte Contemporáneo (a partir del 1960 a la actualidad)	1960	2020
+				
+p_05	Períodificación historia y arte en siglos			
+p_05_01		Siglo X	901	1000
+p_05_02		Primera mitad siglo X	901	950
+p_05_03		Mediados del siglo X	930	970
+p_05_04		Segunda mitad siglo X	951	1000
+p_05_05		Siglo XI	1001	1100
+p_05_06		Primera mitad del siglo XI	1001	1050
+p_05_07		Medidados del siglo XI	1030	1070
+p_05_08		Segunda mitad siglo XI	1051	1100
+p_05_09		Siglo XII	1101	1200
+p_05_10		Primera mitad del siglo XII	1101	1150
+p_05_11		Medidados del siglo XII	1130	1170
+p_05_12		Segunda mitad siglo XII	1151	1200
+p_05_13		Siglo XIII	1201	1300
+p_05_14		Primera mitad del siglo XIII	1201	1250
+p_05_15		Medidados del siglo XIII	1230	1270
+p_05_16		Segunda mitad siglo XIII	1251	1300
+p_05_17		Siglo XIV	1301	1400
+p_05_18		Primera mitad del siglo XIV	1301	1350
+p_05_19		Medidados del siglo XIV	1330	1370
+p_05_20		Segunda mitad siglo XIV	1351	1400
+p_05_21		Siglo XV	1401	1500
+p_05_22		Primera mitad del siglo XV	1401	1450
+p_05_23		Medidados del siglo XV	1430	1470
+p_05_24		Segunda mitad siglo XV	1451	1500
+p_05_25		Siglo XVI (arte fundamentalmente religioso) (RENANCENTISTA)	1501	1600
+p_05_26		Primera mitad del siglo XVI	1501	1550
+p_05_27		Medidados del siglo XVI	1530	1570
+p_05_28		Segunda mitad siglo XVI	1551	1600
+p_05_29		Siglo XVII 	1601	1700
+p_05_30		Primera mitad del siglo XVII (arte barroco)	1601	1650
+p_05_31		Medidados del siglo XVII (arte barroco)	1630	1670
+p_05_32		Segunda mitad siglo XVII (arte barroco)	1651	1700
+p_05_33		Siglo XVIII (arte barroco)	1701	1800
+p_05_34		Primera mitad del siglo XVIII (arte barroco)	1701	1750
+p_05_35		Medidados del siglo XVIII (arte barroco)	1730	1770
+p_05_36		Segunda mitad siglo XVIII (arte Barroco que comparte tiempo con el Neoclásico)	1751	1800
+p_05_37		Siglo XIX	1801	1900
+p_05_38		Primera mitad del siglo XIX	1801	1850
+p_05_39		Medidados del siglo XIX	1830	1870
+p_05_40		Segunda mitad siglo XIX	1851	1900
+p_05_41		Siglo XX	1901	2000
+p_05_42		Primera mitad del siglo XX	1901	1950
+p_05_43		Medidados del siglo XX	1930	1970
+p_05_44		Segunda mitad siglo XX	1951	2000
