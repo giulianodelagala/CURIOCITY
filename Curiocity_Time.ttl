@@ -98,7 +98,7 @@ SP10 Declarative Time Span it defines. Syntactic variants or use of different sc
 may result in multiple instances of SP14 Time Expression defining exactly the
 same time span. Transformations between different temporal reference systems
 in general result in new definitions of time spans approximating each other."""@en ;
-                  rdfs:label "geo:Q14 defines time"@en .
+                  rdfs:label "Q14 defines time"@en .
 
 
 ###  http://erlangen-crm.org/170309/P100_was_death_of
@@ -4803,44 +4803,95 @@ time:in_XSD_g-Year rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  http://curiocity.org/Cemetery
+:Cemetery rdf:type owl:Class ;
+          rdfs:subClassOf :PlaceCH ;
+          rdfs:comment "This class conforms the spaces intended to shelter human remains. They are spaces containing monuments of historical value."@en ;
+          rdfs:label "Cemetery"@en .
+
+
 ###  http://curiocity.org/D11_Digital_Measurement_Event
 :D11_Digital_Measurement_Event rdf:type owl:Class ;
                                rdfs:subClassOf ecrm:E16_Measurement ;
-                               rdfs:label "dig:D11 Digital Measurement Event" .
+                               rdfs:label "D11 Digital Measurement Event" .
 
 
 ###  http://curiocity.org/D1_Digital_Object
 :D1_Digital_Object rdf:type owl:Class ;
                    rdfs:subClassOf ecrm:E73_Information_Object ;
                    rdfs:comment "This class comprises identifiable immaterial items that can be represented as sets of bit sequences, such as data sets, e-texts, images, audio or video items, software, etc., and are documented as single units. Any aggregation of instances  of D1 Digital Object into a  whole  treated as single unit is also regarded as an instance of D1 Digital Object. This  means  that  for  instance,  the  content  of  a  DVD,  an  XML  file  on  it,  and  an element  of  this  file,  are  regarded  as  distinct  instances  of  D1  Digital  Object, mutually related by the P106 is composed of (forms part of) property.A  D1  Digital  Object  does  not  depend  on  a  specific  physical  carrier,  and  it  can exist on one or more carriers simultaneously." ;
-                   rdfs:label "dig:D1 Digital Object" .
+                   rdfs:label "D1 Digital Object" .
 
 
 ###  http://curiocity.org/D2_Digitization_Process
 :D2_Digitization_Process rdf:type owl:Class ;
                          rdfs:subClassOf :D11_Digital_Measurement_Event ;
-                         rdfs:label "dig:D2 Digitization Process" .
+                         rdfs:label "D2 Digitization Process" .
 
 
 ###  http://curiocity.org/D9_Data_Object
 :D9_Data_Object rdf:type owl:Class ;
                 rdfs:subClassOf :D1_Digital_Object ;
                 rdfs:comment "This class comprises instances of D1 Digital Object that are the direct result of a digital measurement or a formal derivative of it, containing quantitative properties of some physical things or other constellations of matter." ;
-                rdfs:label "dig:D9 Data Object" .
+                rdfs:label "D9 Data Object" .
+
+
+###  http://curiocity.org/EventCH
+:EventCH rdf:type owl:Class ;
+         rdfs:subClassOf ecrm:E5_Event ;
+         rdfs:label "EventCH"@es .
 
 
 ###  http://curiocity.org/Measurements
 :Measurements rdf:type owl:Class ;
               rdfs:subClassOf ecrm:E54_Dimension ;
               rdfs:comment "scope note: artifact measurements (length, height, width, depth diameter)"@en ;
-              rdfs:label "cit:Measurements"@en .
+              rdfs:label "Measurements"@en .
+
+
+###  http://curiocity.org/Monument
+:Monument rdf:type owl:Class ;
+          rdfs:subClassOf :PlaceCH ;
+          rdfs:comment """This class conforms the types of structure (a statue or art object) created to
+commemorate an important person or event, not necessarily of a catastrophic nature. Usually located in open spaces."""@en ;
+          rdfs:label "Monument"@en .
+
+
+###  http://curiocity.org/Natural_Landscape
+:Natural_Landscape rdf:type owl:Class ;
+                   rdfs:subClassOf :PlaceCH ;
+                   rdfs:comment "This class conforms the natural landscapes that due to their beauty and unique characteristics are considered Cultural Heritage."@en ;
+                   rdfs:label "Natural Landscape"@en .
+
+
+###  http://curiocity.org/Park
+:Park rdf:type owl:Class ;
+      rdfs:subClassOf :PlaceCH ;
+      rdfs:comment "This class conforms the extensions of open space provided for recreational use."@en ;
+      rdfs:label "Park"@en .
+
+
+###  http://curiocity.org/PlaceCH
+:PlaceCH rdf:type owl:Class ;
+         rdfs:subClassOf ecrm:E27_Site ;
+         rdfs:comment "This class conforms the extensions of space which can be identified as Cultural Heritage."@en ;
+         rdfs:label "SiteCH"@en .
+
+
+###  http://curiocity.org/Protected_Area
+:Protected_Area rdf:type owl:Class ;
+                rdfs:subClassOf :PlaceCH ;
+                rdfs:comment """This class conforms extensions of natural nature space that are protected
+by legal mechanisms in order to avoid the predation of some animal species or
+vegetable."""@en ;
+                rdfs:label "Protected Area"@en .
 
 
 ###  http://curiocity.org/Range_RGB
 :Range_RGB rdf:type owl:Class ;
            rdfs:subClassOf ecrm:E54_Dimension ;
            rdfs:comment "scope note: RGB range classification for Visual Recognition purposes."@en ;
-           rdfs:label "cit:Range RGB" .
+           rdfs:label "Range RGB" .
 
 
 ###  http://curiocity.org/SP10_Declarative_Time-Span
@@ -4861,7 +4912,7 @@ Examples:
  Extent in time defined by the expression “1961”
  Extent in time defined by the expression “From 12-17-1993 to 12-8-1996”
  Extent in time defined by the expression “14h30 – 16h22 4th July 1945”"""@en ;
-                            rdfs:label "geo:SP10 Declarative Time-Span"@en .
+                            rdfs:label "SP10 Declarative Time-Span"@en .
 
 
 ###  http://curiocity.org/SP14_Time_Expression
@@ -4887,14 +4938,27 @@ Temporal information in GML
 From 12-17-1993 to 12-8-1996
 14h30 – 16h22 4th July 1945
 9.30 am 1.1.1999 to 2.00 pm 1.1.1999"""@en ;
-                      rdfs:label "geo:SP14 Time Expression"@en .
+                      rdfs:label "SP14 Time Expression"@en .
+
+
+###  http://curiocity.org/Sport_Center
+:Sport_Center rdf:type owl:Class ;
+              rdfs:subClassOf :PlaceCH ;
+              rdfs:comment "This class conforms the recreational sports spaces of massive attraction."@en ;
+              rdfs:label "Sport Center"@en .
+
+
+###  http://curiocity.org/Tradition
+:Tradition rdf:type owl:Class ;
+           rdfs:subClassOf :EventCH ;
+           rdfs:label "Tradition"@es .
 
 
 ###  http://curiocity.org/Weigth
 :Weigth rdf:type owl:Class ;
         rdfs:subClassOf ecrm:E54_Dimension ;
         rdfs:comment "scope note: artifact weigth"@en ;
-        rdfs:label "cit:Weigth"@en .
+        rdfs:label "Weigth"@en .
 
 
 ###  http://erlangen-crm.org/170309/E10_Transfer_of_Custody
@@ -4924,7 +4988,7 @@ Examples:
 
 In First Order Logic:
 E10(x) ⊃ E7(x)"""@en ;
-                             rdfs:label "crm:E10 Transfer of Custody"@en ;
+                             rdfs:label "E10 Transfer of Custody"@en ;
                              skos:notation "E10" .
 
 
@@ -4952,7 +5016,7 @@ Examples:
 
 In First Order Logic:
 E11(x) ⊃ E7(x)"""@en ;
-                      rdfs:label "crm:E11 Modification"@en ;
+                      rdfs:label "E11 Modification"@en ;
                       skos:notation "E11" .
 
 
@@ -4981,7 +5045,7 @@ Examples:
 In First Order Logic:
 E12(x) ⊃ E11(x)
 E12(x) ⊃ E63(x)"""@en ;
-                    rdfs:label "crm:E12 Production"@en ;
+                    rdfs:label "E12 Production"@en ;
                     skos:notation "E12" .
 
 
@@ -5004,7 +5068,7 @@ Examples:
 
 In First Order Logic: 
 E13(x) ⊃ E7(x)"""@en ;
-                              rdfs:label "crm:E13 Attribute Assignment"@en ;
+                              rdfs:label "E13 Attribute Assignment"@en ;
                               skos:notation "E13" .
 
 
@@ -5029,7 +5093,7 @@ Examples:
 
 In First Order Logic:
 E14(x) ⊃ E13(x)"""@en ;
-                              rdfs:label "crm:E14 Condition Assessment"@en ;
+                              rdfs:label "E14 Condition Assessment"@en ;
                               skos:notation "E14" .
 
 
@@ -5054,7 +5118,7 @@ Examples:
 
 In First Order Logic:
 E15(x) ⊃ E13(x)"""@en ;
-                               rdfs:label "crm:E15 Identifier Assignment"@en ;
+                               rdfs:label "E15 Identifier Assignment"@en ;
                                skos:notation "E15" .
 
 
@@ -5084,7 +5148,7 @@ Examples:
 
 In First Order Logic:
 E16(x) ⊃ E13(x)"""@en ;
-                     rdfs:label "crm:E16 Measurement"@en ;
+                     rdfs:label "E16 Measurement"@en ;
                      skos:notation "E16" .
 
 
@@ -5110,7 +5174,7 @@ Examples:
 
 In First Order Logic:
 E17(x) ⊃ E13(x)"""@en ;
-                         rdfs:label "crm:E17 Type Assignment"@en ;
+                         rdfs:label "E17 Type Assignment"@en ;
                          skos:notation "E17" .
 
 
@@ -5149,7 +5213,7 @@ Examples:
 In First Order Logic:
 E18(x) ⊃ E72(x)
 E18(x) ⊃ E92(x)"""@en ;
-                        rdfs:label "crm:E18 Physical Thing"@en ;
+                        rdfs:label "E18 Physical Thing"@en ;
                         skos:notation "E18" .
 
 
@@ -5182,7 +5246,7 @@ Examples:
 
 In First Order Logic:
 E19(x) ⊃ E18(x)"""@en ;
-                         rdfs:label "crm:E19 Physical Object"@en ;
+                         rdfs:label "E19 Physical Object"@en ;
                          skos:notation "E19" .
 
 
@@ -5208,7 +5272,7 @@ Examples:
 
 In First Order Logic: 
 E1(x)"""@en ;
-                   rdfs:label "crm:E1Entity"@en ;
+                   rdfs:label "E1Entity"@en ;
                    skos:notation "E1" .
 
 
@@ -5228,7 +5292,7 @@ Examples:
 
 In First Order Logic:
 E20(x) ⊃ E19(x)"""@en ;
-                           rdfs:label "crm:E20 Biological Object"@en ;
+                           rdfs:label "E20 Biological Object"@en ;
                            skos:notation "E20" .
 
 
@@ -5256,7 +5320,7 @@ Examples:
 In First Order Logic:
 E21(x) ⊃ E20(x)
 E21(x) ⊃ E39(x)"""@en ;
-                rdfs:label "crm:E21 Person"@en ;
+                rdfs:label "E21 Person"@en ;
                 skos:notation "E21" .
 
 
@@ -5277,7 +5341,7 @@ Examples:
 In First Order Logic:
 E22(x) ⊃ E19(x)
 E22(x) ⊃ E24(x)"""@en ;
-                         rdfs:label "crm:E22 Man-Made Object"@en ;
+                         rdfs:label "E22 Man-Made Object"@en ;
                          skos:notation "E22" .
 
 
@@ -5302,7 +5366,7 @@ Examples:
 In First Order Logic:
 E24(x) ⊃ E18(x)
 E24(x) ⊃ E71(x)"""@en ;
-                                 rdfs:label "crm:E24 Physical Man-Made Thing"@en ;
+                                 rdfs:label "E24 Physical Man-Made Thing"@en ;
                                  skos:notation "E24" .
 
 
@@ -5322,7 +5386,7 @@ Examples:
 In First Order Logic:
 E25(x) ⊃ E26(x)
 E25(x) ⊃ E24(x)"""@en ;
-                          rdfs:label "crm:E25 Man-Made Feature"@en ;
+                          rdfs:label "E25 Man-Made Feature"@en ;
                           skos:notation "E25" .
 
 
@@ -5350,7 +5414,7 @@ Examples:
 
 In First Order Logic:
 E26(x) ⊃ E18(x)"""@en ;
-                          rdfs:label "crm:E26 Physical Feature"@en ;
+                          rdfs:label "E26 Physical Feature"@en ;
                           skos:notation "E26" .
 
 
@@ -5373,7 +5437,7 @@ Examples:
 
 In First Order Logic:
 E27(x)⊃ E26(x)"""@en ;
-              rdfs:label "crm:E27 Site"@en ;
+              rdfs:label "E27 Site"@en ;
               skos:notation "E27" .
 
 
@@ -5400,7 +5464,7 @@ Examples:
 
 In First Order Logic:
 E28(x) ⊃ E71(x)"""@en ;
-                           rdfs:label "crm:E28 Conceptual Object"@en ;
+                           rdfs:label "E28 Conceptual Object"@en ;
                            skos:notation "E28" .
 
 
@@ -5428,7 +5492,7 @@ Examples:
 
 In First Order Logic:
 E29(x) ⊃ E73(x)"""@en ;
-                             rdfs:label "crm:E29 Design or Procedure"@en ;
+                             rdfs:label "E29 Design or Procedure"@en ;
                              skos:notation "E29" .
 
 
@@ -5452,7 +5516,7 @@ Examples:
 
 In First Order Logic:
 E2(x) ⊃ E1(x)"""@en ;
-                        rdfs:label "crm:E2 Temporal Entity"@en ;
+                        rdfs:label "E2 Temporal Entity"@en ;
                         skos:notation "E2" .
 
 
@@ -5496,7 +5560,7 @@ Examples:
 
 In First Order Logic:
 E31(x) ⊃ E73(x)"""@en ;
-                  rdfs:label "crm:E31 Document"@en ;
+                  rdfs:label "E31 Document"@en ;
                   skos:notation "E31" .
 
 
@@ -5513,7 +5577,7 @@ Examples:
 
 In First Order Logic:
 E32(x) ⊃ E31(x)"""@en ;
-                            rdfs:label "crm:E32 Authority Document"@en ;
+                            rdfs:label "E32 Authority Document"@en ;
                             skos:notation "E32" .
 
 
@@ -5542,7 +5606,7 @@ Examples:
 
 In First Order Logic:
 E33(x) ⊃ E73(x)"""@en ;
-                           rdfs:label "crm:E33 Linguistic Object"@en ;
+                           rdfs:label "E33 Linguistic Object"@en ;
                            skos:notation "E33" .
 
 
@@ -5565,7 +5629,7 @@ Examples:
 In First Order Logic:
 E34(x) ⊃ E33(x)
 E34(x) ⊃ E37(x)"""@en ;
-                     rdfs:label "crm:E34 Inscription"@en ;
+                     rdfs:label "E34 Inscription"@en ;
                      skos:notation "E34" .
 
 
@@ -5589,7 +5653,7 @@ Examples:
 In First Order Logic:
 E35(x) ⊃ E33(x)
 E35(x) ⊃ E41(x)"""@en ;
-               rdfs:label "crm:E35 Title"@en ;
+               rdfs:label "E35 Title"@en ;
                skos:notation "E35" .
 
 
@@ -5611,7 +5675,7 @@ Examples:
 
 In First Order Logic:
 E36(x) ⊃ E73(x)"""@en ;
-                     rdfs:label "crm:E36 Visual Item"@en ;
+                     rdfs:label "E36 Visual Item"@en ;
                      skos:notation "E36" .
 
 
@@ -5630,7 +5694,7 @@ Examples:
 
 In First Order Logic:
 E37(x) ⊃ E36(x)"""@en ;
-              rdfs:label "crm:E37 Mark"@en ;
+              rdfs:label "E37 Mark"@en ;
               skos:notation "E37" .
 
 
@@ -5649,7 +5713,7 @@ Examples:
 
 In First Order Logic:
 E39(x) ⊃ E77(x)"""@en ;
-               rdfs:label "crm:E39 Actor"@en ;
+               rdfs:label "E39 Actor"@en ;
                skos:notation "E39" .
 
 
@@ -5678,7 +5742,7 @@ Examples:
 
 In First Order Logic:
 E3(x) ⊃ E2(x)"""@en ;
-                        rdfs:label "crm:E3 Condition State"@en ;
+                        rdfs:label "E3 Condition State"@en ;
                         skos:notation "E3" .
 
 
@@ -5706,7 +5770,7 @@ Examples:
 
 In First Order Logic:
 E41(x) ⊃ E90(x)"""@en ;
-                     rdfs:label "crm:E41 Appellation"@en ;
+                     rdfs:label "E41 Appellation"@en ;
                      skos:notation "E41" .
 
 
@@ -5728,7 +5792,7 @@ the French rules]
 
 In First Order Logic:
 E42(x) ⊃ E41(x)"""@en ;
-                    rdfs:label "crm:E42 Identifier"@en ;
+                    rdfs:label "E42 Identifier"@en ;
                     skos:notation "E42" .
 
 
@@ -5769,7 +5833,7 @@ Examples:
 In First Order Logic: 
 E4(x) ⊃ E2(x)
 E4(x) ⊃ E92(x)"""@en ;
-               rdfs:label "crm:E4 Period"@en ;
+               rdfs:label "E4 Period"@en ;
                skos:notation "E4" .
 
 
@@ -5798,7 +5862,7 @@ Examples:
 
 In First Order Logic:
 E52(x) ⊃ E1(x)"""@en ;
-                   rdfs:label "crm:E52 Time-Span"@en ;
+                   rdfs:label "E52 Time-Span"@en ;
                    skos:notation "E52" .
 
 
@@ -5826,7 +5890,7 @@ Examples:
 
 In First Order Logic:
 E53(x) ⊃ E1(x)"""@en ;
-               rdfs:label "crm:E53 Place"@en ;
+               rdfs:label "E53 Place"@en ;
                skos:notation "E53" .
 
 
@@ -5855,7 +5919,7 @@ Examples:
 
 In First Order Logic:
 E54(x) ⊃ E1(x)"""@en ;
-                   rdfs:label "crm:E54 Dimension"@en ;
+                   rdfs:label "E54 Dimension"@en ;
                    skos:notation "E54" .
 
 
@@ -5883,7 +5947,7 @@ Examples:
 
 In First Order Logic:
 E55(x) ⊃ E28(x)"""@en ;
-              rdfs:label "crm:E55 Type" ;
+              rdfs:label "E55 Type" ;
               skos:notation "E55" ,
                             "crm:E55 Type"@en .
 
@@ -5907,7 +5971,7 @@ Examples:
 
 In First Order Logic:
 E56(x) ⊃ E55(x)"""@en ;
-                  rdfs:label "crm:E56 Language"@en ;
+                  rdfs:label "E56 Language"@en ;
                   skos:notation "E56" .
 
 
@@ -5932,7 +5996,7 @@ Examples:
 
 In First Order Logic:
 E57(x) ⊃ E55(x)"""@en ;
-                  rdfs:label "crm:E57 Material"@en ;
+                  rdfs:label "E57 Material"@en ;
                   skos:notation "E57" .
 
 
@@ -5961,7 +6025,7 @@ Examples:
 
 In First Order Logic:
 E58(x) ⊃ E55(x)"""@en ;
-                          rdfs:label "crm:E58 Measurement Unit"@en ;
+                          rdfs:label "E58 Measurement Unit"@en ;
                           skos:notation "E58" .
 
 
@@ -5989,7 +6053,7 @@ Examples:
 
 In First Order Logic:
 E5(x) ⊃ E4(x)"""@en ;
-              rdfs:label "crm:E5 Event"@en ;
+              rdfs:label "E5 Event"@en ;
               skos:notation "E5" .
 
 
@@ -6013,7 +6077,7 @@ Examples:
 
 In First Order Logic:
 E63(x) ⊃ E5(x)"""@en ;
-                                rdfs:label "crm:E63 Beginning of Existence"@en ;
+                                rdfs:label "E63 Beginning of Existence"@en ;
                                 skos:notation "E63" .
 
 
@@ -6036,7 +6100,7 @@ Examples:
 
 In First Order Logic:
 E64(x) ⊃ E5(x)"""@en ;
-                          rdfs:label "crm:E64 End of Existence"@en ;
+                          rdfs:label "E64 End of Existence"@en ;
                           skos:notation "E64" .
 
 
@@ -6058,7 +6122,7 @@ Examples:
 In First Order Logic:
 E65(x) ⊃ E7(x)
 E65(x) ⊃ E63(x)"""@en ;
-                  rdfs:label "crm:E65 Creation"@en ;
+                  rdfs:label "E65 Creation"@en ;
                   skos:notation "E65" .
 
 
@@ -6087,7 +6151,7 @@ Examples:
 In First Order Logic:
 E66(x) ⊃ E7(x)
 E66(x) ⊃ E63(x)"""@en ;
-                   rdfs:label "crm:E66 Formation"@en ;
+                   rdfs:label "E66 Formation"@en ;
                    skos:notation "E66" .
 
 
@@ -6112,7 +6176,7 @@ Examples:
 
 In First Order Logic:
 E67(x) ⊃ E63(x)"""@en ;
-               rdfs:label "crm:E67 Birth"@en ;
+               rdfs:label "E67 Birth"@en ;
                skos:notation "E67" .
 
 
@@ -6134,7 +6198,7 @@ Examples:
 
 In First Order Logic:
 E68(x) ⊃ E64(x)"""@en ;
-                     rdfs:label "crm:E68 Dissolution"@en ;
+                     rdfs:label "E68 Dissolution"@en ;
                      skos:notation "E68" .
 
 
@@ -6155,7 +6219,7 @@ Examples:
 
 In First Order Logic:
 E69(x) ⊃ E64(x)"""@en ;
-               rdfs:label "crm:E69 Death"@en ;
+               rdfs:label "E69 Death"@en ;
                skos:notation "E69" .
 
 
@@ -6183,7 +6247,7 @@ Examples:
 
 In First Order Logic:
 E6(x) ⊃ E64(x)"""@en ;
-                    rdfs:label "crm:E6 Destruction"@en ;
+                    rdfs:label "E6 Destruction"@en ;
                     skos:notation "E6" .
 
 
@@ -6205,7 +6269,7 @@ Examples:
 
 In First Order Logic:
 E70(x) ⊃ E77(x)"""@en ;
-               rdfs:label "crm:E70 Thing"@en ;
+               rdfs:label "E70 Thing"@en ;
                skos:notation "E70" .
 
 
@@ -6225,7 +6289,7 @@ Examples:
 
 In First Order Logic:
 E71(x) ⊃ E70(x)"""@en ;
-                        rdfs:label "crm:E71 Man-Made Thing"@en ;
+                        rdfs:label "E71 Man-Made Thing"@en ;
                         skos:notation "E71" .
 
 
@@ -6276,7 +6340,7 @@ Examples:
 In First Order Logic: 
 E73(x) ⊃ E89(x)  
 E73(x) ⊃ E90(x)"""@en ;
-                            rdfs:label "crm:E73 Information Object"@en ;
+                            rdfs:label "E73 Information Object"@en ;
                             skos:notation "E73" .
 
 
@@ -6318,7 +6382,7 @@ Examples:
 
 In First Order Logic:
 E74(x) ⊃ E39(x)"""@en ;
-               rdfs:label "crm:E74 Group"@en ;
+               rdfs:label "E74 Group"@en ;
                skos:notation "E74" .
 
 
@@ -6342,7 +6406,7 @@ Examples:
 
 In First Order Logic:
 E77(x) ⊃ E1(x)"""@en ;
-                         rdfs:label "crm:E77 Persistent Item"@en ;
+                         rdfs:label "E77 Persistent Item"@en ;
                          skos:notation "E77" .
 
 
@@ -6367,7 +6431,7 @@ Examples:
 
 In First Order Logic:
 E78(x) ⊃ E24(x)"""@en ;
-                         rdfs:label "crm:E78 Collection"@en ;
+                         rdfs:label "E78 Collection"@en ;
                          skos:notation "E78" .
 
 
@@ -6393,7 +6457,7 @@ Examples:
 
 In First Order Logic:
 E79(x) ⊃ E11(x)"""@en ;
-                       rdfs:label "crm:E79 Part Addition"@en ;
+                       rdfs:label "E79 Part Addition"@en ;
                        skos:notation "E79" .
 
 
@@ -6421,7 +6485,7 @@ Examples:
 
 In First Order Logic:
 E7(x) ⊃ E5(x)"""@en ;
-                 rdfs:label "crm:E7 Activity"@en ;
+                 rdfs:label "E7 Activity"@en ;
                  skos:notation "E7" .
 
 
@@ -6447,7 +6511,7 @@ Examples:
 
 In First Order Logic:
 E80(x) ⊃ E11(x)"""@en ;
-                      rdfs:label "crm:E80 Part Removal"@en ;
+                      rdfs:label "E80 Part Removal"@en ;
                       skos:notation "E80" .
 
 
@@ -6474,7 +6538,7 @@ Examples:
 In First Order Logic:
 E81(x) ⊃ E63(x)
 E81(x) ⊃ E64(x)"""@en ;
-                        rdfs:label "crm:E81 Transformation"@en ;
+                        rdfs:label "E81 Transformation"@en ;
                         skos:notation "E81" .
 
 
@@ -6496,7 +6560,7 @@ Examples:
 
 In First Order Logic:
 E83(x) ⊃ E65(x)"""@en ;
-                       rdfs:label "crm:E83 Type Creation"@en ;
+                       rdfs:label "E83 Type Creation"@en ;
                        skos:notation "E83" .
 
 
@@ -6523,7 +6587,7 @@ Examples:
 
 In First Order Logic:
 E85(x) ⊃ E7(x)"""@en ;
-                 rdfs:label "crm:E85 Joining"@en ;
+                 rdfs:label "E85 Joining"@en ;
                  skos:notation "E85" .
 
 
@@ -6550,7 +6614,7 @@ Examples:
 
 In First Order Logic:
 E86(x) ⊃ E7(x)"""@en ;
-                 rdfs:label "crm:E86 Leaving"@en ;
+                 rdfs:label "E86 Leaving"@en ;
                  skos:notation "E86" .
 
 
@@ -6573,7 +6637,7 @@ Examples:
 
 In First Order Logic:
 E87(x) ⊃ E7(x)"""@en ;
-                           rdfs:label "crm:E87 Curation Activity"@en ;
+                           rdfs:label "E87 Curation Activity"@en ;
                            skos:notation "E87" .
 
 
@@ -6606,7 +6670,7 @@ Examples:
 
 In First Order Logic:
 E89(x) ⊃ E28(x)"""@en ;
-                              rdfs:label "crm:E89 Propositional Object"@en ;
+                              rdfs:label "E89 Propositional Object"@en ;
                               skos:notation "E89" .
 
 
@@ -6637,7 +6701,7 @@ Examples:
 
 In First Order Logic:
 E8(x) ⊃ E7(x)"""@en ;
-                    rdfs:label "crm:E8 Acquisition"@en ;
+                    rdfs:label "E8 Acquisition"@en ;
                     skos:notation "E8" .
 
 
@@ -6669,7 +6733,7 @@ Examples:
 In First Order Logic:
 E90(x) ⊃ E28(x)
 E90(x) ⊃ E72(x)"""@en ;
-                         rdfs:label "crm:E90 Symbolic Object"@en ;
+                         rdfs:label "E90 Symbolic Object"@en ;
                          skos:notation "E90" .
 
 
@@ -6744,72 +6808,8 @@ Examples:
 
 In First Order Logic:
 E9(x) ⊃ E7(x)"""@en ;
-             rdfs:label "crm:E9 Move"@en ;
+             rdfs:label "E9 Move"@en ;
              skos:notation "E9" .
-
-
-###  http://erlangen-crm.org/170309/PlaceCH
-ecrm:PlaceCH rdf:type owl:Class ;
-             rdfs:subClassOf ecrm:E27_Site ;
-             rdfs:comment "This class conforms the extensions of space which can be identified as Cultural Heritage."@en ;
-             rdfs:label "cit:SiteCH"@en .
-
-
-###  http://erlangen-crm.org/170309/cit:Cemetery
-ecrm:cit:Cemetery rdf:type owl:Class ;
-                  rdfs:subClassOf ecrm:PlaceCH ;
-                  rdfs:comment "This class conforms the spaces intended to shelter human remains. They are spaces containing monuments of historical value."@en ;
-                  rdfs:label "cit:Cemetery"@en .
-
-
-###  http://erlangen-crm.org/170309/cit:EventCH
-ecrm:cit:EventCH rdf:type owl:Class ;
-                 rdfs:subClassOf ecrm:E5_Event ;
-                 rdfs:label "cit:EventCH"@es .
-
-
-###  http://erlangen-crm.org/170309/cit:Monument
-ecrm:cit:Monument rdf:type owl:Class ;
-                  rdfs:subClassOf ecrm:PlaceCH ;
-                  rdfs:comment """This class conforms the types of structure (a statue or art object) created to
-commemorate an important person or event, not necessarily of a catastrophic nature. Usually located in open spaces."""@en ;
-                  rdfs:label "cit:Monument"@en .
-
-
-###  http://erlangen-crm.org/170309/cit:Natural_Landscape
-ecrm:cit:Natural_Landscape rdf:type owl:Class ;
-                           rdfs:subClassOf ecrm:PlaceCH ;
-                           rdfs:comment "This class conforms the natural landscapes that due to their beauty and unique characteristics are considered Cultural Heritage."@en ;
-                           rdfs:label "cit:Natural Landscape"@en .
-
-
-###  http://erlangen-crm.org/170309/cit:Park
-ecrm:cit:Park rdf:type owl:Class ;
-              rdfs:subClassOf ecrm:PlaceCH ;
-              rdfs:comment "This class conforms the extensions of open space provided for recreational use."@en ;
-              rdfs:label "cit:Park"@en .
-
-
-###  http://erlangen-crm.org/170309/cit:Protected_Area
-ecrm:cit:Protected_Area rdf:type owl:Class ;
-                        rdfs:subClassOf ecrm:PlaceCH ;
-                        rdfs:comment """This class conforms extensions of natural nature space that are protected
-by legal mechanisms in order to avoid the predation of some animal species or
-vegetable."""@en ;
-                        rdfs:label "cit:Protected Area"@en .
-
-
-###  http://erlangen-crm.org/170309/cit:Sport_Center
-ecrm:cit:Sport_Center rdf:type owl:Class ;
-                      rdfs:subClassOf ecrm:PlaceCH ;
-                      rdfs:comment "This class conforms the recreational sports spaces of massive attraction."@en ;
-                      rdfs:label "cit:Sport Center"@en .
-
-
-###  http://erlangen-crm.org/170309/cit:Tradition
-ecrm:cit:Tradition rdf:type owl:Class ;
-                   rdfs:subClassOf ecrm:cit:EventCH ;
-                   rdfs:label "cit:Tradition"@es .
 
 
 ###  http://www.w3.org/2006/time#Instant
