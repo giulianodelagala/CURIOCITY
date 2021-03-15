@@ -2,7 +2,7 @@
 
 This is a little instructive to set Pellet Reasoner in Jena Fuseki using docker image. If you have any suggestion, feel free to contact me.
 
-## Steps
+## Configure Openllet with Jena Fuseki image Docker
 
 ### Get Docker image
 
@@ -15,7 +15,13 @@ Get a Jena Fuseki docker image (*stain/jena-fuseki*) trying:
 * ` -p ` : local/container ports
 * ` -v ` : mounts a specify directory on the host (*/host/data/fuseki*) inside the container at the specified path (*/fuseki*)
 
-More info about this image can be found [here](https://hub.docker.com/r/stain/jena-fuseki).
+More info about this docker image can be found [here](https://hub.docker.com/r/stain/jena-fuseki).
+
+### Get Openllet JAR files
+
+Download and extract Openllet Jena JAR files with all dependencies from [here](https://jar-download.com/artifacts/com.github.galigator.openllet/openllet-jena/2.6.5).
+
+More info about Openllet Reasoner can be found [here](https://github.com/Galigator/openllet).
 
 ### Change Jena Fuseki config.ttl
 
@@ -98,3 +104,46 @@ Go to the *host/data/fuseki* directory and change the *config.ttl* configuration
    tdb:location "/fuseki/databases";
    .
 ```
+
+### Copy Openllet JAR files to container
+
+The docker image has a convenient script to facilitate adding custom code to Fuseki Server. The script can be found in */jena-fuseki* directory on the container under the name *fuseki-server*. The script recognizess if exists a *../extra/* directory in *FUSEKI-BASE* path, and configure Jena Fuseki execution (classpath). For our case *FUSEKI_BASE=host/data/fuseki*, so we have to create a *extra* directory, and copy all the extracted Openllet JAR files into it.
+
+>cp /openllet_extracted_dir/*.jar /host/data/fuseki/extra/
+
+Up to this point, we have configured Jena Fuseki to use Openllet as a reasoner, so we can restart the container:
+
+>docker restart fuseki
+
+## Get CURIOCITY in Docker container
+
+Docker image stain/jena-fuseki includes script to load data to TDB, but we use *tdbloader* command from inside the container instead.
+
+### Copying ontology and instantiation files
+
+Copy to *host/data/fuseki* directory all needed CURIOCITY files, for example:
+* CURIOCITY_base.ttl
+* Period.ttl
+* Instantiation_files.ttl
+* Digitizing_files.ttl
+
+### Get ontology data in TDB
+
+First we get a bash shell inside the container.
+
+> docker exec -it fuseki /bin/bash
+
+We can see our prompt has changed, showing we are inside the container. Find tdbloader command, for our case is located in */jena-fuseki/*. Also we can find that previous CURIOCITY files are in */fuseki/* container directory indeed. Now we can load the data to TDB database to the */fuseki/databases/* directory specified in *config.ttl*. Supposing we are in */fuseki/* directory:
+
+> ../jena-fuseki/./tdbloader All_CURIOCITY_files.ttl databases/
+
+When the loading finishes we can restart the container.
+
+> docker restart fuseki
+
+Go the Jena Fuseki web service, and check everything works fine.
+
+
+
+
+
