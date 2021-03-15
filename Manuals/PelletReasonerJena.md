@@ -144,6 +144,12 @@ When the loading finishes we can restart the container.
 
 Go the Jena Fuseki web service, and check everything works fine.
 
+## Additional Steps
+
+Keep in mind that if the container is removed, all the changes you have made will be lost. It's advisable to create a image of the container.
+
+> docker commit fuseki name_of_new_template
+
 
 
 
