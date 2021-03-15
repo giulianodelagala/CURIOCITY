@@ -139,7 +139,7 @@ We can see our prompt has changed, showing we are inside the container. Find tdb
 
 When the loading finishes we can restart the container.
 
-> exit 
+> exit </br>
 > docker restart fuseki
 
 Go the Jena Fuseki web service, and check everything works fine.
