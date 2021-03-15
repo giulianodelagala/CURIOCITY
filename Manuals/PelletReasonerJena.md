@@ -15,13 +15,13 @@ Get a Jena Fuseki docker image (*stain/jena-fuseki*) trying:
 * ` -p ` : local/container ports
 * ` -v ` : mounts a specify directory on the host (*/host/data/fuseki*) inside the container at the specified path (*/fuseki*)
 
-More info about this docker image can be found [here](https://hub.docker.com/r/stain/jena-fuseki).
+More info about this docker image can be found <a href="https://hub.docker.com/r/stain/jena-fuseki" target="_blank">here</a>.
 
 ### Get Openllet JAR files
 
 Download and extract Openllet Jena JAR files with all dependencies from [here](https://jar-download.com/artifacts/com.github.galigator.openllet/openllet-jena/2.6.5).
 
-More info about Openllet Reasoner can be found [here](https://github.com/Galigator/openllet).
+More info about Openllet Reasoner can be found <a href="https://github.com/Galigator/openllet" target="_blank">here</a>.
 
 ### Change Jena Fuseki config.ttl
 
