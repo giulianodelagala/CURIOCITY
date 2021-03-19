@@ -221,25 +221,6 @@ class Evaluacion:
             self.INROnto[1], self.ANOnto[1], self.TMOnto2[1] ]
 
         return pd.DataFrame(zip(value, score) , index = metric, columns=['Value','Score'])
-        '''
-        print("LCOMOnto" , self.LCOMOnto[0], "sc: ", self.LCOMOnto[1])
-        print("WMCOnto2" , self.WMCOnto2[0], "sc: ", self.WMCOnto2[1])
-        print("DITOnto", self.DITOnto[0], "sc: ", self.DITOnto[1])
-        print("NACOnto", self.NACOnto[0], "sc: ", self.NACOnto[1])
-
-        print("NOCOnto", self.NOCOnto[0], "sc: ", self.NOCOnto[1])      
-        print("CBOOnto", self.CBOOnto[0], "sc: ", self.CBOOnto[1])
-        print("RFCOnto", self.RFCOnto[0], "sc: ", self.RFCOnto[1])
-        print("NOMOnto", self.NOMOnto[0], "sc: ", self.NOMOnto[1])
-
-        print("RROnto", self.RROnto[0], "sc: ", self.RROnto[1])
-        print("PROnto", self.PROnto[0], "sc: ", self.PROnto[1])
-        print ("AROnto", self.AROnto[0], "sc: ", self.AROnto[1])
-
-        print ("INROnto", self.INROnto[0], "sc: ", self.INROnto[1])
-        print("ANOnto", self.ANOnto[0], "sc: ", self.ANOnto[1])
-        print("TMOnto2", self.TMOnto2[0], "sc: ", self.TMOnto2[1])
-        '''
 
     def EvalStructural(self):
 
