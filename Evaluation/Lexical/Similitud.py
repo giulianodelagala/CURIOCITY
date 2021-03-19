@@ -7,34 +7,6 @@ import numpy as np
 import editdistance as ed
 import math
 
-'''
-def getEntities(nameOntology, prefix, part):
-    g = Graph()
-    g.parse(nameOntology, format="xml")
-    print("Analizing :", nameOntology)
-
-    subjects =[]
-
-    for subj, pred, obj in g:
-        # check if there is at least one triple in the Graph
-        if (subj, pred, obj) not in g:
-           raise Exception("It better be!")
-        else:           
-            if part == "subj":
-                evaluatedString = subj          
-            elif part == "pred":
-                evaluatedString = pred
-            elif part == "obj":
-                evaluatedString = obj
-            start = evaluatedString.find(prefix)
-            if start != -1:
-                osubj = evaluatedString[start+len(prefix):]
-                subjects.append(osubj)
-
-    only = list(set(subjects))
-    return only
-'''
-
 def getEntities(nameOntology):
     g = Graph()
     g.parse(nameOntology, format='turtle')
