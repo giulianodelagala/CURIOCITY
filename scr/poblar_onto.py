@@ -46,39 +46,6 @@ class Populate():
         f.write(save_file)
         f.close()
 
-    '''
-    def AddPerson(self, name:str):     
-        person = self.cit[name]    
-        #Add triple
-        self.g.add((person, RDF.type, OWL.NamedIndividual))
-        self.g.add((person, RDF.type, self.ecrm.E21_Person))
-
-    def AddType(self, name:str):     
-        var_ = self.cit[name]    
-        #Add triple
-        self.g.add((var_, RDF.type, OWL.NamedIndividual))
-        self.g.add((var_, RDF.type, self.ecrm.E55_Type))
-
-    def AddPlace(self, name:str):     
-        var_ = self.cit[name]    
-        #Add triple
-        self.g.add((var_, RDF.type, OWL.NamedIndividual))
-        self.g.add((var_, RDF.type, self.ecrm.E53_Place))
-
-    def AddManMadeObject(self, name:str): #TODO    
-        var_ = self.cit[name]    
-        #Add triple
-        e22 = URIRef(self.ecrm + "E22_Man-Made_Object")  
-        self.g.add((var_, RDF.type, OWL.NamedIndividual))
-        self.g.add((var_, RDF.type, e22))
-        
-    def AddHasType(self, name:str, type_:str =""): #TODO    
-        var_ = self.cit[name]    
-        #Add triple
-        #self.g.add((var_, RDF.type, OWL.NamedIndividual))
-        tipo = URIRef(self.cit + type_)
-        self.g.add((var_, self.ecrm.P2_has_type, tipo))
-    '''
     def Formato(self, cadena: str):
         #Converse to required URI format
         cadena = cadena.replace(" ", "_")
