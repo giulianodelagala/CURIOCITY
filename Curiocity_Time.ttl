@@ -22,6 +22,10 @@
 #    Annotation properties
 #################################################################
 
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#notation
 skos:notation rdf:type owl:AnnotationProperty .
 
@@ -6953,7 +6957,7 @@ time:TemporalEntity rdf:type owl:Class ;
 :Imagen_Cesto_de_la_Cultura_Nazca_01 rdf:type owl:NamedIndividual ,
                                               :D9_Data_Object ;
                                      ecrm:P43_has_dimension :A1_Range ;
-                                     :T1_has_red_value "200,200,200"^^xsd:string ;
+                                     :T1_has_red_value 200 ;
                                      :T2_has_file_name "m01_s01_002.jpg"^^xsd:string .
 
 
@@ -6967,7 +6971,7 @@ time:TemporalEntity rdf:type owl:Class ;
 ###  http://curiocity.org/Inicio_Intermedio_Temprano
 :Inicio_Intermedio_Temprano rdf:type owl:NamedIndividual ,
                                      time:Instant ;
-                            time:in_XSD_g-Year "-500"^^xsd:gYear .
+                            time:in_XSD_g-Year "-0500"^^xsd:gYear .
 
 
 ###  http://curiocity.org/Intermedio_Temprano
@@ -7049,5 +7053,723 @@ time:TemporalEntity rdf:type owl:Class ;
                                            ecrm:E52_Time-Span ;
                                   ecrm:P82_at_some_time_within "100-600 d.C."^^xsd:string .
 
+#################################################################
+#    Rules
+#################################################################
+
+:V rdf:type swrl:Variable .
+
+:VBegin rdf:type swrl:Variable .
+
+:beginYear rdf:type swrl:Variable .
+
+:VEnd rdf:type swrl:Variable .
+
+:endYear rdf:type swrl:Variable .
+
+:T1 rdf:type swrl:Variable .
+
+:T2 rdf:type swrl:Variable .
+
+:T1begin rdf:type swrl:Variable .
+
+:T1beginYear rdf:type swrl:Variable .
+
+:T1end rdf:type swrl:Variable .
+
+:T1endYear rdf:type swrl:Variable .
+
+:T2begin rdf:type swrl:Variable .
+
+:T2beginYear rdf:type swrl:Variable .
+
+:T2end rdf:type swrl:Variable .
+
+:T2endYear rdf:type swrl:Variable .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Interval starts"^^xsd:string ;
+   rdfs:label "S5"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:ProperInterval ;
+                           swrl:argument1 :T1
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate time:ProperInterval ;
+                                      swrl:argument1 :T2
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate time:hasBeginning ;
+                                                 swrl:argument1 :T1 ;
+                                                 swrl:argument2 :T1begin
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                            swrl:argument1 :T1begin ;
+                                                            swrl:argument2 :T1beginYear
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate time:hasEnd ;
+                                                                       swrl:argument1 :T1 ;
+                                                                       swrl:argument2 :T1end
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                  swrl:argument1 :T1end ;
+                                                                                  swrl:argument2 :T1endYear
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate time:hasBeginning ;
+                                                                                             swrl:argument1 :T2 ;
+                                                                                             swrl:argument2 :T2begin
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                        swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                        swrl:argument1 :T2begin ;
+                                                                                                        swrl:argument2 :T2beginYear
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate time:hasEnd ;
+                                                                                                                   swrl:argument1 :T2 ;
+                                                                                                                   swrl:argument2 :T2end
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                                              swrl:argument1 :T2end ;
+                                                                                                                              swrl:argument2 :T2endYear
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                         swrl:builtin swrlb:equal ;
+                                                                                                                                         swrl:arguments ( :T1beginYear
+                                                                                                                                                          :T2beginYear
+                                                                                                                                                        )
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                    swrl:builtin swrlb:lessThan ;
+                                                                                                                                                    swrl:arguments ( :T1endYear
+                                                                                                                                                                     :T2endYear
+                                                                                                                                                                   )
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest rdf:nil
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate time:intervalStarts ;
+                           swrl:argument1 :T1 ;
+                           swrl:argument2 :T2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Interval finishes"^^xsd:string ;
+   rdfs:label "S7"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:ProperInterval ;
+                           swrl:argument1 :T1
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate time:ProperInterval ;
+                                      swrl:argument1 :T2
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate time:hasBeginning ;
+                                                 swrl:argument1 :T1 ;
+                                                 swrl:argument2 :T1begin
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                            swrl:argument1 :T1begin ;
+                                                            swrl:argument2 :T1beginYear
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate time:hasEnd ;
+                                                                       swrl:argument1 :T1 ;
+                                                                       swrl:argument2 :T1end
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                  swrl:argument1 :T1end ;
+                                                                                  swrl:argument2 :T1endYear
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate time:hasBeginning ;
+                                                                                             swrl:argument1 :T2 ;
+                                                                                             swrl:argument2 :T2begin
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                        swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                        swrl:argument1 :T2begin ;
+                                                                                                        swrl:argument2 :T2beginYear
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate time:hasEnd ;
+                                                                                                                   swrl:argument1 :T2 ;
+                                                                                                                   swrl:argument2 :T2end
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                                              swrl:argument1 :T2end ;
+                                                                                                                              swrl:argument2 :T2endYear
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                         swrl:builtin swrlb:greaterThan ;
+                                                                                                                                         swrl:arguments ( :T1beginYear
+                                                                                                                                                          :T2beginYear
+                                                                                                                                                        )
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                    swrl:builtin swrlb:equal ;
+                                                                                                                                                    swrl:arguments ( :T1endYear
+                                                                                                                                                                     :T2endYear
+                                                                                                                                                                   )
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest rdf:nil
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate time:intervalFinishes ;
+                           swrl:argument1 :T1 ;
+                           swrl:argument2 :T2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Interval during"^^xsd:string ;
+   rdfs:label "S6"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:ProperInterval ;
+                           swrl:argument1 :T1
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate time:ProperInterval ;
+                                      swrl:argument1 :T2
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate time:hasBeginning ;
+                                                 swrl:argument1 :T1 ;
+                                                 swrl:argument2 :T1begin
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                            swrl:argument1 :T1begin ;
+                                                            swrl:argument2 :T1beginYear
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate time:hasEnd ;
+                                                                       swrl:argument1 :T1 ;
+                                                                       swrl:argument2 :T1end
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                  swrl:argument1 :T1end ;
+                                                                                  swrl:argument2 :T1endYear
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate time:hasBeginning ;
+                                                                                             swrl:argument1 :T2 ;
+                                                                                             swrl:argument2 :T2begin
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                        swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                        swrl:argument1 :T2begin ;
+                                                                                                        swrl:argument2 :T2beginYear
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate time:hasEnd ;
+                                                                                                                   swrl:argument1 :T2 ;
+                                                                                                                   swrl:argument2 :T2end
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                                              swrl:argument1 :T2end ;
+                                                                                                                              swrl:argument2 :T2endYear
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                         swrl:builtin swrlb:greaterThan ;
+                                                                                                                                         swrl:arguments ( :T1beginYear
+                                                                                                                                                          :T2beginYear
+                                                                                                                                                        )
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                    swrl:builtin swrlb:lessThan ;
+                                                                                                                                                    swrl:arguments ( :T1endYear
+                                                                                                                                                                     :T2endYear
+                                                                                                                                                                   )
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest rdf:nil
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate time:intervalDuring ;
+                           swrl:argument1 :T1 ;
+                           swrl:argument2 :T2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Interval overlaps"^^xsd:string ;
+   rdfs:label "S4"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:ProperInterval ;
+                           swrl:argument1 :T1
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate time:ProperInterval ;
+                                      swrl:argument1 :T2
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate time:hasBeginning ;
+                                                 swrl:argument1 :T1 ;
+                                                 swrl:argument2 :T1begin
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                            swrl:argument1 :T1begin ;
+                                                            swrl:argument2 :T1beginYear
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate time:hasEnd ;
+                                                                       swrl:argument1 :T1 ;
+                                                                       swrl:argument2 :T1end
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                  swrl:argument1 :T1end ;
+                                                                                  swrl:argument2 :T1endYear
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate time:hasBeginning ;
+                                                                                             swrl:argument1 :T2 ;
+                                                                                             swrl:argument2 :T2begin
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                        swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                        swrl:argument1 :T2begin ;
+                                                                                                        swrl:argument2 :T2beginYear
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate time:hasEnd ;
+                                                                                                                   swrl:argument1 :T2 ;
+                                                                                                                   swrl:argument2 :T2end
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                                              swrl:argument1 :T2end ;
+                                                                                                                              swrl:argument2 :T2endYear
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                         swrl:builtin swrlb:lessThan ;
+                                                                                                                                         swrl:arguments ( :T1beginYear
+                                                                                                                                                          :T2beginYear
+                                                                                                                                                        )
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                    swrl:builtin swrlb:lessThan ;
+                                                                                                                                                    swrl:arguments ( :T2beginYear
+                                                                                                                                                                     :T1endYear
+                                                                                                                                                                   )
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                                   rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                               swrl:builtin swrlb:lessThan ;
+                                                                                                                                                               swrl:arguments ( :T1endYear
+                                                                                                                                                                                :T2endYear
+                                                                                                                                                                              )
+                                                                                                                                                             ] ;
+                                                                                                                                                   rdf:rest rdf:nil
+                                                                                                                                                 ]
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate time:intervalOverlaps ;
+                           swrl:argument1 :T1 ;
+                           swrl:argument2 :T2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Interval Meets"^^xsd:string ;
+   rdfs:label "S3"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:ProperInterval ;
+                           swrl:argument1 :T1
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate time:ProperInterval ;
+                                      swrl:argument1 :T2
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate time:hasEnd ;
+                                                 swrl:argument1 :T1 ;
+                                                 swrl:argument2 :T1end
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                            swrl:argument1 :T1end ;
+                                                            swrl:argument2 :T1endYear
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate time:hasBeginning ;
+                                                                       swrl:argument1 :T2 ;
+                                                                       swrl:argument2 :T2begin
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                  swrl:argument1 :T2begin ;
+                                                                                  swrl:argument2 :T2beginYear
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                             swrl:builtin swrlb:equal ;
+                                                                                             swrl:arguments ( :T1endYear
+                                                                                                              :T2beginYear
+                                                                                                            )
+                                                                                           ] ;
+                                                                                 rdf:rest rdf:nil
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate time:intervalMeets ;
+                           swrl:argument1 :T1 ;
+                           swrl:argument2 :T2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "IntervalBefore"^^xsd:string ;
+   rdfs:label "S2"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:ProperInterval ;
+                           swrl:argument1 :T1
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate time:ProperInterval ;
+                                      swrl:argument1 :T2
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate time:hasEnd ;
+                                                 swrl:argument1 :T1 ;
+                                                 swrl:argument2 :T1end
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                            swrl:argument1 :T1end ;
+                                                            swrl:argument2 :T1endYear
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate time:hasBeginning ;
+                                                                       swrl:argument1 :T2 ;
+                                                                       swrl:argument2 :T2begin
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                  swrl:argument1 :T2begin ;
+                                                                                  swrl:argument2 :T2beginYear
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                             swrl:builtin swrlb:lessThan ;
+                                                                                             swrl:arguments ( :T1endYear
+                                                                                                              :T2beginYear
+                                                                                                            )
+                                                                                           ] ;
+                                                                                 rdf:rest rdf:nil
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate time:intervalBefore ;
+                           swrl:argument1 :T1 ;
+                           swrl:argument2 :T2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Proper Interval"^^xsd:string ;
+   rdfs:label "S1"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:Interval ;
+                           swrl:argument1 :V
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                      swrl:propertyPredicate time:hasBeginning ;
+                                      swrl:argument1 :V ;
+                                      swrl:argument2 :VBegin
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                 swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                 swrl:argument1 :VBegin ;
+                                                 swrl:argument2 :beginYear
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                            swrl:propertyPredicate time:hasEnd ;
+                                                            swrl:argument1 :V ;
+                                                            swrl:argument2 :VEnd
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                       swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                       swrl:argument1 :VEnd ;
+                                                                       swrl:argument2 :endYear
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                  swrl:builtin swrlb:notEqual ;
+                                                                                  swrl:arguments ( :beginYear
+                                                                                                   :endYear
+                                                                                                 )
+                                                                                ] ;
+                                                                      rdf:rest rdf:nil
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:ProperInterval ;
+                           swrl:argument1 :V
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Interval finishes"^^xsd:string ;
+   rdfs:label "S8"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate time:ProperInterval ;
+                           swrl:argument1 :T1
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate time:ProperInterval ;
+                                      swrl:argument1 :T2
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate time:hasBeginning ;
+                                                 swrl:argument1 :T1 ;
+                                                 swrl:argument2 :T1begin
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                            swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                            swrl:argument1 :T1begin ;
+                                                            swrl:argument2 :T1beginYear
+                                                          ] ;
+                                                rdf:rest [ rdf:type swrl:AtomList ;
+                                                           rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                       swrl:propertyPredicate time:hasEnd ;
+                                                                       swrl:argument1 :T1 ;
+                                                                       swrl:argument2 :T1end
+                                                                     ] ;
+                                                           rdf:rest [ rdf:type swrl:AtomList ;
+                                                                      rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                  swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                  swrl:argument1 :T1end ;
+                                                                                  swrl:argument2 :T1endYear
+                                                                                ] ;
+                                                                      rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                 rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                             swrl:propertyPredicate time:hasBeginning ;
+                                                                                             swrl:argument1 :T2 ;
+                                                                                             swrl:argument2 :T2begin
+                                                                                           ] ;
+                                                                                 rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                            rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                        swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                        swrl:argument1 :T2begin ;
+                                                                                                        swrl:argument2 :T2beginYear
+                                                                                                      ] ;
+                                                                                            rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                       rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                                                                                   swrl:propertyPredicate time:hasEnd ;
+                                                                                                                   swrl:argument1 :T2 ;
+                                                                                                                   swrl:argument2 :T2end
+                                                                                                                 ] ;
+                                                                                                       rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                  rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                                                                                                              swrl:propertyPredicate time:in_XSD_g-Year ;
+                                                                                                                              swrl:argument1 :T2end ;
+                                                                                                                              swrl:argument2 :T2endYear
+                                                                                                                            ] ;
+                                                                                                                  rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                             rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                         swrl:builtin swrlb:equal ;
+                                                                                                                                         swrl:arguments ( :T1beginYear
+                                                                                                                                                          :T2beginYear
+                                                                                                                                                        )
+                                                                                                                                       ] ;
+                                                                                                                             rdf:rest [ rdf:type swrl:AtomList ;
+                                                                                                                                        rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                                                                                                                    swrl:builtin swrlb:equal ;
+                                                                                                                                                    swrl:arguments ( :T1endYear
+                                                                                                                                                                     :T2endYear
+                                                                                                                                                                   )
+                                                                                                                                                  ] ;
+                                                                                                                                        rdf:rest rdf:nil
+                                                                                                                                      ]
+                                                                                                                           ]
+                                                                                                                ]
+                                                                                                     ]
+                                                                                          ]
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate time:intervalEquals ;
+                           swrl:argument1 :T1 ;
+                           swrl:argument2 :T2
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
