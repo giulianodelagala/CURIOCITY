@@ -1079,11 +1079,11 @@
 
 :p_01_03-Interval-End a owl:NamedIndividual,
         time:Instant ;
-    time:in_XSD_g-Year "-500"^^xsd:gYear .
+    time:in_XSD_g-Year "-0500"^^xsd:gYear .
 
 :p_01_04-Interval-Beginning a owl:NamedIndividual,
         time:Instant ;
-    time:in_XSD_g-Year "-500"^^xsd:gYear .
+    time:in_XSD_g-Year "-0500"^^xsd:gYear .
 
 :p_01_04-Interval-End a owl:NamedIndividual,
         time:Instant ;
