@@ -23,7 +23,7 @@ WHERE {
           a ecrm:E4_Period ;
           rdfs:label ?label.
   {
-    SELECT (?s as ?artifact)
+    SELECT ?s
     WHERE {
       ?s a ecrm:E22_Man-Made_Object ;
          rdfs:label "Puntas Líticas" ;
@@ -284,3 +284,6 @@ WHERE {
         ecrm:L1_digitized ?artifact .
   ?artifact rdfs:label ?artifact_l ;
 }
+
+
+  
