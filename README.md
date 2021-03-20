@@ -35,5 +35,7 @@ CURIOCITY (Cultural Heritage for Urban Tourism in Indoor/Outdoor environments of
         ├── docs                    # front-end web service files
         └── ...
 
+## References
+
 More info about OQuaRE ontology evaluation framework [here](http://miuras.inf.um.es/oquarewiki/index.php5/Quality_metrics), and [here](https://github.com/atibaut/ontology-evaluation).
 
