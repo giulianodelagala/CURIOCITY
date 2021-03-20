@@ -22,9 +22,9 @@ CURIOCITY (Cultural Heritage for Urban Tourism in Indoor/Outdoor environments of
         │   └── ...
         ├── Scripts                 # Application 'n Data processing layers scripts (under development)
         │   ├── curiocity_gui.py    # admin app interface
-        │   ├── data_process.py     # script data processing (CSV->CURIOCITY)
-        │   ├── query_process.py    # script data processing (Sparql)
-        │   ├── period_process.py   # script data processing (CSV periods data->CURIOCITY)
+        │   ├── data_process.py     # data processing script (CSV->CURIOCITY)
+        │   ├── query_process.py    # data processing script (queries)
+        │   ├── period_process.py   # data processing script (CSV periods data->CURIOCITY)
         │   ├── poblar_onto.py      # instantiation utilities
         │   └── ...
         ├── data                    # museum datasets (D-RUTAS) Arequipa, Peru
@@ -33,7 +33,7 @@ CURIOCITY (Cultural Heritage for Urban Tourism in Indoor/Outdoor environments of
         │   ├── recoleta.csv        # "La Recoleta" museum dataset
         │   └── ...
         ├── Manuals                 # Documentation files
-        ├── docs                    # front-end web service files
+        ├── docs                    # web service front-end files
         └── ...
 
 ## References
