@@ -266,7 +266,7 @@ class Evaluacion:
         self.adaptability = (self.WMCOnto2[1] + self.DITOnto[1] + self.RFCOnto[1] + self.CBOOnto[1])/4.0
         #Reliability
         self.recoverability = (self.WMCOnto2[1] + self.DITOnto[1] + self.NOMOnto[1] + self.LCOMOnto[1])/4.0
-        self.availability = self.LCOMOnto[1]
+        self.availability = (self.WMCOnto2[1] + self.NOCOnto[1] + self.RFCOnto[1] + self.LCOMOnto[1])/4.0
         #  Replaceability
         self.replaceability = (self.WMCOnto2[1] + self.DITOnto[1] + self.NOCOnto[1] + self.NOMOnto[1])/4.0
         #  Operability
@@ -288,7 +288,7 @@ class Evaluacion:
 
     def EvalCharacteristics(self):
         #Characteristic
-        structural = np.mean(self.score_struct[:-1])
+        structural = np.mean(self.score_struct)
         func_adequacy = np.mean(self.score_fa[:-1]) #Functional adequacy
         #adaptability 
         reliability = (self.recoverability + self.availability)/2.0
