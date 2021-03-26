@@ -232,7 +232,16 @@ class Evaluacion:
         self.consistency = 5 #Change according to evaluation
 
         self.sub_struct = ['Formal relations', 'Cohesion', 'Tangledness', 'Redundancy', 'Formalization', 'Consistency']
-        self.score_struct = [frs,cohesion,tangledness,redundancy, self.formalization, self.consistency, frs] #Repeat first for graphics
+        self.score_struct = [frs,cohesion,tangledness,redundancy, self.formalization, self.consistency] #Repeat first for graphics
+
+        self.structural = {
+            'Formal relations' : frs,
+            'Cohesion'         : cohesion,
+            'Tangledness'      : tangledness,
+            'Redundancy'       : redundancy,
+            'Formalization'    : self.formalization,
+            'Consistency'      : self.consistency
+        }
 
     def EvalFunctionalAdequacy(self):
         #Functional adequacy
@@ -261,10 +270,10 @@ class Evaluacion:
         #  Replaceability
         self.replaceability = (self.WMCOnto2[1] + self.DITOnto[1] + self.NOCOnto[1] + self.NOMOnto[1])/4.0
         #  Operability
-        learnability = (self.WMCOnto2[1] + self.LCOMOnto[1] + self.RFCOnto[1] + self.NOMOnto[1] + self.CBOOnto[1] + self.NOCOnto[1])/6.0
+        self.learnability = (self.WMCOnto2[1] + self.LCOMOnto[1] + self.RFCOnto[1] + self.NOMOnto[1] + self.CBOOnto[1] + self.NOCOnto[1])/6.0
 
         self.sub_arro = ['Adaptability', 'Recoverability', 'Availability', 'Replaceability', 'Learnability']
-        self.score_arro = [self.adaptability, self.recoverability, self.availability, self.replaceability, learnability, self.adaptability]
+        self.score_arro = [self.adaptability, self.recoverability, self.availability, self.replaceability, self.learnability, self.adaptability]
 
     def EvalMaintainability(self):
         modularity = (self.WMCOnto2[1] + self.CBOOnto[1])/2.0
@@ -286,8 +295,8 @@ class Evaluacion:
         #replaceability
         maintainability = np.mean(self.score_maintain[:-1])
 
-        self.sub_char = ['Structural', 'Functional\nadequacy', 'Transferability', 'Reliability', 'Compatibility', 'Maintainability']
-        self.score_char = [structural, func_adequacy, self.adaptability, reliability, self.replaceability, maintainability, structural]
+        self.sub_char = ['Structural', 'Functional\nadequacy', 'Transferability', 'Reliability', 'Compatibility', 'Maintainability', 'Operability']
+        self.score_char = [structural, func_adequacy, self.adaptability, reliability, self.replaceability, maintainability, self.learnability]
 
 if __name__ == "__main__":
 
