@@ -259,7 +259,7 @@ class Evaluacion:
         self.sub_fa = ['Controlled\n vocabulary', 'Schema &\n value reconciliation', 'Consistent\n Search & Query',
          'Knowledge\n acquisition', 'Clustering &\n similiraty', 'Indexing &\n linking', 'Results\n representation',
           'Text analysis', 'Guidance &\n decision trees', 'Knowledge\n reuse']
-        self.score_fa = [cv, scv, csq, ka, cs, il, rr, ta, gdt, kr, cv]
+        self.score_fa = [cv, scv, csq, ka, cs, il, rr, ta, gdt, kr]
 
     def EvalARRO(self):
         #Adaptability
@@ -273,7 +273,7 @@ class Evaluacion:
         self.learnability = (self.WMCOnto2[1] + self.LCOMOnto[1] + self.RFCOnto[1] + self.NOMOnto[1] + self.CBOOnto[1] + self.NOCOnto[1])/6.0
 
         self.sub_arro = ['Adaptability', 'Recoverability', 'Availability', 'Replaceability', 'Learnability']
-        self.score_arro = [self.adaptability, self.recoverability, self.availability, self.replaceability, self.learnability, self.adaptability]
+        self.score_arro = [self.adaptability, self.recoverability, self.availability, self.replaceability, self.learnability]
 
     def EvalMaintainability(self):
         modularity = (self.WMCOnto2[1] + self.CBOOnto[1])/2.0
@@ -284,7 +284,7 @@ class Evaluacion:
         testability = (self.WMCOnto2[1] + self.DITOnto[1] + self.LCOMOnto[1] + self.RFCOnto[1] + self.NOMOnto[1] + self.CBOOnto[1])/6.0
 
         self.sub_maintain = ['Modularity', 'Reusability', 'Analysability', 'Changeability', 'Modification\nStability', 'Testability']
-        self.score_maintain = [modularity, reusability, analysability, changeability, mo_stability, testability, modularity]
+        self.score_maintain = [modularity, reusability, analysability, changeability, mo_stability, testability]
 
     def EvalCharacteristics(self):
         #Characteristic
