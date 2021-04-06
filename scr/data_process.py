@@ -11,7 +11,7 @@ import urllib.parse
 import json
 
 class DataProcess:
-    def __init__(self, logf, ontof, csvf, periodf, sender = None):
+    def __init__(self, logf, ontof, csvf, periodf, invalid = [], sender = None):
         
         self.onto_filename = ontof
         
@@ -23,6 +23,16 @@ class DataProcess:
         self.period_graph = Graph() #Periods instantiation
         self.period_graph.parse(periodf, format="turtle")
         self.sender = sender
+
+        if (invalid == []):
+            self.invalid = ['No asignado',
+                'nan',
+                'No aplicable',
+                'Desconocida', 'Desconocido',
+                'Sin información',
+                'No definido']
+        else:
+            self.invalid = invalid
 
         self.row = 0 #current processing row
     
@@ -94,16 +104,10 @@ class DataProcess:
     
     def __Verificar(self, cadena: str):
         #Verify legal field
-        if (str(cadena) != "No asignado" and 
-            str(cadena) != 'nan' and 
-            str(cadena) != 'No aplicable' and 
-            str(cadena) != 'Desconocida' and
-            str(cadena) != 'Desconocido' and
-            str(cadena) != 'Sin información' and
-            str(cadena) != 'No definido'):
-            return True
-        else:
+        if (str(cadena) in self.invalid):
             return False
+        else:
+            return True
 
     def VerificarActorv2(self, actor: str):
         #Verificar si actor existe y devolver URI
@@ -122,6 +126,7 @@ class DataProcess:
 
     def __VerifyActor(self, actor : str, tipo:str):
         if ( self.__Verificar(actor)):
+            actor = actor.strip()
             actor_uri = URIRef(self.Popu.cit + self.Popu.Formato(actor))
 
             if ( (actor_uri, RDF.type, self.Popu.ecrm.E21_Person) in self.Popu.g): #existe como persona
@@ -155,6 +160,7 @@ class DataProcess:
 
                    
     def __VerifyMainID(self, id_text : str):
+        id_text = id_text.strip()
         subject = URIRef(self.Popu.cit + id_text)
         if ( (subject, RDF.type, self.Popu.ecrm.E42_Identifier) in self.Popu.g):
             self.log.write(f"ERROR:Fila {self.row+2} -> Codigo existente: {id_text}, Fila ignorada\n")
@@ -164,8 +170,9 @@ class DataProcess:
             self.Popu.AddLiteralFromURI(self.__conc_id, "P190_has_symbolic_content", id_text, "string")
             return False
 
-    def __VerifyAltId(self, alt_id_text):
+    def __VerifyAltId(self, alt_id_text:str):
         if (self.__Verificar(alt_id_text) ):
+            alt_id_text = alt_id_text.strip()
             alt_id = self.Popu.AddSubjectFromURI(self.__conc_id, "/IDalternativo", "E42_Identifier")
             self.Popu.AddLiteralFromURI(alt_id, "P190_has_symbolic_content", alt_id_text, "string")
             return alt_id
@@ -175,6 +182,7 @@ class DataProcess:
 
     def __VerifyMainTitle(self, title : str):
         if (self.__Verificar(title)):
+            title = title.strip()
             return title #TODO Crear Title Concept
         else:
             self.log.write(f"WARNING:Fila {self.row+2} -> Titulo no asignado\n")
@@ -192,6 +200,7 @@ class DataProcess:
 
     def __VerifyUtility(self, utility_text: str):
         if (self.__Verificar(utility_text) ):
+            utility_text = utility_text.strip()
             utility = self.Popu.AddSubjectFromURI(self.__conc_id, "/Utility", "E55_Type")
             self.Popu.AddLabel(utility, utility_text)
             return utility
@@ -201,6 +210,7 @@ class DataProcess:
 
     def __VerifyObjectCondition(self, condition: str):
         if ( self.__Verificar(condition)):
+            condition = condition.strip()
             condition_uri = URIRef(self.Popu.cit + self.Popu.Formato(condition))
             if ( (condition_uri, RDF.type, self.Popu.ecrm.E55_Type) in self.Popu.g): #tipo condicion existente
                 self.__ScreenLog("Tipo Condición existente ... omitiendo")
@@ -213,6 +223,7 @@ class DataProcess:
       
     def __VerifyMaterial(self, material: str):
         if ( self.__Verificar(material)):
+            material = material.strip()
             material_uri = URIRef(self.Popu.cit + self.Popu.Formato(material))
             if ( (material_uri, RDF.type, self.Popu.ecrm.E55_Type) in self.Popu.g): #material existente
                 self.__ScreenLog("Material existente ... omitiendo")
@@ -225,6 +236,7 @@ class DataProcess:
 
     def __VerifyPlace(self, place: str):
         if ( self.__Verificar(place)):
+            place = place.strip()
             place_uri = URIRef(self.Popu.cit + self.Popu.Formato(place))
             if ( (place_uri, RDF.type, self.Popu.ecrm.E55_Type) in self.Popu.g): #place existente
                 self.__ScreenLog("Lugar(place) existente ... omitiendo")
@@ -289,15 +301,26 @@ class DataProcess:
         return dimen
 
     def __VerifyPeriods(self, period : str):
-        period_uri = URIRef(self.Popu.cit + self.Popu.Formato(period))
-
-        if ( (period_uri, RDF.type, self.Popu.ecrm.E4_Period) in self.period_graph):
-            prop_uri = URIRef(self.Popu.ecrm + "P4_has_time-span")
-            period_span = self.period_graph.value(period_uri, prop_uri)              
-            return period_uri, period_span
-        else:
+        
+        def warning():
             self.log.write(f"WARNING:Fila {self.row+2} -> Periodo desconocido.\n")
             return self.__periodo_unknown, self.__periodo_span_unknown
+
+        if ( self.__Verificar(period)):
+            period = period.strip()
+            period_uri = URIRef(self.Popu.cit + self.Popu.Formato(period))
+         
+            if ( (period_uri, RDF.type, self.Popu.ecrm.E4_Period) in self.period_graph):
+                prop_uri = URIRef(self.Popu.ecrm + "P4_has_time-span")
+                period_span = self.period_graph.value(period_uri, prop_uri)              
+                return period_uri, period_span
+            else:
+                return warning()
+        else:
+            return warning()
+            
+        
+            
 
     def __InitGeneralConcepts(self):
         # General Concepts
@@ -317,34 +340,34 @@ class DataProcess:
 
     def __ProcessConcepts(self):
         #Main ID
-        exist = self.__VerifyMainID(self.data.iloc[self.row,self.__col_codigo].strip())
+        exist = self.__VerifyMainID(self.data.iloc[self.row,self.__col_codigo])
         self.__ScreenLog(self.__conc_id)
         if (exist): #Dont process row
             return
         #Alternative ID
-        self.__alt_id = self.__VerifyAltId(self.data.iloc[self.row,self.__col_alt_code].strip())
+        self.__alt_id = self.__VerifyAltId(self.data.iloc[self.row,self.__col_alt_code])
         #Main Tile
-        self.__title_text = self.__VerifyMainTitle(self.data.iloc[self.row,self.__col_titulo].strip())
+        self.__title_text = self.__VerifyMainTitle(self.data.iloc[self.row,self.__col_titulo])
         #Object are classified E22 by default, verify for problems
         self.__obj = self.Popu.AddSubjectFromURI(self.__conc_id, "/Object" , "E22_Man-Made_Object")
         self.Popu.AddLabel(self.__obj, self.__title_text)
         #Type Utility
-        self.__utility = self.__VerifyUtility(self.data.iloc[self.row,self.__col_uso].strip() )
+        self.__utility = self.__VerifyUtility(self.data.iloc[self.row,self.__col_uso])
         #Object Creator, Donor, Owner
-        self.__creator = self.__VerifyActor(self.data.iloc[self.row,self.__col_creador].strip(), "creator") 
-        self.__donor = self.__VerifyActor(self.data.iloc[self.row,self.__col_donor].strip(), "donor")
-        self.__owner = self.__VerifyActor(self.data.iloc[self.row,self.__col_duenio].strip(), "owner")
+        self.__creator = self.__VerifyActor(self.data.iloc[self.row,self.__col_creador], "creator") 
+        self.__donor = self.__VerifyActor(self.data.iloc[self.row,self.__col_donor], "donor")
+        self.__owner = self.__VerifyActor(self.data.iloc[self.row,self.__col_duenio], "owner")
         #Artifact measurements
         self.__dimen = self.__VerifyDimensions() 
         #artifact condition type, material
-        self.__type_condition = self.__VerifyObjectCondition(self.data.iloc[self.row,self.__col_estado].strip() )
+        self.__type_condition = self.__VerifyObjectCondition(self.data.iloc[self.row,self.__col_estado])
         self.__condition = self.Popu.AddSubjectFromURI(self.__conc_id, "/Current_Condition", "E3_Condition_State")
-        self.__material = self.__VerifyMaterial(self.data.iloc[self.row,self.__col_material].strip() )
+        self.__material = self.__VerifyMaterial(self.data.iloc[self.row,self.__col_material])
         #Period
-        self.__period, self.__period_span = self.__VerifyPeriods(self.data.iloc[self.row,self.__col_id_periodo].strip()) 
+        self.__period, self.__period_span = self.__VerifyPeriods(self.data.iloc[self.row,self.__col_id_periodo]) 
         #Localization
-        self.__localization = self.__VerifyPlace(self.data.iloc[self.row,self.__col_localizacion].strip() )
-        self.__department = self.__VerifyPlace(self.data.iloc[self.row,self.__col_department].strip() )
+        self.__localization = self.__VerifyPlace(self.data.iloc[self.row,self.__col_localizacion])
+        self.__department = self.__VerifyPlace(self.data.iloc[self.row,self.__col_department])
         #Default concepts, check for problems
         #Production/Creation Event E12 by default
         self.__production = self.Popu.AddSubjectFromURI(self.__conc_id, "/Production", "E12_Production") 
@@ -391,7 +414,12 @@ class DataProcess:
         self.Popu.AddRelationFromURI(self.__localization, 'P89_falls_within', self.__department)
 
     def Execute(self):
-        self.__ReadColumnIndex()
+        try:
+            self.__ReadColumnIndex()
+        except KeyError as key:
+            self.__ScreenLog(f"CSV column not found: {key}")
+            return
+
         self.__InitUnknownConcepts()
         self.__InitGeneralConcepts()
         

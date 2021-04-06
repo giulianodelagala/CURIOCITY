@@ -135,7 +135,7 @@ First we get a bash shell inside the container.
 
 We can see our prompt has changed, showing we are inside the container. Find tdbloader command, for our case is located in */jena-fuseki/*. Also we can find that previous CURIOCITY files are in */fuseki/* container directory indeed. Now we can load the data to TDB database to the */fuseki/databases/* directory specified in *config.ttl*. Supposing we are in */fuseki/* directory:
 
-> ../jena-fuseki/./tdbloader All_CURIOCITY_files.ttl databases/
+> ../jena-fuseki/./tdbloader --loc databases/ All_CURIOCITY_files.ttl 
 
 When the loading finishes we can restart the container.
 

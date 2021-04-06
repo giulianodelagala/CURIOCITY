@@ -1,11 +1,12 @@
 #from tkinter import *
 from logging import disable
+from re import S
 import tkinter as tk
 from tkinter import StringVar, ttk
 from tkinter import simpledialog
 import tkinter
 
-from tkinter.constants import E, HORIZONTAL, LEFT, TOP
+from tkinter.constants import E, HORIZONTAL, LEFT, N, TOP, Y
 from tkinter.filedialog import askopenfilename
 from tkinter import messagebox
 
@@ -35,9 +36,7 @@ class MainApplication(tk.Frame):
         self.tabControl = TabControl(self.parent)
         self.tabControl.pack(expand= True, fill="both")
         self.parent.title("CURIOCITY FRAMEWORK v0.2")
-
-        
-            
+   
         # self.default_font = font.nametofont("TkDefaultFont")
         # self.default_font.configure(family="Segoe Script",
         #     weight=font.BOLD, size=50)
@@ -80,7 +79,7 @@ class TabControl(ttk.Notebook):
 class PopulateTab(tk.Frame):   
     def __init__(self, parent):
         tk.Frame.__init__(self, parent)
-        
+        invalid_text = "No asignado, nan, No aplicable, Desconocida, Desconocido, Sin información, No definido, No aplica, No registra información, Ninguno"
         # Widgets
         self.wrapperPopulate = tk.LabelFrame(self, text = "Populate Ontology", bd=3)
         self.wrapperPopulate.pack(fill="both", expand="yes", padx=20, pady=10)
@@ -93,6 +92,7 @@ class PopulateTab(tk.Frame):
         self.periodLabel = tk.Label(self.wrapperPopulate, text="Time Period Ontology filename:", anchor="w")
         self.ontoLabel = tk.Label(self.wrapperPopulate, text="Output Ontology filename:", anchor="w")
         self.logLabel = tk.Label(self.wrapperPopulate, text="Log filename:")
+        self.invalidLabel = tk.Label(self.wrapperPopulate, text="Invalid field data:")
 
         self.csvEntry = tk.Entry(self.wrapperPopulate, width= 50) #bg, border
         self.csvEntry.insert(0, "museum_data.csv")
@@ -102,6 +102,9 @@ class PopulateTab(tk.Frame):
         self.ontoEntry.insert(0, "museum_onto.ttl")
         self.logEntry = tk.Entry(self.wrapperPopulate, width=50)
         self.logEntry.insert(0, "museum_log.txt")
+        
+        self.invalidText = tk.Text(self.wrapperPopulate, width=78, height=4, state="normal")
+        self.invalidText.insert(tk.INSERT, invalid_text)
 
         self.csvLoadButton = tk.Button(self.wrapperPopulate, text="Choose...", command= lambda: parent.chooseFileButtonClick(self.csvEntry), padx=30)
         self.periodLoadButton = tk.Button(self.wrapperPopulate, text="Choose...", command= lambda: parent.chooseFileButtonClick(self.periodEntry), padx=30)
@@ -119,18 +122,27 @@ class PopulateTab(tk.Frame):
         self.logLabel.grid(sticky="e", row=3, column=0, pady=10)
         self.logEntry.grid(row=3, column=1, padx=10)
 
+        self.invalidLabel.grid(sticky=tk.NE, row=4, column=0, pady=10)
+        
+        self.invalidText.grid(sticky=tk.NW, row=4, column=1, columnspan=2, padx=10, pady=10)
+        
         self.logText = tk.Text(self.wrapperPopulate, width=100, height=20, state="normal")
-        self.logText.grid(row=4, column=0, columnspan=3)
+        self.logText.grid(sticky=tk.N, row=5, column=0, columnspan=3, ipady=0)
 
         populateButton = tk.Button(self, text="Populate!", command= self.populateButtonClick, padx=30)
         populateButton.pack(pady=5)
 
     def populateButtonClick(self):
+        invalid = self.GetInvalidData()
         process = DataProcess(logf=self.logEntry.get(),
             csvf=self.csvEntry.get(), ontof=self.ontoEntry.get(),
-            periodf=self.periodEntry.get(), sender = self)
+            periodf=self.periodEntry.get(), invalid=invalid, sender = self)
         process.Execute()
         return True
+
+    def GetInvalidData(self):
+        invalid_text = self.invalidText.get("1.0",tk.END)
+        return invalid_text.split(", ")
     
     def Choose(self, who):
         result = messagebox.askquestion("Choose", "Is " + who + " a Person[Yes] or Group[No] ?", icon="question")
