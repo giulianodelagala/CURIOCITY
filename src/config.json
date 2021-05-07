@@ -1,0 +1,34 @@
+{
+    "Invalid": "nan, No asignado, No aplicable, Desconocida, Desconocido, Sin información, No definido, No aplica, No registra información, Ninguno, No registra",
+    "CSV": {
+        "ID": "Código único en la database",
+        "Alternative ID": "Número/código asignado por el museo desde ingreso a ser expuesto",
+        "Title": "Título principal del objeto u obra de arte",
+        "Description": "Descripción o nota asociada al objeto",
+        "Author": "Creador del objeto",
+        "Utility": "Uso que se le dio al objeto",
+        "Owner": "Dueño actual",
+        "Condition State": "Estado actual del objeto",
+        "Material": "Material del objeto (TECNICA USADA)",
+        "Period ID": "Código del Período o evento",
+        "Period": "Periodo, evento",
+        "Creation date": "Fecha de creación del objeto/obra de arte",
+        "Acquisition": "Forma como fue adquirido el objeto",
+        "Donor": "Identifica y da crédito a la persona, fundación o método por el cual el objeto fue adquirido  (del/a cual fue adquirido el objeto)",
+        "Donor description": "Descripción de donación",
+        "Location in Museum": "Localización del objeto dentro del museo",
+        "Museum Department": "Departamento dentro del museo responsable por el objeto",
+        "Artifact height": "Dimensión: Alto",
+        "Artifact width": "Dimensión: Ancho",
+        "Artifact length": "Dimensión: Largo",
+        "Artifact diameter": "Dimensión: Diámetro",
+        "Artifact depth": "Profundidad",
+        "Artifact weight": "Peso"
+    },
+    "Period": {
+        "ID": "CODIGO",
+        "Description": "DESCRIP2",
+        "Begin": "INICIO",
+        "End": "FIN"
+    }
+}

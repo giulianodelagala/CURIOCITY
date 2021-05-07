@@ -16,6 +16,8 @@ class Populate():
         #Namespaces
         self.ecrm = Namespace("http://erlangen-crm.org/170309/")
 
+        
+
         #Prefijos
         self.g.bind("owl", OWL)
         self.g.bind("rdf", RDF)
@@ -26,23 +28,23 @@ class Populate():
         #self.map_entidad = {"place" : self.ecrm.E53_Place }
 
     #Carga de Ontologia NO UTILIZAR
-    # def getEntities(self, nameOntology: str, format: str):
-    #     g = Graph()
-    #     g.parse(nameOntology, format= format)
-    #     print("Loading :", nameOntology)
+    def getEntities(self, nameOntology: str, format: str):
+        g = Graph()
+        g.parse(nameOntology, format= format)
+        print("Loading :", nameOntology)
 
-    #     # loop through each triple in the graph (subj, pred, obj)
-    #     for subj, pred, obj in g:
-    #         # check if there is at least one triple in the Graph
-    #         if (subj, pred, obj) not in g:
-    #             raise Exception("It better be!")
+        # loop through each triple in the graph (subj, pred, obj)
+        for subj, pred, obj in g:
+            # check if there is at least one triple in the Graph
+            if (subj, pred, obj) not in g:
+                raise Exception("It better be!")
 
-    #     print( f"graf has {len(g)} statements")
+        print( f"graf has {len(g)} statements")
 
-    #     save_file = g.serialize(format="turtle").decode("utf-8")
-    #     f = open("archivo.ttl", "w")
-    #     f.write(save_file)
-    #     f.close()
+        save_file = g.serialize(format="turtle").decode("utf-8")
+        f = open("archivo.ttl", "w")
+        f.write(save_file)
+        f.close()
 
     def Formato(self, cadena: str):
         #Converse to required URI format

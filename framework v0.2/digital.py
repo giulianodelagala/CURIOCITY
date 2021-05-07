@@ -7,9 +7,9 @@ from rdflib import URIRef, Graph, Namespace
 
 def LeerDatos(filename : str, header = True):
     if (header):
-        data = pd.read_csv(filename + ".csv", sep =',', encoding='utf8', header = 0)
+        data = pd.read_csv(filename + ".csv", sep ='\t', encoding='utf8', header = 0)
     else:
-        data = pd.read_csv(filename+ ".csv", sep =',', header = None)
+        data = pd.read_csv(filename+ ".csv", sep ='\t', header = None)
     #data = data.sample(frac = 1)
     #data = data.sort_values(data.columns[-1])
     #return np.array(data.iloc[:,:])
@@ -17,18 +17,18 @@ def LeerDatos(filename : str, header = True):
 
 log = open("log_digital.txt", "w")
 
-data = LeerDatos("lista")
+data = LeerDatos("ObjRGB")
 num_filas = data.shape[0] #total de filas
-print(data)
+
 #Column index from csv
 col_codigo = data.columns.get_loc('Codigo')
 col_file = data.columns.get_loc('Filename')
 
-# col_clasifica = data.columns.get_loc('Clasificacion')
+col_clasifica = data.columns.get_loc('Clasificacion')
 
-# col_R = data.columns.get_loc('R')
-# col_G = data.columns.get_loc('G')
-# col_B = data.columns.get_loc('B')
+col_R = data.columns.get_loc('R')
+col_G = data.columns.get_loc('G')
+col_B = data.columns.get_loc('B')
 ###############
 
 #g = Graph()
@@ -40,7 +40,7 @@ col_file = data.columns.get_loc('Filename')
 Popu = Populate()
 #Load Instances
 instances = Graph()
-instances.parse("reasoner_municipal.xml", format = "xml")
+instances.parse("museo.ttl", format = "turtle")
 
 #########
 # General Concepts
@@ -53,13 +53,13 @@ instances.parse("reasoner_municipal.xml", format = "xml")
 #                     "string", "ecrm")
 
 #Add Concept Type (for Recognition purposes) TODO Llevarlo a todos los objetos
-# rec_type = Popu.AddSubject("Recognition_Concept", "E55_Type", ins_label=False)
+rec_type = Popu.AddSubject("Recognition_Concept", "E55_Type", ins_label=False)
 
-# ceramica = Popu.AddSubject("Ceramica como arte decorativo", "E55_Type", ins_label=True)
-# Popu.AddRelationFromURI(ceramica, "P_127_has_broader_term", rec_type)
+ceramica = Popu.AddSubject("Ceramica como arte decorativo", "E55_Type", ins_label=True)
+Popu.AddRelationFromURI(ceramica, "P_127_has_broader_term", rec_type)
 
-# pintura = Popu.AddSubject("Pintura de arte fino", "E55_Type", ins_label=True)
-# Popu.AddRelationFromURI(pintura, "P_127_has_broader_term", rec_type)
+pintura = Popu.AddSubject("Pintura de arte fino", "E55_Type", ins_label=True)
+Popu.AddRelationFromURI(pintura, "P_127_has_broader_term", rec_type)
 
 for row in range(0, num_filas):
 
@@ -77,7 +77,6 @@ for row in range(0, num_filas):
         obj = URIRef(Popu.cit + data.iloc[row, col_codigo].strip())
 
         sub = instances.value( predicate=pred, object=obj)
-        print(obj)
         print(sub)
         ##########
         # Particular Concepts
@@ -89,21 +88,21 @@ for row in range(0, num_filas):
         #Image
         img = Popu.AddSubject( filename, "D9_Data_Object", name_space="cit", ins_label=False)
         #Popu.AddRelationFromURI(img, "P43_has_dimension", a1)
-        # Popu.AddLiteralFromURI(img, "T1_has_red_value", data.iloc[row,col_R], dtype="integer", name_space="cit")
-        # Popu.AddLiteralFromURI(img, "T1_has_green_value", data.iloc[row,col_G], dtype="integer", name_space="cit")
-        # Popu.AddLiteralFromURI(img, "T1_has_blue_value", data.iloc[row,col_B], dtype="integer", name_space="cit")
+        Popu.AddLiteralFromURI(img, "T1_has_red_value", data.iloc[row,col_R], dtype="integer", name_space="cit")
+        Popu.AddLiteralFromURI(img, "T1_has_green_value", data.iloc[row,col_G], dtype="integer", name_space="cit")
+        Popu.AddLiteralFromURI(img, "T1_has_blue_value", data.iloc[row,col_B], dtype="integer", name_space="cit")
 
         Popu.AddLiteralFromURI(img, "T2_has_file_name", filename, dtype="string", name_space="cit")
 
         #Digitization Event Buscar en Repositorio el ID y asociar a concepto
-        Popu.AddRelationFromURI(proc_rutas, "L1_digitized", sub, name_space="cit") 
-        Popu.AddRelationFromURI(proc_rutas, "L20_has_created", img, name_space="cit")
+        Popu.AddRelationFromURI(proc_rutas, "L1_digitized", sub) 
+        Popu.AddRelationFromURI(proc_rutas, "L20_has_created", img)
 
         #Add Concept Type to Object (for Recognition purposes) TODO 
-        # if (data.iloc[row, col_clasifica].strip() == "Ceramica como arte decorativo"):
-        #     Popu.AddRelationFromURI(sub, "P2_has_type", ceramica)
-        # elif (data.iloc[row, col_clasifica].strip() == "Pintura de arte fino"):
-        #     Popu.AddRelationFromURI(sub, "P2_has_type", pintura)
+        if (data.iloc[row, col_clasifica].strip() == "Ceramica como arte decorativo"):
+            Popu.AddRelationFromURI(sub, "P2_has_type", ceramica)
+        elif (data.iloc[row, col_clasifica].strip() == "Pintura de arte fino"):
+            Popu.AddRelationFromURI(sub, "P2_has_type", pintura)
 
 #Save Instantiation
-Popu.SaveTriples("municipal_digital.xml", format='xml')
+Popu.SaveTriples("digital.ttl")

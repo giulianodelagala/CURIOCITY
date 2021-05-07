@@ -4,9 +4,9 @@ from rdflib import RDF, OWL, URIRef
 from rdflib.plugins.sparql import prepareQuery
 
 #from numpy import nan
-# import math
+import math
 import pandas as pd 
-# import urllib.parse
+import urllib.parse
 
 import json
 
@@ -25,13 +25,13 @@ class PeriodProcess():
         
     def __ReadColumnIndex(self):
         #Column index from csv
-        with open("config.json", 'r') as name_columns_file :
+        with open("name_period_columns.json", 'r') as name_columns_file :
             name_columns = json.load(name_columns_file)
 
-        self.__col_codigo = self.data.columns.get_loc(name_columns['Period']['ID'])
-        self.__col_descripcion = self.data.columns.get_loc(name_columns['Period']['Description'])
-        self.__col_inicio = self.data.columns.get_loc(name_columns['Period']['Begin'])
-        self.__col_fin = self.data.columns.get_loc(name_columns['Period']['End'])
+        self.__col_codigo = self.data.columns.get_loc(name_columns['ID'])
+        self.__col_descripcion = self.data.columns.get_loc(name_columns['Description'])
+        self.__col_inicio = self.data.columns.get_loc(name_columns['Period begin'])
+        self.__col_fin = self.data.columns.get_loc(name_columns['Period end'])
 
     def __Verificar(self, cadena: str):
         #Verify legal field

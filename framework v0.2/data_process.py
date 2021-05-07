@@ -1,14 +1,14 @@
 #Procesamiento de Data
-from rdflib.exceptions import Error
 from poblar_onto import Populate
 from rdflib import RDF, OWL, URIRef, Graph
 from rdflib.plugins.sparql import prepareQuery
 
+#from numpy import nan
+import math
 import pandas as pd 
+import urllib.parse
 
 import json
-
-from owlready2 import World, sync_reasoner_pellet
 
 class DataProcess:
     def __init__(self, logf, ontof, csvf, periodf, invalid = [], sender = None):
@@ -22,13 +22,8 @@ class DataProcess:
         self.Popu = Populate() #Populate tools
         self.period_graph = Graph() #Periods instantiation
         self.period_graph.parse(periodf, format="turtle")
-        self.curiocity_file = "../Curiocity_Time.ttl"
-        self.curiocity_graph = Populate()
-        self.curiocity_graph.g.parse(self.curiocity_file, format="turtle")
         self.sender = sender
 
-        # self.graph_temp = Populate()
-        ### Get Invalid Data
         if (invalid == []):
             self.invalid = ['No asignado',
                 'nan',
@@ -50,59 +45,45 @@ class DataProcess:
         else:
             self.sender.Logger(message)
 
-    def MergeOntos(self, format:str = 'turtle'):
-        #Merge output rdf triples Base + Period + Instantiations
-        self.graph_temp = Populate()
-        self.graph_temp.g = self.curiocity_graph.g + self.period_graph + self.Popu.g
-        # Save individuals  
-        try:
-            self.graph_temp.SaveTriples(self.onto_filename, format=format)
-            return True
-        except:
-            print("Error")
-            return False
-
-    
-
     def LeerDatos(self, filename : str, header = True):
         #Return pandas dataframe with csv data
         return pd.read_csv(filename, sep ='\t', encoding='utf8', header = 0)
         
     def __ReadColumnIndex(self):
         #Column index from csv
-        with open("config.json", 'r') as name_columns_file :
+        with open("name_columns.json", 'r') as name_columns_file :
             name_columns = json.load(name_columns_file)
 
-        self.__col_codigo = self.data.columns.get_loc(name_columns['CSV']['ID'])
-        self.__col_alt_code = self.data.columns.get_loc(name_columns['CSV']['Alternative ID'])
-        self.__col_titulo = self.data.columns.get_loc(name_columns['CSV']['Title'])
-        self.__col_descripcion = self.data.columns.get_loc(name_columns['CSV']['Description'])
-        self.__col_creador = self.data.columns.get_loc(name_columns['CSV']['Author'])
+        self.__col_codigo = self.data.columns.get_loc(name_columns['ID'])
+        self.__col_alt_code = self.data.columns.get_loc(name_columns['Alternative ID'])
+        self.__col_titulo = self.data.columns.get_loc(name_columns['Title'])
+        self.__col_descripcion = self.data.columns.get_loc(name_columns['Description'])
+        self.__col_creador = self.data.columns.get_loc(name_columns['Author'])
 
-        self.__col_uso = self.data.columns.get_loc(name_columns['CSV']['Utility'])
-        self.__col_duenio = self.data.columns.get_loc(name_columns['CSV']['Owner'])
-        self.__col_estado = self.data.columns.get_loc(name_columns['CSV']['Condition State'])
-        self.__col_material = self.data.columns.get_loc(name_columns['CSV']['Material'])
+        self.__col_uso = self.data.columns.get_loc(name_columns['Utility'])
+        self.__col_duenio = self.data.columns.get_loc(name_columns['Owner'])
+        self.__col_estado = self.data.columns.get_loc(name_columns['Condition State'])
+        self.__col_material = self.data.columns.get_loc(name_columns['Material'])
 
-        self.__col_id_periodo = self.data.columns.get_loc(name_columns['CSV']['Period ID'])
-        self.__col_periodo = self.data.columns.get_loc(name_columns['CSV']['Period'])
+        self.__col_id_periodo = self.data.columns.get_loc(name_columns['Period ID'])
+        self.__col_periodo = self.data.columns.get_loc(name_columns['Period'])
 
-        self.__col_date_creation = self.data.columns.get_loc(name_columns['CSV']['Creation date'])
+        self.__col_date_creation = self.data.columns.get_loc(name_columns['Creation date'])
 
-        self.__col_adquisicion = self.data.columns.get_loc(name_columns['CSV']['Acquisition'])
-        self.__col_donor = self.data.columns.get_loc(name_columns['CSV']['Donor'])
-        self.__col_desc_donor = self.data.columns.get_loc(name_columns['CSV']['Donor description'])
+        self.__col_adquisicion = self.data.columns.get_loc(name_columns['Acquisition'])
+        self.__col_donor = self.data.columns.get_loc(name_columns['Donor'])
+        self.__col_desc_donor = self.data.columns.get_loc(name_columns['Donor description'])
         #TODO probable organizacion de descripciones
 
-        self.__col_localizacion = self.data.columns.get_loc(name_columns['CSV']['Location in Museum'])
-        self.__col_department = self.data.columns.get_loc(name_columns['CSV']['Museum Department'])
+        self.__col_localizacion = self.data.columns.get_loc(name_columns['Location in Museum'])
+        self.__col_department = self.data.columns.get_loc(name_columns['Museum Department'])
 
-        self.__col_alto = self.data.columns.get_loc(name_columns['CSV']['Artifact height'])
-        self.__col_ancho = self.data.columns.get_loc(name_columns['CSV']['Artifact width'])
-        self.__col_largo = self.data.columns.get_loc(name_columns['CSV']['Artifact length'])
-        self.__col_diametro = self.data.columns.get_loc(name_columns['CSV']['Artifact diameter'])
-        self.__col_profundidad = self.data.columns.get_loc(name_columns['CSV']['Artifact depth'])
-        self.__col_peso = self.data.columns.get_loc(name_columns['CSV']['Artifact weight'])
+        self.__col_alto = self.data.columns.get_loc(name_columns['Artifact height'])
+        self.__col_ancho = self.data.columns.get_loc(name_columns['Artifact width'])
+        self.__col_largo = self.data.columns.get_loc(name_columns['Artifact length'])
+        self.__col_diametro = self.data.columns.get_loc(name_columns['Artifact diameter'])
+        self.__col_profundidad = self.data.columns.get_loc(name_columns['Artifact depth'])
+        self.__col_peso = self.data.columns.get_loc(name_columns['Artifact weight'])
 
     def __InitUnknownConcepts(self):
         ########################
@@ -337,7 +318,9 @@ class DataProcess:
                 return warning()
         else:
             return warning()
-               
+            
+        
+            
 
     def __InitGeneralConcepts(self):
         # General Concepts
@@ -345,10 +328,6 @@ class DataProcess:
         self.__type_id = self.Popu.AddSubject("ID-RUTAS", "E55_Type")
         #Measurement Unit
         self.__meas_cm = self.Popu.AddSubject("cm","E58_Measurement_Unit")
-        #Verified-Unverified Type
-        self.__type_verified = self.Popu.AddSubject("Verified", "E55_Type")
-        self.__type_unverified = self.Popu.AddSubject("Unverified", "E55_Type")
-
 
     def __InvalidRow(self):
         #Verify current row is valid: MainID and Title non empty
@@ -405,8 +384,6 @@ class DataProcess:
         self.Popu.AddRelationFromURI(self.__obj, 'P45_consists_of', self.__material)
         self.Popu.AddLiteralFromURI(self.__obj, 'P3_has_note', self.data.iloc[self.row, self.__col_descripcion], dtype="string", name_space="ecrm")
         self.Popu.AddRelationFromURI(self.__obj, 'P55_has_current_location', self.__localization)
-        self.Popu.AddRelationFromURI(self.__obj, 'P2_has_type', self.__type_verified)
-        self.Popu.AddRelationFromURI(self.__obj, 'P43_has_dimension', self.__dimen)
 
         #of the Condition
         self.Popu.AddRelationFromURI(self.__condition, 'P44_has_type', self.__type_condition)
@@ -436,12 +413,12 @@ class DataProcess:
         #Localization
         self.Popu.AddRelationFromURI(self.__localization, 'P89_falls_within', self.__department)
 
-    def Execute(self, format:str ='turtle'):
+    def Execute(self):
         try:
             self.__ReadColumnIndex()
         except KeyError as key:
             self.__ScreenLog(f"CSV column not found: {key}")
-            return False
+            return
 
         self.__InitUnknownConcepts()
         self.__InitGeneralConcepts()
@@ -455,27 +432,7 @@ class DataProcess:
                 self.__ProcessProperties()
                     
         # Save individuals
-        try:
-            self.Popu.SaveTriples(self.onto_filename, format=format)
-            return True
-        except:
-            return False
-
-class ReasonerProcess:
-    def __init__(self, file_input, file_output) -> None:
-        self.input = file_input
-        self.output = file_output
-
-    def ExecuteReasoner(self):
-        onto = World()
-        try:
-            onto.get_ontology("file://" + self.input).load()
-
-            sync_reasoner_pellet(onto, infer_property_values=True)
-            onto.save(file=self.output)
-            return True
-        except:
-            return False
+        self.Popu.SaveTriples(self.onto_filename)
 
 if __name__ == "__main__":
     Proceso = DataProcess(logf="log_prueba.txt",

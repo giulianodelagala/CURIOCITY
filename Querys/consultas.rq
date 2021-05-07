@@ -284,6 +284,160 @@ WHERE {
         ecrm:L1_digitized ?artifact .
   ?artifact rdfs:label ?artifact_l ;
 }
+#######
+#Filter condition
+SELECT ?subject ?predicate ?object
+WHERE {
+  ?subject  ecrm:P55_has_current_location ?object .
+  FILTER (regex(str(?object) , "nara" , "i") ) 
+}
 
+#######
+#Author ID and label
+SELECT ?author ?author_l
+WHERE {
+  VALUES ?type { ecrm:E21_Person ecrm:E74_Group }
+  ?author  a ?type ;
+  		rdfs:label ?author_l .
+}
 
-  
+##### PROPERTY PATH GENERAL QUERY
+
+SELECT DISTINCT ?id_l ?artifact_l 
+(COALESCE (?author_lab, "UNKNOWN") AS ?author_l)
+?material_l ?location_l
+(COALESCE (?donor_lab, "UNKNOWN") AS ?donor_l)
+(COALESCE (?period_lab, "UNKNOWN") AS ?period_l)
+(COALESCE (?begin_date, "UNKNOWN") AS ?begin_d)
+(COALESCE (?end_date, "UNKNOWN") AS ?end_d)
+?note 
+(COALESCE (?note_donor_, "UNKNOWN") AS ?note_donor)
+(BOUND (?tag) AS ?verified)
+WHERE {
+  #VALUES ?type { time:in_XSD_date time:in_XSD_g-Year }
+  ?artifact a ecrm:E22_Man-Made_Object ;
+            rdfs:label ?artifact_l ; #Title
+            ecrm:P48_has_preferred_identifier ?id ;
+            ecrm:P55_has_current_location ?location ;
+            ecrm:P3_has_note ?note ;
+            ecrm:P45_consists_of ?material .
+  ?material rdfs:label ?material_l .
+  ?id rdfs:label ?id_l .
+  ?location rdfs:label ?location_l .
+  ?prod ecrm:P108_has_produced ?artifact .
+  OPTIONAL { ?prod ecrm:P14_carried_out_by ?author .
+        	?author rdfs:label ?author_lab . }
+  OPTIONAL { ?prod ecrm:P4_has_time-span/(^ecrm:P4_has_time-span) ?period .
+    		?period ecrm:P4_has_time-span/(^cit:Q14_defines_time) ?interval.
+
+    		?period a ecrm:E4_Period ;
+      			rdfs:label ?period_lab .
+
+    		?interval  time:hasBeginning/(time:in_XSD_date|time:in_XSD_g-Year) ?begin_date .
+    		?interval  time:hasEnd/(time:in_XSD_date|time:in_XSD_g-Year) ?end_date .				
+    }
+  OPTIONAL { ?artifact ecrm:P2_has_type ?tag . FILTER (?tag = :Verified)}
+  FILTER (regex(str(?artifact_l) , "x" , "i") )
+}
+
+###### Delete artifact triples
+PREFIX : <http://curiocity.org/>
+PREFIX ecrm: <http://erlangen-crm.org/170309/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX cit: <http://curiocity.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+DELETE {
+?artifact ?p ?o .
+?s_art ?p_art ?artifact .
+?production ?p2 ?o2 .
+?s_pro ?p_pro ?production .
+?acquisition ?p1 ?o1 .
+?s_acq ?p_acq ?acquisition .
+?id ?p6 ?o6 .
+?s_id ?p_id ?id .
+?dimension ?p3 ?o3 .
+?s_dim ?p_dim ?dimension .
+?utility ?p4 ?o4 . 
+?s_util ?p_util ?utility .
+?condition ?p5 ?o5 .
+?s_con ?p_con ?condition .
+?process ?p7 ?o7 .
+?s_proc ?p_proc ?process .
+}
+WHERE  {
+  #BIND ( "m01_s06_184" AS ?id_l)
+  BIND ( :m01_s06_184 AS ?id)
+  BIND ( <http://curiocity.org/m01_s06_184/Production> AS ?production)
+  BIND ( <http://curiocity.org/m01_s06_184/Object> AS ?artifact)
+  BIND ( <http://curiocity.org/m01_s06_184/Measurements> AS ?dimension)
+  BIND ( <http://curiocity.org/m01_s06_184/Adquisition> AS ?acquisition)
+  BIND ( <http://curiocity.org/m01_s06_184/Utility> AS ?utility)
+  BIND ( <http://curiocity.org/m01_s06_184/Current_Condition> AS ?condition)
+  {
+  	?artifact	ecrm:P48_has_preferred_identifier ?id ;
+  					?p ?o .
+    ?s_art ?p_art ?artifact .
+  }
+  #?id rdfs:label ?id_l .
+  UNION
+  {
+ 	 ?production ecrm:P108_has_produced? ?artifact ;
+   				?p2 ?o2 .
+    ?s_pro ?p_pro ?production .
+  }
+  UNION
+  {
+    ?acquisition ecrm:P30_transferred_custody_of ?artifact ;
+    					 ?p1 ?o1 .
+    ?s_acq ?p_acq ?acquisition .
+  }
+  UNION
+  {
+    ?id a ecrm:E42_Identifier ;
+  			?p6 ?o6 .
+    ?s_id ?p_id ?id .
+  }
+  UNION
+  {
+    ?artifact ecrm:P43_has_dimension ?dimension .
+  			?dimension ?p3 ?o3 .
+    ?s_dim ?p_dim ?dimension .
+  }
+  UNION
+  {
+     ?artifact ecrm:P44_has_condition ?condition .
+    	?condition ?p5 ?o5 . 
+    ?s_con ?p_con ?condition .
+  }
+  UNION
+  {
+     ?process :L1_digitized ?artifact ;
+    			?p7 ?o7 .
+    ?s_proc ?p_proc ?process .
+  }
+  UNION
+  {
+     ?artifact	ecrm:P2_has_type ?utility . 
+      ?utility ?p4 ?o4 .	
+    ?s_util ?p_util ?utility .
+			#FILTER (?utility != :Verified)} 
+  }
+}
+
+#Search Coincidence Artifact label
+PREFIX : <http://curiocity.org/>
+PREFIX ecrm: <http://erlangen-crm.org/170309/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX cit: <http://curiocity.org/>
+SELECT ?artifact ?filename
+
+WHERE  {
+  BIND ( "m01_s01_023" AS ?id_l)
+  ?artifact a ecrm:E22_Man-Made_Object .
+  ?artifact ecrm:P48_has_preferred_identifier/rdfs:label ?id_l .
+  			
+  ?process ecrm:L1_digitized ?artifact ;
+			ecrm:L20_has_created/:T2_has_file_name ?filename .
+}
