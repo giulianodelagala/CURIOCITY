@@ -1,0 +1,5 @@
+WARNING:Fila 2 -> no válida, no existe id/title
+WARNING:Fila 3 -> no válida, no existe id/title
+WARNING:Fila 4 -> Creador No identificado
+WARNING:Fila 4 -> Donador No identificado
+WARNING:Fila 4 -> Dimensiones no identificadas: altura ancho largo diametro profundidad peso.

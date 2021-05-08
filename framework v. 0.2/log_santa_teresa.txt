@@ -1,0 +1,3 @@
+WARNING:Fila 2 -> no válida, no existe id/title
+WARNING:Fila 3 -> no válida, no existe id/title
+WARNING:Fila 4 -> Creador No identificado
