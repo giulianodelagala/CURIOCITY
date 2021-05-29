@@ -16,7 +16,7 @@
 <http://curiocity.org/> rdf:type owl:Ontology ;
                          rdfs:comment "CURIOCITY Cultural Heritage in Urban Tourism"@en ;
                          rdfs:label "CURIOCITY"@en ;
-                         owl:versionInfo "CURIOCITY 0.1" .
+                         owl:versionInfo "CURIOCITY 0.2" .
 
 #################################################################
 #    Annotation properties
@@ -6966,16 +6966,6 @@ time:TemporalEntity rdf:type owl:Class ;
           ecrm:P3_has_note "A1 Range: values of histogram from 0,0,0 to 20,20,20"^^xsd:string .
 
 
-###  http://curiocity.org/Alexander_Pinto
-:Alexander_Pinto rdf:type owl:NamedIndividual ,
-                          :Profile ;
-                 :has_user_type :admin ;
-                 :email "alexander.pinto@ucsp.edu.pe" ;
-                 :first_name "Alexander" ;
-                 :last_name "Pinto" ;
-                 :password "curiocity@2021" .
-
-
 ###  http://curiocity.org/Altura_de_Cesto_de_la_Cultura_Nazca
 :Altura_de_Cesto_de_la_Cultura_Nazca rdf:type owl:NamedIndividual ,
                                               ecrm:E54_Dimension ;
@@ -7076,6 +7066,12 @@ time:TemporalEntity rdf:type owl:Class ;
                    ecrm:E55_Type .
 
 
+###  http://curiocity.org/ID-USER
+:ID-USER rdf:type owl:NamedIndividual ,
+                  ecrm:E55_Type ;
+         rdfs:comment "USER ID of CURIOCITY Framework" .
+
+
 ###  http://curiocity.org/Imagen_Cesto_de_la_Cultura_Nazca_01
 :Imagen_Cesto_de_la_Cultura_Nazca_01 rdf:type owl:NamedIndividual ,
                                               :D9_Data_Object ;
@@ -7156,6 +7152,24 @@ time:TemporalEntity rdf:type owl:Class ;
 :admin rdf:type owl:NamedIndividual ,
                 :User_Type ;
        rdfs:label "Administrator"@en .
+
+
+###  http://curiocity.org/alexanderpinto
+:alexanderpinto rdf:type owl:NamedIndividual ,
+                         ecrm:E42_Identifier ;
+                ecrm:P2_has_type :ID-USER ;
+                :P190_has_symbolic_content "alexanderpinto"^^xsd:string .
+
+
+###  http://curiocity.org/alexanderpinto-profile
+:alexanderpinto-profile rdf:type owl:NamedIndividual ,
+                                 :Profile ;
+                        :has_user_type :admin ;
+                        ecrm:P48_has_preferred_identifier :alexanderpinto ;
+                        :email "alexander.pinto@ucsp.edu.pe"^^xsd:string ;
+                        :first_name "Alexander"^^xsd:string ;
+                        :last_name "Pinto"^^xsd:string ;
+                        :password "curiocity@2021"^^xsd:string .
 
 
 ###  http://curiocity.org/cm
