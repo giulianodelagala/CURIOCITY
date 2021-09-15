@@ -15,6 +15,41 @@ class Metricas:
         self.level_dic = {}
         self.leaves = []
         self.classes = []
+        self.prefix = {
+            "ecrm" : self.ecrm,
+            "owl": OWL,
+            "dc": "http://purl.org/dc/elements/1.1/",
+            "l0": "https://w3id.org/italia/onto/l0/",
+            "mu": "https://w3id.org/italia/onto/MU/",
+            "ns": "http://www.w3.org/2006/vcard/ns#",
+            "ro": "https://w3id.org/italia/onto/RO/",
+            "ti": "https://w3id.org/italia/onto/TI/",
+            "CLV": "https://w3id.org/italia/onto/CLV/",
+            "cis": "http://dati.beniculturali.it/cis/",
+            "clv": "https://w3id.org/italia/onto/CLV/",
+            "owl": "http://www.w3.org/2002/07/owl#",
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "xml": "http://www.w3.org/XML/1998/namespace",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "ADMS": "https://w3id.org/italia/onto/ADMS/",
+            "a-cd": "https://w3id.org/arco/ontology/context-description/",
+            "a-ce": "https://w3id.org/arco/ontology/cultural-event/",
+            "a-dd": "https://w3id.org/arco/ontology/denotative-description/",
+            "adms": "https://w3id.org/italia/onto/ADMS/",
+            "arco": "https://w3id.org/arco/ontology/arco/",
+            "core": "https://w3id.org/arco/ontology/core/",
+            "dcat": "http://www.w3.org/ns/dcat#",
+            "foaf": "http://xmlns.com/foaf/0.1/",
+            "opla": "http://ontologydesignpatterns.org/opla#",
+            "prov": "http://www.w3.org/ns/prov#",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "a-cat": "https://w3id.org/arco/ontology/catalogue/",
+            "a-loc": "https://w3id.org/arco/ontology/location/",
+            "opla1": "http://ontologydesignpatterns.org/opla/",
+            "terms": "http://purl.org/dc/terms/",
+            "roapit": "https://w3id.org/italia/onto/RO/",
+            "tiapit": "https://w3id.org/italia/onto/TI/",
+        }
 
         self.getClasses() #create list of classes
         self.levelConcept() #Create level_dic
@@ -29,7 +64,7 @@ class Metricas:
         current = [] #current list to iterate
         prox = [] #next list
         current = [OWL.Thing]
-        
+
         level = 0
         while ( len(current) != 0):
             for child in current:
@@ -42,7 +77,7 @@ class Metricas:
             current.clear()
             current, prox = prox, current
             level += 1
-    
+
     def getClasses(self):
         self.classes = [i for i in self.g.subjects(RDF.type, OWL.Class)]
 
@@ -54,10 +89,10 @@ class Metricas:
                         WHERE {
                             VALUES ?rel { rdfs:domain rdfs:range }
                             ?p a owl:ObjectProperty ;
-                                ?rel ?c ;                                
+                                ?rel ?c ;
                             }""",
-                            initNs= {"ecrm" : self.ecrm,
-                                "owl": OWL} )
+                            initNs= self.prefix
+        )
 
         pro = self.g.query(qpro, initBindings={'c': concept})
         return len(pro)
@@ -69,10 +104,10 @@ class Metricas:
                         WHERE {
                             VALUES ?rel { rdfs:domain rdfs:range }
                             ?p a owl:DatatypeProperty ;
-                                ?rel ?c ;                                
+                                ?rel ?c ;
                             }""",
-                            initNs= {"ecrm" : self.ecrm,
-                                "owl": OWL} )
+                            initNs= self.prefix
+                            )
 
         pro = self.g.query(qpro, initBindings={'c': concept})
         return len(pro)
@@ -83,10 +118,11 @@ class Metricas:
         qpar = prepareQuery( """ SELECT ?p
                         WHERE {
                             ?c rdfs:subClassOf ?p .
-                            FILTER (!isBlank(?p)) 
+                            FILTER (!isBlank(?p))
                         }
                         """,
-                        initNs= {"ecrm" : self.ecrm})
+                        initNs= self.prefix
+                        )
 
         par = self.g.query(qpar, initBindings={'c': concept})
         parent = []
@@ -100,10 +136,11 @@ class Metricas:
         qchi = prepareQuery( """ SELECT ?p
                         WHERE {
                             ?p rdfs:subClassOf ?c .
-                            FILTER (!isBlank(?p)) 
+                            FILTER (!isBlank(?p))
                         }
                         """,
-                        initNs= {"ecrm" : self.ecrm})
+                        initNs= self.prefix
+                        )
 
         chi = self.g.query(qchi, initBindings={'c': concept})
         children = []
@@ -117,14 +154,14 @@ class Metricas:
         # owl:minCardinality, owl:maxCardinality) nested inside of rdfs:subClassOf
         qres = prepareQuery("""SELECT ?p
                         WHERE {
-                            VALUES ?t { 
+                            VALUES ?t {
                                 owl:someValuesFrom owl:allValuesFrom
-                                owl:hasValue owl:minCardinality 
+                                owl:hasValue owl:minCardinality
                                 owl:maxCardinality}
-                            ?c rdfs:subClassOf [ ?t ?p ] .                               
+                            ?c rdfs:subClassOf [ ?t ?p ] .
                             }""",
-                            initNs= {"ecrm" : self.ecrm,
-                                "owl": OWL} )
+                            initNs= self.prefix
+                            )
 
         res = self.g.query(qres, initBindings={'c': concept})
         #for i in res:
@@ -137,15 +174,15 @@ class Metricas:
         # rdfs:label, rdfs:seeAlso, rdfs:isDefinedBy)
         qann = prepareQuery("""SELECT ?p
                         WHERE {
-                            VALUES ?t { 
+                            VALUES ?t {
                                 owl:versionInfo rdfs:comment
-                                rdfs:label rdfs:seeAlso 
+                                rdfs:label rdfs:seeAlso
                                 rdfs:isDefinedBy}
                             ?c a owl:Class ;
                                 ?t ?p .
                             }""",
-                            initNs= {"ecrm" : self.ecrm,
-                                "owl": OWL} )
+                            initNs= self.prefix
+                            )
 
         ann = self.g.query(qann, initBindings={'c': concept})
         #for i in ann:
@@ -155,18 +192,20 @@ class Metricas:
 
     def leavesConcept(self):
         #Return all leaves concepts
+        # Removes blank nodes
         ql = prepareQuery( """ SELECT ?c
                             WHERE {
                                 ?c a owl:Class .
-                                MINUS 
+                                MINUS
                                 {
                                     ?child rdfs:subClassOf ?c .
                                 }
+                            FILTER (!isBlank(?c))
                             }
                             """,
-                            initNs= {"ecrm" : self.ecrm,
-                                    "owl" : OWL})
-        
+                            initNs= self.prefix
+                            )
+
         leaf = self.g.query(ql)
         self.leaves = [i[0] for i in leaf]
 
@@ -186,13 +225,13 @@ class Metricas:
         #Lack of Cohesion in Methods
         sum_len_path , total_path = self.LenPath()
         return sum_len_path/ total_path
-            
+
     def WMCOnto2(self):
         #Weight method per class
         sum_len_path , dummy = self.LenPath()
         total_leaves = len(self.leaves)
         return sum_len_path/total_leaves
-        
+
     def DITOnto(self):
         #Depth of subsumption hierarchy
         who = OWL.Thing
@@ -213,7 +252,7 @@ class Metricas:
         return ancestor / len(self.leaves)
 
     def NOCOnto(self):
-        #Number of Children Concepts  
+        #Number of Children Concepts
         sum_subclasses = 0 #Number of SubClasses for each Concept
         for i in self.classes:
             sum_subclasses += self.numberDirectSubclass(i)
@@ -281,12 +320,12 @@ class Metricas:
 
     def AROnto(self):
         #Attribute Richness
-        #Number of property restrictions 
+        #Number of property restrictions
         restrictions = 0 #number of restrictions per class
         for i in self.classes:
             restrictions += self.numberRestrictions(i)
         return restrictions / len(self.classes)
-    
+
     def INROnto(self):
         #Relationships per concept
         subconcepts = self.numberSubconcepts() #number of subconcepts per class
@@ -308,7 +347,7 @@ class Metricas:
 
 if __name__ == "__main__":
 
-    M = Metricas("../Curiocity_Turtle.owl")
+    M = Metricas("../../arco.ttl")
     #for i in M.level_dic:
     #    print(i, M.level_dic[i])
     #print(M.level_dic)
@@ -319,13 +358,13 @@ if __name__ == "__main__":
     #print(M.classes[1])
     #print(M.numberDirectSubclass("E1_CRM_Entity"))
     #print (M.leaves)
-    
+
     print("LCOMOnto" , M.LCOMOnto())
     print("WMCOnto2" , M.WMCOnto2())
     print("DITOnto", M.DITOnto())
     print("NACOnto", M.NACOnto())
     print("NOCOnto", M.NOCOnto())
-    
+
     print("CBOOnto", M.CBOOnto())
     print("RFCOnto", M.RFCOnto())
     print("NOMOnto", M.NOMOnto())
@@ -339,8 +378,8 @@ if __name__ == "__main__":
     #print(M.numberAnnotation(obj))
     print("ANOnto", M.ANOnto())
     print("TMOnto2", M.TMOnto2())
-    
 
-    
+
+
 
 
