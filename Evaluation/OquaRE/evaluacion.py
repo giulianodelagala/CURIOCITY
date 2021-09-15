@@ -36,7 +36,7 @@ class Evaluacion:
         self.WMCOnto2.append(self.M.WMCOnto2())
         self.DITOnto.append(self.M.DITOnto())
         self.NACOnto.append(self.M.NACOnto())
-        
+
         self.NOCOnto.append(self.M.NOCOnto())
         self.CBOOnto.append(self.M.CBOOnto())
         self.RFCOnto.append(self.M.RFCOnto())
@@ -194,7 +194,7 @@ class Evaluacion:
         else: #>=0 <=0.2
             self.ANOnto.append(1)
         ###############################################
-        if (self.TMOnto2[0] >= 1 and self.TMOnto2[0] <= 2):
+        if (self.TMOnto2[0] >= 0 and self.TMOnto2[0] <= 2):
             self.TMOnto2.append(5)
         elif (self.TMOnto2[0] > 2 and self.TMOnto2[0] <=4):
             self.TMOnto2.append(4)
@@ -207,7 +207,7 @@ class Evaluacion:
         ###############################################
 
     def ShowScore(self):
-        metric = ['LCOMOnto', 'WMCOnto2', 'DITOnto', 'NACOnto', 
+        metric = ['LCOMOnto', 'WMCOnto2', 'DITOnto', 'NACOnto',
             'NOCOnto', 'CBOOnto', 'RFCOnto', 'NOMOnto',
             'RROnto', 'PROnto', 'AROnto',
             'INROnto', 'ANOnto', 'TMOnto2']
@@ -246,7 +246,7 @@ class Evaluacion:
     def EvalFunctionalAdequacy(self):
         #Functional adequacy
         cv = self.ANOnto[1] #Controlled vocabulary
-        scv = (self.RROnto[1] + self.AROnto[1] + self.formalization + self.consistency)/4.0 #Schema and value reconciliation 
+        scv = (self.RROnto[1] + self.AROnto[1] + self.formalization + self.consistency)/4.0 #Schema and value reconciliation
         csq = (self.ANOnto[1] + self.RROnto[1] + self.AROnto[1] + self.INROnto[1] + self.formalization)/5.0 #Consistent search and query
         ka = (self.ANOnto[1] + self.RROnto[1] + self.NOMOnto[1])/3.0 #Knowledge acquisition
         cs = (self.RROnto[1] + self.AROnto[1])/2.0 #Clustering and similiraty
@@ -290,7 +290,7 @@ class Evaluacion:
         #Characteristic
         structural = np.mean(self.score_struct)
         func_adequacy = np.mean(self.score_fa[:-1]) #Functional adequacy
-        #adaptability 
+        #adaptability
         reliability = (self.recoverability + self.availability)/2.0
         #replaceability
         maintainability = np.mean(self.score_maintain[:-1])
