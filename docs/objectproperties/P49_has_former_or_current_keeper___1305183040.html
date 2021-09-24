@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: 'P49 has former or current keeper'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This property identifies the E39 Actor or Actors who have or have had custody of an instance of E18 Physical Thing at some time. This property leaves open the question if parts of this physical thing have been added or removed during the time-spans it has been under the custody of this actor, but it is required that at least a part which can unambiguously be identified as representing the whole has been under this custody for its whole time. The way, in which a representative part is defined, should ensure that it is unambiguous who keeps a part and who the whole and should be consistent with the identity criteria of the kept instance of E18 Physical Thing.<br /><br />The distinction with P50 has current keeper (is current keeper of) is that P49 has former or current keeper (is former or current keeper of) leaves open the question as to whether the specified keepers are current.<br /><br />P49 has former or current keeper (is former or current keeper of) is a shortcut for the more detailed path from ‘E18 Physical Thing’ through ‘P30 transferred custody of’, ‘E10 Transfer of Custody’, ‘P28 custody surrendered by’ or ‘P29 custody received by’ to ‘ E39 Actor’.<br /><br />Examples:<br />- paintings from The Iveagh Bequest (E18) has former or current keeper Secure Deliveries Inc. (E40)<br /><br />In First Order Logic:<br />P49(x,y) ⊃ E18(x)<br />P49(x,y) ⊃ E39(y)"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"P49 has former or current keeper"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"P49"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E18_Physical_Thing___1779016964.html" class='Class' title="http://erlangen-crm.org/170309/E18_Physical_Thing">'E18&nbsp;Physical&nbsp;Thing'</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E39_Actor___-2044985332.html" class='Class' title="http://erlangen-crm.org/170309/E39_Actor">'E39&nbsp;Actor'</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P49i_is_former_or_current_keeper_of___1963156625.html" class='Object Property' title="http://erlangen-crm.org/170309/P49i_is_former_or_current_keeper_of">'P49&nbsp;is&nbsp;former&nbsp;or&nbsp;current&nbsp;keeper&nbsp;of'</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='usage_(3)'>
+<h4>Usage (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P109_has_current_or_former_curator___-1599320785.html" class='Object Property' title="http://erlangen-crm.org/170309/P109_has_current_or_former_curator">'P109&nbsp;has&nbsp;current&nbsp;or&nbsp;former&nbsp;curator'</a> <span class='keyword'>&sube;</span> <span class='Object Property active-entity'>'P49&nbsp;has&nbsp;former&nbsp;or&nbsp;current&nbsp;keeper'</span></li>
+<li class="asserted"><a href="P50_has_current_keeper___-1961834340.html" class='Object Property' title="http://erlangen-crm.org/170309/P50_has_current_keeper">'P50&nbsp;has&nbsp;current&nbsp;keeper'</a> <span class='keyword'>&sube;</span> <span class='Object Property active-entity'>'P49&nbsp;has&nbsp;former&nbsp;or&nbsp;current&nbsp;keeper'</span></li>
+<li class="asserted"><span class='Object Property active-entity'>'P49&nbsp;has&nbsp;former&nbsp;or&nbsp;current&nbsp;keeper'</span> <span class='keyword'>inverse</span> <a href="P49i_is_former_or_current_keeper_of___1963156625.html" class='Object Property' title="http://erlangen-crm.org/170309/P49i_is_former_or_current_keeper_of">'P49&nbsp;is&nbsp;former&nbsp;or&nbsp;current&nbsp;keeper&nbsp;of'</a></li>
+</ul>
+</div>
+</div><!-- usage (3) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: 'P138 represents'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This property establishes the relationship between an E36 Visual Item and the entity that it visually represents.<br /><br />Any entity may be represented visually. This property is part of the fully developed path from E24 Physical Man-Made Thing through P65 shows visual item (is shown by), E36 Visual Item, P138 represents (has representation) to E1 CRM Entity, which is shortcut by P62 depicts (is depicted by). P138.1 mode of representation allows the nature of the representation to be refined.<br /><br />This property is also used for the relationship between an original and a digitisation of the original by the use of techniques such as digital photography, flatbed or infrared scanning. Digitisation is here seen as a process with a mechanical, causal component rendering the spatial distribution of structural and optical properties of the original and does not necessarily include any visual similarity identifiable by human observation."<br /><br />Properties: P138.1 mode of representation: E55 Type<br /><br />Examples:<br />- the digital file found at http://www.emunch.no/N/full/No-MM_N0001-01.jpg (E73) represents page 1 of Edward Munch's manuscript MM N 1, Munch-museet (E73) mode of representation Digitisation(E55)<br />- The 3D model VAM_A.200-1946_trace_1M.ply (E73) represents Victoria & Albert Museum's Madonna and child sculpture (visual work) A.200-1946 (E22) mode of representation 3D surface (E55)<br /><br />In First Order Logic:<br />P138(x,y) ⊃ E36(x)<br />P138(x,y) ⊃ E1(y)<br />P138(x,y,z) ⊃ [P138(x,y) ∧ E55(z)]<br />P138(x,y) ⊃ P67(x,y)"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"P138 represents"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"P138"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E36_Visual_Item___-418467226.html" class='Class' title="http://erlangen-crm.org/170309/E36_Visual_Item">'E36&nbsp;Visual&nbsp;Item'</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E1_CRM_Entity___1026361666.html" class='Class' title="http://erlangen-crm.org/170309/E1_CRM_Entity">E1Entity</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P138i_has_representation___921719737.html" class='Object Property' title="http://erlangen-crm.org/170309/P138i_has_representation">'P138&nbsp;has&nbsp;representation'</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='superproperties_(1)'>
+<h4>Superproperties (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P67_refers_to___106662052.html" class='Object Property' title="http://erlangen-crm.org/170309/P67_refers_to">'P67&nbsp;refers&nbsp;to'</a></li>
+</ul>
+</div>
+</div><!-- superproperties (1) -->
+
+
+<div id='usage_(2)'>
+<h4>Usage (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><span class='Object Property active-entity'>'P138&nbsp;represents'</span> <span class='keyword'>&sube;</span> <a href="P67_refers_to___106662052.html" class='Object Property' title="http://erlangen-crm.org/170309/P67_refers_to">'P67&nbsp;refers&nbsp;to'</a></li>
+<li class="asserted"><span class='Object Property active-entity'>'P138&nbsp;represents'</span> <span class='keyword'>inverse</span> <a href="P138i_has_representation___921719737.html" class='Object Property' title="http://erlangen-crm.org/170309/P138i_has_representation">'P138&nbsp;has&nbsp;representation'</a></li>
+</ul>
+</div>
+</div><!-- usage (2) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

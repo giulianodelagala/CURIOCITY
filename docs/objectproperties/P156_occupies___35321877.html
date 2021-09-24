@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: 'P156 occupies'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This property describes the largest volume in space that an instance of E18 Physical Thing has occupied at any time during its existence, with respect to the reference space relative to itself. This allows you to describe the thing itself as a place that may contain other things, such as a box that may contain coins. In other words, it is the volume that contains all the points which the thing has covered at some time during its existence. In the case of an E26 Physical Feature the default reference space is the one in which the object that bears the feature or at least the surrounding matter of the feature is at rest. In this case there is a 1:1 relation of E26 Feature and E53 Place. For simplicity of implementation multiple inheritance (E26 Feature IsA E53 Place) may be a practical approach.<br /><br />For instances of E19 Physical Objects the default reference space is the one which is at rest to the object itself, i.e. which moves together with the object. We include in the occupied space the space filled by the matter of the physical thing and all its inner spaces.<br /><br />This property is a subproperty of P161 has spatial projection because it refers to its own domain as reference space for its range, whereas P161 has spatial projection may refer to a place in terms of any reference space. For some instances of E18 Physical Object the relative stability of form may not be sufficient to define a useful local reference space, for instance for an amoeba. In such cases the fully developed path to an external reference space and using a temporal validity component may be adequate to determine the place they have occupied.<br /><br />In contrast to P156 occupies, the property P53 has former or current location identifies an instance of E53 Place at which a thing is or has been for some unspecified time span. Further it does not constrain the reference space of the referred instance of P53 Place.<br /><br />In First Order Logic:<br />P156 (x,y) = [E18(x) ∧ E53(y) ∧ P161(x,y) ∧ P157(y,x)]"</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"P156 occupies"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"P156"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E18_Physical_Thing___1779016964.html" class='Class' title="http://erlangen-crm.org/170309/E18_Physical_Thing">'E18&nbsp;Physical&nbsp;Thing'</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E53_Place___424682838.html" class='Class' title="http://erlangen-crm.org/170309/E53_Place">'E53&nbsp;Place'</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P156i_is_occupied_by___494549734.html" class='Object Property' title="http://erlangen-crm.org/170309/P156i_is_occupied_by">P156i_is_occupied_by</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='superproperties_(1)'>
+<h4>Superproperties (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P161_has_spatial_projection___-46017667.html" class='Object Property' title="http://erlangen-crm.org/170309/P161_has_spatial_projection">'P161&nbsp;has&nbsp;spatial&nbsp;projection'</a></li>
+</ul>
+</div>
+</div><!-- superproperties (1) -->
+
+
+<div id='usage_(2)'>
+<h4>Usage (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><span class='Object Property active-entity'>'P156&nbsp;occupies'</span> <span class='keyword'>&sube;</span> <a href="P161_has_spatial_projection___-46017667.html" class='Object Property' title="http://erlangen-crm.org/170309/P161_has_spatial_projection">'P161&nbsp;has&nbsp;spatial&nbsp;projection'</a></li>
+<li class="asserted"><span class='Object Property active-entity'>'P156&nbsp;occupies'</span> <span class='keyword'>inverse</span> <a href="P156i_is_occupied_by___494549734.html" class='Object Property' title="http://erlangen-crm.org/170309/P156i_is_occupied_by">P156i_is_occupied_by</a></li>
+</ul>
+</div>
+</div><!-- usage (2) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: 'P69 has association with'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This property generalises relationships like whole-part, sequence, prerequisite or inspired by between instances of E29 Design or Procedure. Any instance of E29 Design or Procedure may be associated with other designs or procedures. The property is considered to be symmetrical unless otherwise indicated by P69.1 has type.<br />The P69.1 has type property of P69 has association with allows the nature of the association to be specified reading from domain to range; examples of types of association between instances of E29 Design or Procedure include: has part, follows, requires, etc.<br />The property can typically be used to model the decomposition of the description of a complete workflow into a series of separate procedures.<br />This property is transitive.<br /><br />Examples:<br />- Procedure for glass blowing (E29) has association with procedure for glass heating (E29) <br />- The set of instructions for performing Macbeth in Max Reinhardt's production in 1916 in Berlin at Deutsches Theater (E29) has association with the scene design drawing by Ernst Stern reproduced at http://www.glopad.org/pi/fr/record/digdoc/1003814 (E29) has type has part (E55) <br />- Preparation of parchment (E29) has association with soaking and unhairing of skin (E29) has type 'has part' (E55). Preparation of parchment (E29) has association with stretching of skin (E29) has type 'has part' (E55). Stretching of skin (E29) has association with soaking and unhairing of skin (E29) has type 'follows' (E55).<br />- The plan for reassembling the temples at Abu Simbel (E29) has association with the plan for<br />storing and transporting the blocks (E29) has type 'follows' (E55)'.<br /><br />In First Order Logic:<br />P69 (x,y) ⊃ E29(x)<br />P69 (x,y) ⊃ E29(y)<br />P69(x,y,z) ⊃ [P69(x,y) ∧ E55(z)]<br />P69(x,y) ⊃P69(y,x)<br /><br />Properties: P69.1 has type: E55 Type"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"P69 has association with"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"P69"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E29_Design_or_Procedure___-1581879632.html" class='Class' title="http://erlangen-crm.org/170309/E29_Design_or_Procedure">'E29&nbsp;Design&nbsp;or&nbsp;Procedure'</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E29_Design_or_Procedure___-1581879632.html" class='Class' title="http://erlangen-crm.org/170309/E29_Design_or_Procedure">'E29&nbsp;Design&nbsp;or&nbsp;Procedure'</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P69i_is_associated_with___1181453438.html" class='Object Property' title="http://erlangen-crm.org/170309/P69i_is_associated_with">'P69&nbsp;is&nbsp;associated&nbsp;with'</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='usage_(1)'>
+<h4>Usage (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><span class='Object Property active-entity'>'P69&nbsp;has&nbsp;association&nbsp;with'</span> <span class='keyword'>inverse</span> <a href="P69i_is_associated_with___1181453438.html" class='Object Property' title="http://erlangen-crm.org/170309/P69i_is_associated_with">'P69&nbsp;is&nbsp;associated&nbsp;with'</a></li>
+</ul>
+</div>
+</div><!-- usage (1) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

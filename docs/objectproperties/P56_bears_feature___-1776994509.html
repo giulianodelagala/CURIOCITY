@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: 'P56 bears feature'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This property links an instance of E19 Physical Object to an instance of E26 Physical Feature that it bears.<br />An E26 Physical Feature can only exist on one object. One object may bear more than one E26 Physical Feature. An E27 Site should be considered as an E26 Physical Feature on the surface of the Earth.<br />An instance B of E26 Physical Feature being a detail of the structure of another instance A of E26 Physical Feature can be linked to B by use of the property P46 is composed of (forms part of). This implies that the subfeature B is P56i found on the same E19 Physical Object as A.<br />P56 bears feature (is found on) is a shortcut. A more detailed representation can make use of the fully developed (i.e. indirect) path from E19 Physical Object through P59 has section (is located on or within), E53 Place, P53 has former or current location (is former or current location of) to E26 Physical Feature.<br /><br />Examples:<br />- silver cup 232 (E22) bears feature 32 mm scratch on silver cup 232 (E26)<br /><br />In First Order Logic:<br />P56(x,y) ⊃E19(x)<br />P56(x,y) ⊃ E26(y)<br />P56(x,y) ⊃ P46(x,y)"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"P56 bears feature"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"P56"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E19_Physical_Object___-355119456.html" class='Class' title="http://erlangen-crm.org/170309/E19_Physical_Object">'E19&nbsp;Physical&nbsp;Object'</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E26_Physical_Feature___-466296369.html" class='Class' title="http://erlangen-crm.org/170309/E26_Physical_Feature">'E26&nbsp;Physical&nbsp;Feature'</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P56i_is_found_on___-775904491.html" class='Object Property' title="http://erlangen-crm.org/170309/P56i_is_found_on">'P56&nbsp;is&nbsp;found&nbsp;on'</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='superproperties_(1)'>
+<h4>Superproperties (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P46_is_composed_of___-1619783769.html" class='Object Property' title="http://erlangen-crm.org/170309/P46_is_composed_of">'P46&nbsp;is&nbsp;composed&nbsp;of'</a></li>
+</ul>
+</div>
+</div><!-- superproperties (1) -->
+
+
+<div id='usage_(2)'>
+<h4>Usage (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><span class='Object Property active-entity'>'P56&nbsp;bears&nbsp;feature'</span> <span class='keyword'>&sube;</span> <a href="P46_is_composed_of___-1619783769.html" class='Object Property' title="http://erlangen-crm.org/170309/P46_is_composed_of">'P46&nbsp;is&nbsp;composed&nbsp;of'</a></li>
+<li class="asserted"><span class='Object Property active-entity'>'P56&nbsp;bears&nbsp;feature'</span> <span class='keyword'>inverse</span> <a href="P56i_is_found_on___-775904491.html" class='Object Property' title="http://erlangen-crm.org/170309/P56i_is_found_on">'P56&nbsp;is&nbsp;found&nbsp;on'</a></li>
+</ul>
+</div>
+</div><!-- usage (2) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

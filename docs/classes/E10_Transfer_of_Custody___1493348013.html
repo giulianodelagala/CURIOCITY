@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: 'E10 Transfer of Custody'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This class comprises transfers of physical custody of objects between instances of E39 Actor.<br /><br />The recording of the donor and/or recipient is optional. It is possible that in an instance of E10 Transfer of Custody there is either no donor or no recipient. Depending on the circumstances it may describe:<br />1. the beginning of custody<br />2. the end of custody<br />3. the transfer of custody<br />4. the receipt of custody from an unknown source<br />5. the declared loss of an object<br /><br />The distinction between the legal responsibility for custody and the actual physical possession of the object should be expressed using the property P2 has type (is type of). A specific case of transfer of custody is theft. The sense of physical possession requires that the object of custody is in the hands of the keeper at least with a part representative for the whole. The way, in which a representative part is defined, should ensure that it is unambiguous who keeps a part and who the whole and should be consistent with the identity criteria of the kept instance of E18 Physical Thing. For instance, in the case of a set of cutlery we may require the majority of pieces having been in the hands of the actor regardless which individual pieces are kept over time. <br /><br />The interpretation of the museum notion of "accession" differs between institutions. The CRM therefore models legal ownership and physical custody separately. Institutions will then model their specific notions of accession and deaccession as combinations of these.<br /><br />Examples:<br />- the delivery of the paintings by Secure Deliveries Inc. to the National Gallery<br />- the return of Picasso's "Guernica" to Madrid's Prado in 1981<br /><br />In First Order Logic:<br />E10(x) ⊃ E7(x)"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"E10 Transfer of Custody"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"E10"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='superclasses_(2)'>
+<h4>Superclasses (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="E7_Activity___-1264395705.html" class='Class' title="http://erlangen-crm.org/170309/E7_Activity">'E7&nbsp;Activity'</a></li>
+<li class="asserted"><a href="../objectproperties/P30_transferred_custody_of___-593353797.html" class='Object Property' title="http://erlangen-crm.org/170309/P30_transferred_custody_of">'P30&nbsp;transferred&nbsp;custody&nbsp;of'</a> <span class='some'>some</span> <a href="E18_Physical_Thing___1779016964.html" class='Class' title="http://erlangen-crm.org/170309/E18_Physical_Thing">'E18&nbsp;Physical&nbsp;Thing'</a></li>
+</ul>
+</div>
+</div><!-- superclasses (2) -->
+
+
+<div id='members_(1)'>
+<h4>Members (1)</h4>
+<div class='codebox'>
+<span class="asserted"><a href="../individuals/Donativo_de_Cesto_de_la_Cultura_Nazca___786308096.html" class='Individual' title="http://curiocity.org/Donativo_de_Cesto_de_la_Cultura_Nazca">Donativo_de_Cesto_de_la_Cultura_Nazca</a></span></div>
+</div><!-- members (1) -->
+
+
+<div id='usage_(6)'>
+<h4>Usage (6)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../objectproperties/P28_custody_surrendered_by___-1104238189.html" class='Object Property' title="http://erlangen-crm.org/170309/P28_custody_surrendered_by">'P28&nbsp;custody&nbsp;surrendered&nbsp;by'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E10&nbsp;Transfer&nbsp;of&nbsp;Custody'</span></li>
+<li class="asserted"><a href="../objectproperties/P29_custody_received_by___-978959702.html" class='Object Property' title="http://erlangen-crm.org/170309/P29_custody_received_by">'P29&nbsp;custody&nbsp;received&nbsp;by'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E10&nbsp;Transfer&nbsp;of&nbsp;Custody'</span></li>
+<li class="asserted"><a href="../objectproperties/P30_transferred_custody_of___-593353797.html" class='Object Property' title="http://erlangen-crm.org/170309/P30_transferred_custody_of">'P30&nbsp;transferred&nbsp;custody&nbsp;of'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E10&nbsp;Transfer&nbsp;of&nbsp;Custody'</span></li>
+<li class="asserted"><a href="../objectproperties/P28i_surrendered_custody_through___-580340292.html" class='Object Property' title="http://erlangen-crm.org/170309/P28i_surrendered_custody_through">'P28&nbsp;surrendered&nbsp;custody&nbsp;through'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E10&nbsp;Transfer&nbsp;of&nbsp;Custody'</span></li>
+<li class="asserted"><a href="../objectproperties/P29i_received_custody_through___-311171791.html" class='Object Property' title="http://erlangen-crm.org/170309/P29i_received_custody_through">'P29&nbsp;received&nbsp;custody&nbsp;through'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E10&nbsp;Transfer&nbsp;of&nbsp;Custody'</span></li>
+<li class="asserted"><a href="../objectproperties/P30i_custody_transferred_through___-1068068666.html" class='Object Property' title="http://erlangen-crm.org/170309/P30i_custody_transferred_through">'P30&nbsp;custody&nbsp;transferred&nbsp;through'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E10&nbsp;Transfer&nbsp;of&nbsp;Custody'</span></li>
+</ul>
+</div>
+</div><!-- usage (6) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

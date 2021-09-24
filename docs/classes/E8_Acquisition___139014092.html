@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: 'E8 Acquisition'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This class comprises transfers of legal ownership from one or more instances of E39 Actor to one or more other instances of E39 Actor.<br /><br />The class also applies to the establishment or loss of ownership of instances of E18 Physical Thing. It does not, however, imply changes of any other kinds of right. The recording of the donor and/or recipient is optional. It is possible that in an instance of E8 Acquisition there is either no donor or no recipient. Depending on the circumstances, it may describe:<br /><br />1. the beginning of ownership<br />2. the end of ownership<br />3. the transfer of ownership<br />4. the acquisition from an unknown source<br />5. the loss of title due to destruction of the item<br /><br />It may also describe events where a collector appropriates legal title, for example by annexation or field collection. The interpretation of the museum notion of "accession" differs between institutions. The CRM therefore models legal ownership (E8 Acquisition) and physical custody (E10 Transfer of Custody) separately. Institutions will then model their specific notions of accession and deaccession as combinations of these.<br /><br />Examples:<br />- the collection of a hammer-head shark of the genus Sphyrna (Carchariniformes) XXXtbc by John Steinbeck and Edward Ricketts at Puerto Escondido in the Gulf of Mexico on March 25th, 1940<br />- the acquisition of El Greco's "The Apostles Peter and Paul" by the State Hermitage in Saint Petersburg<br />- the loss of my stuffed chaffinch 'Fringilla coelebs Linnaeus, 1758' due to insect damage last year<br /><br />In First Order Logic:<br />E8(x) ⊃ E7(x)"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"E8 Acquisition"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"E8"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='superclasses_(2)'>
+<h4>Superclasses (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="E7_Activity___-1264395705.html" class='Class' title="http://erlangen-crm.org/170309/E7_Activity">'E7&nbsp;Activity'</a></li>
+<li class="asserted"><a href="../objectproperties/P24_transferred_title_of___16792079.html" class='Object Property' title="http://erlangen-crm.org/170309/P24_transferred_title_of">'P24&nbsp;transferred&nbsp;title&nbsp;of'</a> <span class='min'>min</span> 1 <a href="Thing___-200689702.html" class='Class' title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a></li>
+</ul>
+</div>
+</div><!-- superclasses (2) -->
+
+
+<div id='usage_(6)'>
+<h4>Usage (6)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../objectproperties/P22_transferred_title_to___-202062475.html" class='Object Property' title="http://erlangen-crm.org/170309/P22_transferred_title_to">'P22&nbsp;transferred&nbsp;title&nbsp;to'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E8&nbsp;Acquisition'</span></li>
+<li class="asserted"><a href="../objectproperties/P23_transferred_title_from___1097981379.html" class='Object Property' title="http://erlangen-crm.org/170309/P23_transferred_title_from">'P23&nbsp;transferred&nbsp;title&nbsp;from'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E8&nbsp;Acquisition'</span></li>
+<li class="asserted"><a href="../objectproperties/P24_transferred_title_of___16792079.html" class='Object Property' title="http://erlangen-crm.org/170309/P24_transferred_title_of">'P24&nbsp;transferred&nbsp;title&nbsp;of'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E8&nbsp;Acquisition'</span></li>
+<li class="asserted"><a href="../objectproperties/P22i_acquired_title_through___1959180510.html" class='Object Property' title="http://erlangen-crm.org/170309/P22i_acquired_title_through">'P22&nbsp;acquired&nbsp;title&nbsp;through'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E8&nbsp;Acquisition'</span></li>
+<li class="asserted"><a href="../objectproperties/P23i_surrendered_title_through___448010408.html" class='Object Property' title="http://erlangen-crm.org/170309/P23i_surrendered_title_through">'P23&nbsp;surrendered&nbsp;title&nbsp;through'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E8&nbsp;Acquisition'</span></li>
+<li class="asserted"><a href="../objectproperties/P24i_changed_ownership_through___-43031283.html" class='Object Property' title="http://erlangen-crm.org/170309/P24i_changed_ownership_through">'P24&nbsp;changed&nbsp;ownership&nbsp;through'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E8&nbsp;Acquisition'</span></li>
+</ul>
+</div>
+</div><!-- usage (6) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

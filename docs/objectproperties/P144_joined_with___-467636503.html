@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='../classes/index.html' class='' >Classes</a>
+<a href='index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Object Property: 'P144 joined with'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This property identifies the instance of E74 Group of which an instance of E39 Actor becomes a member through an instance of E85 Joining.<br /><br />Although a Joining activity normally concerns only one instance of E74 Group, it is possible to imagine circumstances under which becoming member of one Group implies becoming member of another Group as well.<br /><br />Joining events allow for describing people becoming members of a group with a more detailed path from E74 Group through P144 joined with (gained member by), E85 Joining, P143 joined (was joined by) to E39 Actor, compared to the shortcut offered by P107 has current or former member (is current or former member of).<br />The property P144.1 kind of member can be used to specify the type of membership or the role the member has in the group.<br /><br />Examples:<br />- The election of Sir Isaac Newton as Member of Parliament to the Convention Parliament of 1689 (E85) joined with the Convention Parliament (E40)<br />- The inauguration of Mikhail Sergeyevich Gorbachev as Leader of the Union of Soviet Socialist Republics (USSR) in 1985 (E85) joined with the office of Leader of the Union of Soviet Socialist Republics (USSR) (E40) with P144.1 kind  of member President (E55)<br />- The implementation of the membership treaty January 1. 1973 between EU and Denmark (E85) joined with EU (E40)<br /><br />In First Order Logic:<br />P144(x,y) ⊃ E85(x)<br />P144(x,y)⊃ E74(y)<br />P144(x,y,z) ⊃ [P144(x,y) ∧ E55(z)]<br />P144(x,y) ⊃ P11(x,y)<br /><br />Properties: P144.1 kind of member: E55 Type"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"P144 joined with"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"P144"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='domains_(1)'>
+<h4>Domains (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E85_Joining___1326296870.html" class='Class' title="http://erlangen-crm.org/170309/E85_Joining">'E85&nbsp;Joining'</a></li>
+</ul>
+</div>
+</div><!-- domains (1) -->
+
+
+<div id='ranges_(1)'>
+<h4>Ranges (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E74_Group___494720973.html" class='Class' title="http://erlangen-crm.org/170309/E74_Group">'E74&nbsp;Group'</a></li>
+</ul>
+</div>
+</div><!-- ranges (1) -->
+
+
+<div id='inverses_(1)'>
+<h4>Inverses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P144i_gained_member_by___1574790781.html" class='Object Property' title="http://erlangen-crm.org/170309/P144i_gained_member_by">'P144&nbsp;gained&nbsp;member&nbsp;by'</a></li>
+</ul>
+</div>
+</div><!-- inverses (1) -->
+
+
+<div id='superproperties_(1)'>
+<h4>Superproperties (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="P11_had_participant___-981408325.html" class='Object Property' title="http://erlangen-crm.org/170309/P11_had_participant">'P11&nbsp;had&nbsp;participant'</a></li>
+</ul>
+</div>
+</div><!-- superproperties (1) -->
+
+
+<div id='usage_(3)'>
+<h4>Usage (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../classes/E85_Joining___1326296870.html" class='Class' title="http://erlangen-crm.org/170309/E85_Joining">'E85&nbsp;Joining'</a> <span class='keyword'>&sube;</span> <span class='Object Property active-entity'>'P144&nbsp;joined&nbsp;with'</span> <span class='min'>min</span> 1 <a href="../classes/Thing___-200689702.html" class='Class' title="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a></li>
+<li class="asserted"><span class='Object Property active-entity'>'P144&nbsp;joined&nbsp;with'</span> <span class='keyword'>&sube;</span> <a href="P11_had_participant___-981408325.html" class='Object Property' title="http://erlangen-crm.org/170309/P11_had_participant">'P11&nbsp;had&nbsp;participant'</a></li>
+<li class="asserted"><span class='Object Property active-entity'>'P144&nbsp;joined&nbsp;with'</span> <span class='keyword'>inverse</span> <a href="P144i_gained_member_by___1574790781.html" class='Object Property' title="http://erlangen-crm.org/170309/P144i_gained_member_by">'P144&nbsp;gained&nbsp;member&nbsp;by'</a></li>
+</ul>
+</div>
+</div><!-- usage (3) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

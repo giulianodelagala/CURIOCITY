@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+<a href='../individuals/index.html' class='' >Individuals</a>
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: 'E39 Actor'</h2>
+
+<div id='annotations_(3)'>
+<h4>Annotations (3)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"Scope note:<br />This class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible.<br /><br />The CRM does not attempt to model the inadvertent actions of such actors. Individual people should be documented as instances of E21 Person, whereas groups should be documented as instances of either E74 Group or its subclass E40 Legal Body.<br /><br />Examples:<br />- London and Continental Railways (E40)<br />- the Governor of the Bank of England in 1975 (E21)<br />- Sir Ian McKellan (E21)<br /><br />In First Order Logic:<br />E39(x) ⊃ E77(x)"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"E39 Actor"</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/notation___-1273871193.html" class='Annotation Property' title="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a> <span class='literal'>"E39"</span></li>
+</ul>
+</div>
+</div><!-- annotations (3) -->
+
+
+<div id='superclasses_(1)'>
+<h4>Superclasses (1)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="E77_Persistent_Item___-2136398996.html" class='Class' title="http://erlangen-crm.org/170309/E77_Persistent_Item">'E77&nbsp;Persistent&nbsp;Item'</a></li>
+</ul>
+</div>
+</div><!-- superclasses (1) -->
+
+
+<div id='usage_(25)'>
+<h4>Usage (25)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="E72_Legal_Object___-1437078065.html" class='Class' title="http://erlangen-crm.org/170309/E72_Legal_Object">'crm:E72&nbsp;Legal&nbsp;Object'</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/P105_right_held_by___1971212208.html" class='Object Property' title="http://erlangen-crm.org/170309/P105_right_held_by">'P105&nbsp;right&nbsp;held&nbsp;by'</a> <span class='some'>some</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="E78_Curated_Holding___1222467400.html" class='Class' title="http://erlangen-crm.org/170309/E78_Curated_Holding">'E78&nbsp;Collection'</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/P109_has_current_or_former_curator___-1599320785.html" class='Object Property' title="http://erlangen-crm.org/170309/P109_has_current_or_former_curator">'P109&nbsp;has&nbsp;current&nbsp;or&nbsp;former&nbsp;curator'</a> <span class='some'>some</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="E7_Activity___-1264395705.html" class='Class' title="http://erlangen-crm.org/170309/E7_Activity">'E7&nbsp;Activity'</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/P14_carried_out_by___-1765361868.html" class='Object Property' title="http://erlangen-crm.org/170309/P14_carried_out_by">'P14&nbsp;carried&nbsp;out&nbsp;by'</a> <span class='some'>some</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P105i_has_right_on___1388366382.html" class='Object Property' title="http://erlangen-crm.org/170309/P105i_has_right_on">'P105&nbsp;has&nbsp;right&nbsp;on'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P107i_is_current_or_former_member_of___-2033096424.html" class='Object Property' title="http://erlangen-crm.org/170309/P107i_is_current_or_former_member_of">'P107&nbsp;is&nbsp;current&nbsp;or&nbsp;former&nbsp;member&nbsp;of'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P109i_is_current_or_former_curator_of___1054288408.html" class='Object Property' title="http://erlangen-crm.org/170309/P109i_is_current_or_former_curator_of">'P109&nbsp;is&nbsp;current&nbsp;or&nbsp;former&nbsp;curator&nbsp;of'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P11i_participated_in___-685052541.html" class='Object Property' title="http://erlangen-crm.org/170309/P11i_participated_in">'P11&nbsp;participated&nbsp;in'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P131_is_identified_by___335282801.html" class='Object Property' title="http://erlangen-crm.org/170309/P131_is_identified_by">'P131&nbsp;is&nbsp;identified&nbsp;by'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P143i_was_joined_by___-1966978100.html" class='Object Property' title="http://erlangen-crm.org/170309/P143i_was_joined_by">'P143&nbsp;was&nbsp;joined&nbsp;by'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P145i_left_by___-1539936798.html" class='Object Property' title="http://erlangen-crm.org/170309/P145i_left_by">'P145&nbsp;left&nbsp;by'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P49i_is_former_or_current_keeper_of___1963156625.html" class='Object Property' title="http://erlangen-crm.org/170309/P49i_is_former_or_current_keeper_of">'P49&nbsp;is&nbsp;former&nbsp;or&nbsp;current&nbsp;keeper&nbsp;of'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P51i_is_former_or_current_owner_of___1022025077.html" class='Object Property' title="http://erlangen-crm.org/170309/P51i_is_former_or_current_owner_of">'P51&nbsp;is&nbsp;former&nbsp;or&nbsp;current&nbsp;owner&nbsp;of'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P74_has_current_or_former_residence___1831275682.html" class='Object Property' title="http://erlangen-crm.org/170309/P74_has_current_or_former_residence">'P74&nbsp;has&nbsp;current&nbsp;or&nbsp;former&nbsp;residence'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P75_possesses___-1855676946.html" class='Object Property' title="http://erlangen-crm.org/170309/P75_possesses">'P75&nbsp;possesses'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P76_has_contact_point___495270087.html" class='Object Property' title="http://erlangen-crm.org/170309/P76_has_contact_point">'P76&nbsp;has&nbsp;contact&nbsp;point'</a> <span class='keyword'>Domain</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P105_right_held_by___1971212208.html" class='Object Property' title="http://erlangen-crm.org/170309/P105_right_held_by">'P105&nbsp;right&nbsp;held&nbsp;by'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P107_has_current_or_former_member___-1021565927.html" class='Object Property' title="http://erlangen-crm.org/170309/P107_has_current_or_former_member">'P107&nbsp;has&nbsp;current&nbsp;or&nbsp;former&nbsp;member'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P109_has_current_or_former_curator___-1599320785.html" class='Object Property' title="http://erlangen-crm.org/170309/P109_has_current_or_former_curator">'P109&nbsp;has&nbsp;current&nbsp;or&nbsp;former&nbsp;curator'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P11_had_participant___-981408325.html" class='Object Property' title="http://erlangen-crm.org/170309/P11_had_participant">'P11&nbsp;had&nbsp;participant'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P131i_identifies___-808992310.html" class='Object Property' title="http://erlangen-crm.org/170309/P131i_identifies">'P131&nbsp;identifies'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P49_has_former_or_current_keeper___1305183040.html" class='Object Property' title="http://erlangen-crm.org/170309/P49_has_former_or_current_keeper">'P49&nbsp;has&nbsp;former&nbsp;or&nbsp;current&nbsp;keeper'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P51_has_former_or_current_owner___1052785074.html" class='Object Property' title="http://erlangen-crm.org/170309/P51_has_former_or_current_owner">'P51&nbsp;has&nbsp;former&nbsp;or&nbsp;current&nbsp;owner'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P74i_is_current_or_former_residence_of___-1002803451.html" class='Object Property' title="http://erlangen-crm.org/170309/P74i_is_current_or_former_residence_of">'P74&nbsp;is&nbsp;current&nbsp;or&nbsp;former&nbsp;residence&nbsp;of'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P75i_is_possessed_by___569831661.html" class='Object Property' title="http://erlangen-crm.org/170309/P75i_is_possessed_by">'P75&nbsp;is&nbsp;possessed&nbsp;by'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+<li class="asserted"><a href="../objectproperties/P76i_provides_access_to___-1949787015.html" class='Object Property' title="http://erlangen-crm.org/170309/P76i_provides_access_to">'P76&nbsp;provides&nbsp;access&nbsp;to'</a> <span class='keyword'>Range</span> <span class='Class active-entity'>'E39&nbsp;Actor'</span></li>
+</ul>
+</div>
+</div><!-- usage (25) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>
