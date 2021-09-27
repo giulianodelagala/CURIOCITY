@@ -18,6 +18,7 @@ class Metricas:
         self.prefix = {
             "ecrm" : self.ecrm,
             "owl": OWL,
+            "time": "http://www.w3.org/2006/time#",
             "dc": "http://purl.org/dc/elements/1.1/",
             "l0": "https://w3id.org/italia/onto/l0/",
             "mu": "https://w3id.org/italia/onto/MU/",
@@ -347,7 +348,7 @@ class Metricas:
 
 if __name__ == "__main__":
 
-    M = Metricas("../../arco.ttl")
+    M = Metricas("../../CURIOCITY.ttl")
     #for i in M.level_dic:
     #    print(i, M.level_dic[i])
     #print(M.level_dic)
